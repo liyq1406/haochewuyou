@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="SensorsAnalyticsSDK-1.6.36">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.sensorsdata.analytics.android/SensorsAnalyticsSDK/1.6.36/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.sensorsdata.analytics.android/SensorsAnalyticsSDK/1.6.36/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sensorsdata.analytics.android/SensorsAnalyticsSDK/1.6.36/9dde7b0173073cac0367d27adb4a6514cd73119d/SensorsAnalyticsSDK-1.6.36-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

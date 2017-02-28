@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match"
+    android:background="@color/self_common"
+    >
+  <LinearLayout
+      android:background="@color/self_common"
+      android:orientation="vertical"
+      style="@style/wh_match"
+      >
+
+    <TextView
+        android:id="@+id/tv_login_description"
+        android:padding="@dimen/px_15dp"
+        android:text="@string/hc_noregist_tologin"
+        android:textColor="@color/font_gray"
+        style="@style/wh_match_wrap"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rel_login_phone"
+        android:paddingLeft="@dimen/px_15dp"
+        style="@style/hc_regist_rel"
+        >
+
+      <TextView
+          android:id="@+id/tv_login_verifycode"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/px_10dp"
+          android:layout_marginRight="@dimen/px_10dp"
+          android:background="@drawable/selector_gray_stroke_btn"
+          android:gravity="center"
+          android:minHeight="@dimen/px_20dp"
+          android:minWidth="@dimen/px_75dp"
+          android:padding="@dimen/px_5dp"
+          android:text="@string/hc_get_verify_code"
+          android:textSize="@dimen/font_22_px"
+          style="@style/wh_wrap"
+          />
+
+      <TextView
+          android:id="@+id/tv_login_mobile_title"
+          android:layout_centerVertical="true"
+          android:drawableLeft="@drawable/icon_hc_phone"
+          style="@style/hc_login_tv"
+          />
+
+      <com.haoche51.custom.HCEditText
+          android:id="@+id/et_login_phone"
+          android:layout_centerVertical="true"
+          android:layout_toLeftOf="@id/tv_login_verifycode"
+          android:layout_toRightOf="@id/tv_login_mobile_title"
+          android:drawableRight="@drawable/icon_hc_cancel"
+          android:hint="@string/hc_mobile_number"
+          android:inputType="phone"
+          android:maxLength="11"
+          style="@style/hc_login_et"
+          />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_05"
+        android:layout_marginLeft="@dimen/px_15dp"
+        android:layout_marginRight="@dimen/px_15dp"
+        android:background="@color/gray_line"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_login_verify"
+        style="@style/hc_login_linear"
+        >
+
+      <TextView
+          style="@style/hc_login_tv"
+          android:drawableLeft="@drawable/icon_hc_lock"
+          />
+
+      <com.haoche51.custom.HCEditText
+          android:id="@+id/et_login_verify"
+          android:layout_marginRight="@dimen/px_75dp"
+          android:drawableRight="@drawable/icon_hc_cancel"
+          android:hint="@string/hc_verify_code"
+          android:inputType="phone"
+          android:maxLength="6"
+          style="@style/hc_login_et"
+          />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login_login"
+        style="@style/hc_big_btn"
+        android:text="@string/hc_login"
+        />
+
+    <TextView
+        android:visibility="gone"
+        android:textColor="@color/font_gray"
+        android:id="@+id/tv_receive_voice"
+        android:padding="@dimen/px_5dp"
+        android:layout_marginTop="@dimen/px_30dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:text="@string/hc_receive_voice"
+        style="@style/wh_match_wrap"
+        />
+  </LinearLayout>
+
+</ScrollView>

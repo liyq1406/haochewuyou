@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/promote_white"
+    android:orientation="vertical"
+    >
+
+  <TextView
+      style="@style/hc_filter_brand_tv"
+      android:text="@string/hc_filter_price_custom"
+      />
+
+  <TextView
+      android:id="@+id/tv_filter_price"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/px_10dp"
+      android:textSize="@dimen/ip5_28px"
+      android:textColor="@color/home_hot_text"
+      android:paddingRight="@dimen/px_15dp"
+      android:text="@string/no_limit_string"
+      android:gravity="end"
+      />
+
+  <com.haoche51.custom.HCSeekBarPressure
+      android:id="@+id/seekbar_filter_price"
+      style="@style/hc_filter_seek_bar"
+      />
+
+  <TextView
+      android:id="@+id/tv_seek_bar_ensure"
+      android:layout_width="@dimen/px_67dp"
+      android:layout_height="@dimen/px_32dp"
+      android:layout_marginTop="@dimen/px_10dp"
+      android:textColor="@color/promote_white"
+      android:background="@color/home_grx_red"
+      android:gravity="center"
+      android:textSize="@dimen/ip5_28px"
+      android:text="@string/confirm_string"
+      android:layout_gravity="center"
+      android:visibility="gone"
+      />
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/px_05"
+      android:background="@color/diff_deep_gray_"
+      android:layout_marginTop="@dimen/px_15dp"
+      />
+
+  <TextView
+      style="@style/hc_filter_brand_tv"
+      android:text="@string/hc_jinghao"
+      />
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/px_44dp"
+      >
+    <TextView
+        android:id="@+id/tv_price_unlimited"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_44dp"
+        android:background="@drawable/selector_common_click"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/px_15dp"
+        android:text="@string/hc_filter_unlimited"
+        android:textSize="@dimen/ip5_28px"
+        android:textColor="@color/home_hot_text"
+        />
+    <ImageView
+        android:id="@+id/iv_price_unlimited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/px_15dp"
+        android:visibility="gone"
+        android:src="@drawable/icon_filter_choosed"
+        />
+  </FrameLayout>
+  <TextView
+      style="@style/hc_filter_brand_tv"
+      android:text="@string/hc_filter_choose_price"
+      />
+
+</LinearLayout>

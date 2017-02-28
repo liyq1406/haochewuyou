@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match_wrap"
+    android:background="@color/hc_transcolor"
+    >
+
+
+  <LinearLayout
+      android:layout_marginTop="@dimen/px_15dp"
+      android:padding="@dimen/dp_20px"
+      android:orientation="vertical"
+      style="@style/wh_match_wrap"
+      android:background="@color/promote_white"
+      android:gravity="center"
+      >
+
+    <TextView
+        android:id="@+id/tv_coupon_count"
+        style="@style/wh_match_wrap"
+        android:minHeight="@dimen/px_40dp"
+        android:gravity="center"
+        android:textSize="@dimen/font_title"
+        />
+
+    <Button
+        android:id="@+id/btn_look"
+        style="@style/hc_big_btn"
+        android:text="@string/hc_look_now"
+        android:layout_marginBottom="@dimen/px_10dp"
+        />
+
+  </LinearLayout>
+
+  <ImageView
+      android:id="@+id/iv_cancel"
+      style="@style/wh_wrap"
+      android:src="@drawable/selector_red_cancel"
+      android:layout_gravity="top|right"
+      android:layout_marginRight="@dimen/px_10dp"
+      />
+
+</FrameLayout>

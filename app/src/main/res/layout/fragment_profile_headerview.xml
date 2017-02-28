@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match_wrap"
+    android:orientation="vertical"
+    >
+
+  <RelativeLayout
+      style="@style/wh_match_wrap"
+      android:id="@+id/relative_profile_top"
+      android:background="@drawable/bg_profile_top"
+      android:layout_height="@dimen/px_150dp"
+      >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/px_15dp"
+        android:layout_marginLeft="@dimen/px_25dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        style="@style/wh_w_w"
+        >
+
+      <ImageView
+          android:id="@+id/iv_profile_avatar"
+          android:src="@drawable/icon_not_login_avatar"
+          style="@style/wh_w_w"
+          />
+
+      <TextView
+          android:id="@+id/tv_profile_username"
+          android:text="@string/hc_login_regist"
+          android:padding="@dimen/px_25dp"
+          style="@style/wh_w_w"
+          />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_profile_advisory"
+        android:padding="@dimen/px_8dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/px_10dp"
+        android:drawableLeft="@drawable/icon_white_phone"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:text="@string/hc_advisory_phone"
+        style="@style/wh_w_w"
+        />
+
+  </RelativeLayout>
+
+  <LinearLayout
+      android:layout_height="@dimen/px_65dp"
+      android:background="@color/promote_white"
+      style="@style/wh_match_wrap"
+      >
+
+    <FrameLayout
+        style="@style/profile_top_style"
+        android:background="@drawable/selector_common_click"
+        >
+
+      <LinearLayout
+          android:id="@+id/linear_profile_book"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:gravity="center"
+          android:background="@drawable/selector_common_click"
+          >
+
+        <TextView
+            android:id="@+id/tv_profile_book_num"
+            android:layout_marginTop="@dimen/px_2dp"
+            android:textColor="@color/reminder_red"
+            style="@style/wh_wrap"
+            android:text="0"
+            />
+
+        <!-- TextView的drawableTop属性  没法居中显示drawable-->
+        <ImageView
+            android:id="@+id/iv_profile_book_icon"
+            android:src="@drawable/icon_p_book"
+            style="@style/wh_wrap"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/px_2dp"
+            android:text="@string/hc_p_book"
+            android:textColor="@color/home_hot_text"
+            style="@style/wh_wrap"
+            />
+
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/tv_profile_book_reminder"
+          android:layout_gravity="right"
+          android:layout_margin="@dimen/px_5dp"
+          style="@style/profile_reminder"
+          android:layout_width="@dimen/px_8dp"
+          android:layout_height="@dimen/px_8dp"
+          />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_profile_collect"
+        android:background="@drawable/bg_left_right_gray"
+        style="@style/profile_top_style"
+        >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="@dimen/px_05"
+          android:layout_marginRight="@dimen/px_05"
+          android:background="@drawable/selector_common_click"
+          style="@style/profile_top_style"
+          >
+
+        <TextView
+            android:id="@+id/tv_profile_collect_num"
+            android:layout_marginTop="@dimen/px_2dp"
+            android:textColor="@color/reminder_red"
+            android:text="0"
+            style="@style/wh_wrap"
+            />
+
+        <!-- TextView的drawableTop属性  没法居中显示drawable-->
+        <ImageView
+            android:id="@+id/iv_profile_collect_icon"
+            android:src="@drawable/icon_p_collection"
+            style="@style/wh_wrap"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/px_2dp"
+            android:text="@string/hc_p_collect"
+            android:textColor="@color/home_hot_text"
+            style="@style/wh_wrap"
+            />
+
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/tv_profile_collect_reminder"
+          android:layout_gravity="right"
+          android:layout_margin="@dimen/px_5dp"
+          style="@style/profile_reminder"
+          android:layout_width="@dimen/px_8dp"
+          android:layout_height="@dimen/px_8dp"
+          />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        style="@style/profile_top_style"
+        >
+
+      <LinearLayout
+          android:id="@+id/linear_profile_sub"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/selector_common_click"
+          >
+        <TextView
+            android:id="@+id/tv_profile_sub_num"
+            android:textColor="@color/reminder_red"
+            style="@style/wh_wrap"
+            android:text="0"
+            />
+
+        <!-- TextView的drawableTop属性  没法居中显示drawable-->
+        <ImageView
+            android:id="@+id/iv_profile_sub_icon"
+            android:src="@drawable/icon_p_sub"
+            style="@style/wh_wrap"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/px_2dp"
+            android:text="@string/hc_p_sub"
+            android:textColor="@color/home_hot_text"
+            style="@style/wh_wrap"
+            />
+
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/tv_profile_subscribe_reminder"
+          android:layout_gravity="right"
+          android:background="@drawable/bg_rect_reminder"
+          android:visibility="invisible"
+          android:textSize="@dimen/font_14_px"
+          android:layout_marginTop="@dimen/px_5dp"
+          android:layout_marginRight="@dimen/px_5dp"
+          android:gravity="center"
+          style="@style/wh_w_w"
+          />
+
+    </FrameLayout>
+
+  </LinearLayout>
+
+  <View
+      style="@style/zy_profile_diliver"
+      />
+
+  <RelativeLayout
+      android:id="@+id/rel_profile_coupon"
+      style="@style/name_zy_profile_rel"
+      >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_p_coupon"
+        android:drawablePadding="@dimen/px_10dp"
+        android:textColor="@color/font_black"
+        android:layout_centerVertical="true"
+        android:text="@string/hc_p_coupon"
+        />
+    <TextView
+        android:id="@+id/tv_profile_coupon_icon_right"
+        style="@style/profile_item_tv_right"
+        />
+
+    <TextView
+        android:id="@+id/tv_profile_coupon_reminder"
+        android:layout_toLeftOf="@id/tv_profile_coupon_icon_right"
+        style="@style/profile_reminder"
+        />
+
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/rel_profile_history"
+      style="@style/name_zy_profile_rel"
+      >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_p_history"
+        android:drawablePadding="@dimen/px_10dp"
+        android:textColor="@color/font_black"
+        android:layout_centerVertical="true"
+        android:text="@string/hc_p_history"
+        />
+    <TextView style="@style/profile_item_tv_right"/>
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/rel_profile_setting"
+      style="@style/name_zy_profile_rel"
+      >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_p_setting"
+        android:drawablePadding="@dimen/px_10dp"
+        android:textColor="@color/font_black"
+        android:layout_centerVertical="true"
+        android:text="@string/hc_p_setting"
+        />
+    <TextView style="@style/profile_item_tv_right"/>
+  </RelativeLayout>
+
+  <View
+      style="@style/zy_profile_diliver"
+      />
+
+  <RelativeLayout
+      android:id="@+id/rel_profile_recommand"
+      android:visibility="gone"
+      style="@style/name_zy_profile_rel"
+      android:layout_marginBottom="@dimen/px_1dp"
+      >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_p_recommand"
+        android:drawablePadding="@dimen/px_10dp"
+        android:textColor="@color/font_black"
+        android:layout_centerVertical="true"
+        android:text="@string/hc_p_recommand"
+        />
+    <TextView style="@style/profile_item_tv_right"/>
+  </RelativeLayout>
+
+</LinearLayout>

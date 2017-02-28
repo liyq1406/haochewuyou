@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    style="@style/wh_match"
+    >
+  <TextView
+      android:id="@+id/tv_more_for_click"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:background="@color/hc_transcolor"
+      />
+  <RelativeLayout
+      style="@style/wh_match"
+      android:id="@+id/rel_more_parent"
+      android:background="@color/self_white"
+      >
+    <View
+        android:id="@+id/linear_filter_more_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_05"
+        android:background="@color/diff_deep_gray_"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/px_50dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_50dp"
+        android:layout_alignParentBottom="true"
+        >
+      <TextView
+          android:id="@+id/tv_filter_more_result"
+          android:layout_width="@dimen/px_90dp"
+          android:layout_height="match_parent"
+          android:layout_alignParentRight="true"
+          android:background="@color/home_grx_red"
+          android:gravity="center"
+          android:textSize="@dimen/ip5_32px"
+          android:textColor="@color/promote_white"
+          android:text="@string/hc_filter_search_result"
+          />
+      <TextView
+          android:id="@+id/tv_filter_more_result_hint"
+          android:layout_toLeftOf="@id/tv_filter_more_result"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/promote_white"
+          android:gravity="center"
+          android:textColor="@color/home_hot_text"
+          android:textSize="@dimen/ip5_28px"
+          android:text="@string/hc_filter_search_result_hint"
+          />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_more_name"
+        style="@style/hc_filter_top_tv"
+        android:text="@string/hc_filter"
+        />
+    <TextView
+        android:id="@+id/tv_filter_more_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px_45dp"
+        android:paddingRight="@dimen/px_15dp"
+        android:paddingLeft="@dimen/px_15dp"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/ip5_28px"
+        android:gravity="center_vertical"
+        android:textColor="@color/home_grx_red"
+        android:text="@string/hc_filter_reset"
+        />
+
+    <com.haoche51.custom.HCScrollView
+        style="@style/wh_match"
+        android:id="@+id/sv_filter_more"
+        android:layout_above="@id/linear_filter_more_bottom_line"
+        android:layout_below="@id/tv_more_name"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/self_white"
+          android:orientation="vertical"
+          >
+
+        <include layout="@layout/filter_more_car_type"/>
+
+        <include layout="@layout/filter_more_car_age"/>
+
+        <include layout="@layout/filter_more_car_distance"/>
+
+        <include layout="@layout/filter_more_speed_box"/>
+
+        <include layout="@layout/filter_more_standard"/>
+
+        <include layout="@layout/filter_more_emissions"/>
+
+        <include layout="@layout/filter_more_country"/>
+
+        <include layout="@layout/filter_more_color"/>
+
+      </LinearLayout>
+    </com.haoche51.custom.HCScrollView>
+  </RelativeLayout>
+</LinearLayout>

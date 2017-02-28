@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/framelayout_core"
+    style="@style/wh_match"
+    >
+
+  <com.haoche51.custom.HCViewPager
+      android:id="@+id/viewpager_core"
+      style="@style/wh_match"
+      />
+
+  <ImageView
+      android:id="@+id/iv_core_live"
+      android:layout_width="@dimen/px_80dp"
+      android:layout_height="@dimen/px_80dp"
+      android:contentDescription="@null"
+      android:visibility="gone"
+      android:layout_gravity="bottom|right"
+      android:layout_marginRight="@dimen/px_10dp"
+      android:layout_marginBottom="@dimen/px_30dp"
+      android:clickable="true"
+      >
+  </ImageView>
+
+</FrameLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="hc_filter_price_custom">自定义价格</string>
+  <string name="hc_filter_choose_price">选择价格</string>
+  <string name="hc_filter_car_age_hint">车龄</string>
+  <string name="hc_filter_distance_hint">里程</string>
+  <string name="hc_filter_speed_box_hint">变速箱</string>
+  <string name="hc_filter_standard_hint">排放标准</string>
+  <string name="hc_filter_car_type_hint">车身结构</string>
+  <string name="hc_filter_emissions_hint">排量</string>
+  <string name="hc_filter_country_hint">国别</string>
+  <string name="hc_filter_color_hint">车身颜色</string>
+  <string name="hc_filter_reset">重置</string>
+  <string name="hc_filter_unlimited">不限</string>
+  <string name="hc_filter_search_result">查看</string>
+  <string name="hc_filter_search_result_hint">为您找到%s辆车</string>
+
+  <string-array name="hc_filter_sort">
+    <item>综合排序</item>
+    <item>价格低到高</item>
+    <item>价格高到低</item>
+    <item>车龄新到旧</item>
+    <item>里程短到长</item>
+  </string-array>
+
+  <string-array name="hc_filter_price">
+    <item>2万以内</item>
+    <item>2-3万</item>
+    <item>3-5万</item>
+    <item>5-7万</item>
+    <item>7-9万</item>
+    <item>9-12万</item>
+    <item>12-15万</item>
+    <item>15-20万</item>
+    <item>20-30万</item>
+    <item>30万以上</item>
+  </string-array>
+  <!-- 0未知 1两厢 2三厢 3SUV 4MPV 5旅行车 6跑车 7皮卡 8面包车' -->
+  <string-array name="hc_filter_more_car_type">
+    <item>两厢轿车</item>
+    <item>三厢轿车</item>
+    <item>SUV</item>
+    <item>MPV</item>
+    <item>旅行车</item>
+    <item>跑车</item>
+    <item>皮卡</item>
+    <item>面包车</item>
+  </string-array>
+  <string-array name="hc_filter_more_car_age">
+    <item>1年内</item>
+    <item>3年内</item>
+    <item>5年内</item>
+    <item>8年内</item>
+    <item>8年以上</item>
+  </string-array>
+  <string-array name="hc_filter_more_distance">
+    <item>3万公里内</item>
+    <item>5万公里内</item>
+    <item>8万公里内</item>
+    <item>10万公里内</item>
+    <item>10万公里以上</item>
+  </string-array>
+  <string-array name="hc_filter_more_speed_box">
+    <item>手动</item>
+    <item>自动</item>
+  </string-array>
+  <string-array name="hc_filter_more_standard">
+    <item>国三及以上</item>
+    <item>国四及以上</item>
+    <item>国五</item>
+  </string-array>
+  <string-array name="hc_filter_more_emissions">
+    <item>1.2L及以下</item>
+    <item>1.3L-1.6L</item>
+    <item>1.7L-2.0L</item>
+    <item>2.1L-3.0L</item>
+    <item>3.1L-4.0L</item>
+    <item>4.1L以上</item>
+  </string-array>
+  <string-array name="hc_filter_more_country">
+    <item>德系</item>
+    <item>日系</item>
+    <item>韩系</item>
+    <item>美系</item>
+    <item>法系</item>
+    <item>国产</item>
+    <item>合资</item>
+    <item>进口</item>
+    <item>非国产</item>
+    <item>非日系</item>
+  </string-array>
+  <string-array name="hc_filter_more_color">
+    <item>黑色</item>
+    <item>白色</item>
+    <item>银灰色</item>
+    <item>深灰色</item>
+    <item>红色</item>
+    <item>蓝色</item>
+    <item>绿色</item>
+    <item>黄色</item>
+    <item>金/棕色</item>
+    <item>橙色</item>
+    <item>其他色</item>
+  </string-array>
+
+
+  <string-array name="hc_filter_speed_box">
+    <item>不限</item>
+    <item>手动</item>
+    <item>自动</item>
+  </string-array>
+  <string-array name="hc_filter_standard">
+    <item>不限</item>
+    <item>国三及以上</item>
+    <item>国四及以上</item>
+    <item>国五</item>
+  </string-array>
+  <!-- 0未知 1两厢 2三厢 3SUV 4MPV 5旅行车 6跑车 7皮卡 8面包车' -->
+  <string-array name="hc_filter_car_type">
+    <item>不限</item>
+    <item>两厢轿车</item>
+    <item>三厢轿车</item>
+    <item>SUV</item>
+    <item>MPV</item>
+    <item>旅行车</item>
+    <item>跑车</item>
+    <item>皮卡</item>
+    <item>面包车</item>
+  </string-array>
+  <string-array name="hc_filter_country">
+    <item>不限</item>
+    <item>德系</item>
+    <item>日系</item>
+    <item>韩系</item>
+    <item>美系</item>
+    <item>法系</item>
+    <item>国产</item>
+    <item>合资</item>
+    <item>进口</item>
+    <item>非国产</item>
+    <item>非日系</item>
+  </string-array>
+  <string-array name="hc_filter_color">
+    <item>不限</item>
+    <item>黑色</item>
+    <item>白色</item>
+    <item>银灰色</item>
+    <item>深灰色</item>
+    <item>红色</item>
+    <item>蓝色</item>
+    <item>绿色</item>
+    <item>黄色</item>
+    <item>金/棕色</item>
+    <item>橙色</item>
+    <item>其他色</item>
+  </string-array>
+
+  <string-array name="hc_filter_country_temp">
+    <item>buxian</item>
+    <item>dexi</item>
+    <item>rixi</item>
+    <item>hanxi</item>
+    <item>meixi</item>
+    <item>faxi</item>
+    <item>guochan</item>
+    <item>hezi</item>
+    <item>jinkou</item>
+    <item>feiguochan</item>
+    <item>feirixi</item>
+  </string-array>
+
+  <string-array name="hc_filter_color_temp">
+    <item>不限</item>
+    <item>黑色</item>
+    <item>白色</item>
+    <item>银灰色</item>
+    <item>深灰色</item>
+    <item>红色</item>
+    <item>蓝色</item>
+    <item>绿色</item>
+    <item>黄色</item>
+    <item>金色</item>
+    <item>橙色</item>
+    <item>其他色</item>
+  </string-array>
+
+</resources>

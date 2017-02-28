@@ -1,0 +1,159 @@
+[
+    {
+        "outputFile": "/Users/mac/Documents/AndroidProject/android_studio_buyerapp/XMAutoUpdateSDK/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 76,
+                    "endOffset": 177
+                },
+                "from": {
+                    "file": "/Users/mac/Documents/AndroidProject/android_studio_buyerapp/XMAutoUpdateSDK/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 105,
+                        "endColumn": 76,
+                        "endOffset": 177
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 182,
+                    "endColumn": 168,
+                    "endOffset": 346
+                },
+                "from": {
+                    "file": "/Users/mac/Documents/AndroidProject/android_studio_buyerapp/XMAutoUpdateSDK/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 182,
+                        "endColumn": 168,
+                        "endOffset": 346
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 351,
+                    "endColumn": 110,
+                    "endOffset": 457
+                },
+                "from": {
+                    "file": "/Users/mac/Documents/AndroidProject/android_studio_buyerapp/XMAutoUpdateSDK/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 351,
+                        "endColumn": 110,
+                        "endOffset": 457
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 462,
+                    "endColumn": 81,
+                    "endOffset": 539
+                },
+                "from": {
+                    "file": "/Users/mac/Documents/AndroidProject/android_studio_buyerapp/XMAutoUpdateSDK/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 462,
+                        "endColumn": 81,
+                        "endOffset": 539
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 544,
+                    "endColumn": 81,
+                    "endOffset": 621
+                },
+                "from": {
+                    "file": "/Users/mac/Documents/AndroidProject/android_studio_buyerapp/XMAutoUpdateSDK/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 544,
+                        "endColumn": 81,
+                        "endOffset": 621
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 626,
+                    "endColumn": 155,
+                    "endOffset": 777
+                },
+                "from": {
+                    "file": "/Users/mac/Documents/AndroidProject/android_studio_buyerapp/XMAutoUpdateSDK/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 626,
+                        "endColumn": 155,
+                        "endOffset": 777
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 782,
+                    "endColumn": 173,
+                    "endOffset": 951
+                },
+                "from": {
+                    "file": "/Users/mac/Documents/AndroidProject/android_studio_buyerapp/XMAutoUpdateSDK/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 782,
+                        "endColumn": 173,
+                        "endOffset": 951
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 956,
+                    "endColumn": 96,
+                    "endOffset": 1048
+                },
+                "from": {
+                    "file": "/Users/mac/Documents/AndroidProject/android_studio_buyerapp/XMAutoUpdateSDK/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 956,
+                        "endColumn": 96,
+                        "endOffset": 1048
+                    }
+                }
+            }
+        ]
+    }
+]

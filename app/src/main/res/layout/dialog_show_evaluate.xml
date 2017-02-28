@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match_wrap"
+    android:background="@color/hc_transcolor"
+    >
+
+  <LinearLayout
+      android:layout_marginTop="@dimen/px_15dp"
+      android:padding="@dimen/dp_20px"
+      android:orientation="vertical"
+      style="@style/wh_match_wrap"
+      android:background="@color/promote_white"
+      android:gravity="center"
+      >
+
+    <TextView
+        android:drawableTop="@drawable/icon_evaluate"
+        android:layout_marginTop="@dimen/px_20dp"
+        style="@style/wh_match_wrap"
+        android:minHeight="@dimen/px_40dp"
+        android:gravity="center"
+        android:textSize="@dimen/font_28_px"
+        android:text="@string/promote_content"
+        android:textColor="@color/self_black"
+        android:drawablePadding="@dimen/px_10dp"
+        android:layout_marginBottom="-10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_evaluate_ok"
+        style="@style/hc_big_btn"
+        android:text="@string/promote_ok"
+        android:layout_marginBottom="@dimen/px_5dp"
+        />
+
+  </LinearLayout>
+
+  <ImageView
+      android:id="@+id/iv_evaluate_cancel"
+      style="@style/wh_wrap"
+      android:src="@drawable/selector_red_cancel"
+      android:layout_gravity="top|right"
+      android:layout_marginRight="@dimen/px_10dp"
+      />
+
+</FrameLayout>

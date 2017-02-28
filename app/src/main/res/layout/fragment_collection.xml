@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/self_common"
+    style="@style/wh_match"
+    >
+
+  <com.haoche51.custom.HCPullToRefresh
+      android:id="@+id/hcptr_collect_list"
+      style="@style/wh_match"
+      />
+
+  <include layout="@layout/empty_for_coll"/>
+
+  <include layout="@layout/activity_loading"/>
+
+  <include layout="@layout/layout_for_net_err"/>
+
+
+</FrameLayout>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg_bottom_line_light_gray"
+    style="@style/wh_match_wrap"
+    >
+  <TextView
+      style="@style/hc_filter_tv_hint"
+      android:text="@string/hc_filter_car_type_hint"
+      />
+
+  <com.haoche51.custom.HCGridView
+      android:id="@+id/gv_filter_car_type"
+      style="@style/hc_filter_gv"
+      />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match"
+    android:paddingTop="@dimen/px_28dp"
+    android:background="@color/hc_transcolor"
+    android:orientation="vertical"
+    >
+
+  <ImageView
+      android:layout_gravity="right"
+      android:id="@+id/iv_promote_cancel"
+      android:src="@drawable/icon_line_cancel_top"
+      android:layout_marginRight="@dimen/px_35dp"
+      style="@style/wh_wrap"
+      />
+
+  <ImageView
+      android:id="@+id/iv_promote_pic"
+      android:layout_gravity="center_horizontal"
+      android:src="@drawable/default_template"
+      style="@style/wh_wrap"
+      />
+
+</LinearLayout>

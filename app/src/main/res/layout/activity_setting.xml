@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match"
+    android:orientation="vertical"
+    >
+
+  <View style="@style/zy_profile_diliver"/>
+
+  <RelativeLayout
+      android:id="@+id/rel_setting_feedback"
+      style="@style/name_zy_profile_rel"
+      >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/px_10dp"
+        android:textColor="@color/font_black"
+        android:layout_centerVertical="true"
+        android:text="@string/hc_feedback"
+        />
+    <TextView style="@style/profile_item_tv_right"/>
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/rel_setting_evaluate"
+      style="@style/name_zy_profile_rel"
+      >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/px_10dp"
+        android:textColor="@color/font_black"
+        android:layout_centerVertical="true"
+        android:text="@string/evaluate_app"
+        />
+    <TextView
+        style="@style/profile_item_tv_right"
+        android:text="@string/give_haoche_zan"
+        />
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/rel_setting_update"
+      style="@style/name_zy_profile_rel"
+      >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/px_10dp"
+        android:textColor="@color/font_black"
+        android:layout_centerVertical="true"
+        android:text="@string/system_update"
+        />
+    <TextView
+        android:id="@+id/tv_setting_version"
+        style="@style/profile_item_tv_right"
+        android:text="@string/check_update"
+        />
+
+    <ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/pb_setting"
+        android:layout_marginRight="@dimen/px_20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="?android:attr/progressBarStyleSmall"
+        />
+
+  </RelativeLayout>
+
+
+  <View style="@style/zy_profile_diliver"/>
+
+  <RelativeLayout
+      android:visibility="gone"
+      android:id="@+id/rel_setting_logout"
+      style="@style/name_zy_profile_rel"
+      >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/px_10dp"
+        android:textColor="@color/reminder_red"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/hc_logout"
+        />
+    <TextView
+        style="@style/profile_item_tv_right"
+        android:drawableRight="@null"
+        />
+  </RelativeLayout>
+
+</LinearLayout>

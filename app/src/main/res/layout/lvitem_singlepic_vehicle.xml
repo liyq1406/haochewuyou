@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/promote_white"
+    style="@style/wh_match_wrap"
+    >
+
+  <include
+      android:id="@+id/rel_singlepic_parent"
+      layout="@layout/lvitem_singlepic_vehicle_sub_child"/>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/px_5dp"
+      android:layout_below="@id/rel_singlepic_parent"
+      android:background="@drawable/bg_top_line_gray_list"
+      />
+
+</RelativeLayout>

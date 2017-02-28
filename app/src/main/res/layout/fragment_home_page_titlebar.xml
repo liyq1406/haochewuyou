@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_search_home_bar"
+    android:layout_marginTop="@dimen/px_m48"
+    style="@style/wh_match_wrap"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+    <RelativeLayout
+        android:background="@color/promote_white"
+        style="@style/wh_match_wrap"
+        android:layout_height="@dimen/px_45dp"
+        >
+
+      <TextView
+          android:id="@+id/tv_home_title_city"
+          style="@style/home_title_city"
+          android:layout_marginLeft="@dimen/px_25dp"
+          />
+
+      <TextView
+          android:id="@+id/tv_home_title_split"
+          style="@style/home_title_split"
+          android:layout_toRightOf="@id/tv_home_title_city"
+          />
+
+      <LinearLayout
+          android:id="@+id/linear_search_home_title"
+          android:layout_toRightOf="@id/tv_home_title_split"
+          style="@style/home_title_right_layout"
+          android:paddingRight="@dimen/px_20dp"
+          android:layout_marginRight="@dimen/px_25dp"
+          >
+
+        <TextView
+            style="@style/home_title_right_search"
+            />
+      </LinearLayout>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_3dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_home_top"
+        />
+
+  </LinearLayout>
+</FrameLayout>

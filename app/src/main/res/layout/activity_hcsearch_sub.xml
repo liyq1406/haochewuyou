@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_popular_parent"
+    style="@style/wh_match_wrap"
+    android:orientation="vertical"
+    android:background="@color/new_bg_gray"
+    >
+
+  <LinearLayout
+      android:id="@+id/linear_hotsearch_parent"
+      android:visibility="gone"
+      style="@style/wh_match_wrap"
+      android:orientation="vertical"
+      >
+
+    <TextView
+        android:layout_width="match_parent"
+        style="@style/tv_48"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/px_10dp"
+        android:text="@string/popular_search"
+        android:textColor="@color/font_gray"
+        android:layout_marginLeft="@dimen/coupon_leftright"
+        android:layout_marginRight="@dimen/coupon_leftright"
+        />
+
+    <View
+        android:layout_marginLeft="@dimen/coupon_leftright"
+        android:layout_marginRight="@dimen/coupon_leftright"
+        style="@style/gray_line"
+        />
+
+    <com.haoche51.custom.github.TagFlowLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:max_select="1"
+        android:id="@+id/flowlayout_content"
+        android:layout_margin="@dimen/px_20dp"
+        style="@style/wh_match_wrap"
+        />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:background="@color/promote_white"
+      >
+    <TextView
+        android:layout_marginLeft="@dimen/coupon_leftright"
+        android:layout_marginRight="@dimen/coupon_leftright"
+        android:id="@+id/tv_search_history_hint"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/px_10dp"
+        android:layout_width="match_parent"
+        style="@style/tv_48"
+        android:textSize="@dimen/font_normal"
+        android:textColor="@color/font_black"
+        android:text="@string/hc_search_history"
+        android:background="@drawable/bg_bottom_line_gray"
+        />
+  </LinearLayout>
+
+</LinearLayout>

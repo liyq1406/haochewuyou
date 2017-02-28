@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_title_descption"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_60dp"
+    >
+
+  <!-- 我出售的车  头部标题-->
+
+  <ImageView
+      android:id="@+id/iv_sold_brand"
+      style="@style/wh_wrap"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="@dimen/px_13dp"
+      />
+
+  <View
+      android:id="@+id/view_sold_line"
+      android:layout_width="@dimen/px_05"
+      android:layout_height="@dimen/px_30dp"
+      android:layout_centerVertical="true"
+      android:layout_margin="@dimen/px_13dp"
+      android:layout_toRightOf="@id/iv_sold_brand"
+      android:background="@color/zy_gray"
+      />
+
+  <ImageView
+      android:id="@+id/iv_sold_dropdown"
+      style="@style/wh_wrap"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:padding="@dimen/px_10dp"
+      android:src="@drawable/icon_dropdown"
+      />
+
+  <TextView
+      android:id="@+id/tv_sold_vehicle_name"
+      android:layout_centerVertical="true"
+      android:layout_centerHorizontal="true"
+      android:layout_toLeftOf="@id/iv_sold_dropdown"
+      android:layout_toRightOf="@id/view_sold_line"
+      android:gravity="left"
+      style="@style/wh_wrap"
+      />
+
+</RelativeLayout>

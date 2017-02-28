@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="grx_empty_gray">#9d9d9d</color>
+  <color name="grx_diff_gray">#fbf9f7</color>
+
+  <color name="md__defaultBackground">#FFFFFF</color>
+
+  <!-- The default background of the menu. -->
+  <color name="self_black">#000</color>
+  <color name="self_gray">#4D4D4D</color>
+  <color name="self_empty">#6D6D6D</color>
+  <color name="self_white">#FFFFFF</color>
+  <color name="self_common">#F2F2F2</color>
+  <color name="self_grey">#808080</color>
+  <color name="self_background">#d9d9d9</color>
+  <color name="promote_orange">#F59F77</color>
+  <!-- 橙色 -->
+  <color name="promote_white">#FFFFFF</color>
+  <color name="promote_gray">#E2E2E2</color>
+  <!-- 灰色间隔线 -->
+  <color name="promote_black">#333333</color>
+  <color name="font_gray">#ACACAC</color>
+  <!-- 字体颜色 灰 -->
+  <color name="empty_tv_gray">#C5C5C5</color>
+  <!-- 空数据灰色 -->
+  <color name="font_black">#666666</color>
+  <!-- 字体颜色 黑 -->
+
+  <color name="hc_hint_color">#b6b6b6</color>
+
+  <color name="font_detail_gray">#666666</color>
+
+  <color name="color_green">#43a047</color>
+
+  <color name="diff_vehicle_bg">#eceff1</color>
+  <color name="sub_title_color">#757575</color>
+  <color name="diff_deep_gray_">#e0e0e0</color>
+  <color name="diff_light_gray">#f5f5f5</color>
+  <!-- 价格红色字体 -->
+
+
+  <color name="hc_pink">#ffebec</color>
+
+  <color name="reminder_red">#ff2626</color>
+  <color name="light_reminder_red">#80ff2626</color>
+
+  <color name="diff_bg_red">#ff6f33</color>
+  <!-- 对比红色背景 -->
+  <color name="diff_bg_light_red">#f26b30</color>
+  <!-- 对比红色背景 -->
+
+  <color name="promote_light">#98A5B0</color>
+  <color name="letter_bar_color">#80BEBEBE</color>
+  <!-- 浅灰色 品牌筛选右边竖直字母栏背景色 选中灰色矩形背景 -->
+  <color name="letter_toast">#7F7F7F</color>
+  <!-- 品牌筛选字母 弹出的字母Toast 背景色 -->
+
+  <color name="progress_bg">#3C3C3C</color>
+  <!-- progress黑色背景 -->
+
+  <color name="gray_line">#dddddd</color>
+  <!-- 灰色分割线 -->
+  <color name="gray_bg">#fafafa</color>
+  <!-- 灰色背景 -->
+
+  <color name="vehicle_shadow">#eeeeee</color>
+  <!-- 好车故事阴影 -->
+
+  <color name="vehicle_ratingbar_color">#ffd400</color>
+  <color name="diff_bottom_btn_top_line">#bdbdbd</color>
+  <!-- 比一比 底部button 分界线颜色 -->
+
+  <!-- 完全透明 -->
+  <color name="hc_transcolor">#00000000</color>
+  <color name="hc_half_trans">#50000000</color>
+
+  <!-- 意见反馈背景色 -->
+  <color name="hc_feedback_bg">#eeeeee</color>
+
+  <!-- 公共按下效果灰色 -->
+  <color name="common_gray">#f5f5f5</color>
+  <!-- 按钮未未未未按下蓝色 -->
+
+  <color name="coupon_green">#00cc99</color>
+  <!-- 优惠券绿色 -->
+  <color name="coupon_gray">#929292</color>
+  <!-- 优惠券失效灰色 -->
+
+  <color name="filter_bar_color">#faf7f7</color>
+
+  <!--大家都在搜-->
+  <color name="popular_search">#212121</color>
+
+  <!-- 新的灰色背景-->
+  <color name="new_bg_gray">#efebe9</color>
+
+  <!-- 灰色横线 -->
+  <color name="new_line_gray">#c9c9c9</color>
+
+  <!--应用中的tab红色字体颜色 -->
+  <color name="main_color_red">#ff2626</color>
+
+
+  <color name="text_enabled">@color/promote_black</color>
+  <color name="text_disabled">@color/font_black</color>
+
+  <!--出售爱车右上角文字颜色-->
+  <color name="sell_spread_back">#f2f0f1</color>
+
+  <color name="zy_gray">#dadada</color>
+  <color name="zy_gray_0">#eaeaea</color>
+  <color name="zy_font_gray">#bdbdbd</color>
+  <color name="zy_click_gray">#faf7f7</color>
+
+  <color name="lp_font_gray">#99000000</color>
+
+  <color name="city_choose_bg">#f6f1f0</color>
+  <color name="city_tv_border">#cacdcc</color>
+  <color name="city_tv_hint">#999999</color>
+  <color name="home_price_text">#656565</color>
+
+
+  <color name="home_grx_enter_gray">#faf7f7</color>
+  <color name="home_grx_red">#ff2626</color>
+  <color name="home_grx_transparent">#7F000000</color>
+  <color name="home_grx_banner_trans">#75434343</color>
+
+  <color name="filter_hint_text">#9a9a9a</color>
+  <color name="filter_bg_color">#000000</color>
+
+  <color name="hc_sort_shadow">#4c3f3f3f</color>
+  <color name="hc_sort_pink">#4cffebec</color>
+
+  <color name="hc_tab_text_color">#626262</color>
+
+  <color name="hc_home_quiz_wrong_color">#ff0000</color>
+  <color name="hc_home_evaluate_score">#ffcc00</color>
+
+  <color name="home_top_one">#4ce7e7e7</color>
+  <color name="home_top_enter">#4cf1f1f1</color>
+  <color name="home_top_two">#4cf9f9f9</color>
+
+  <color name="home_hot_normal">#f9f9f9</color>
+  <color name="home_hot">#9f9f9f</color>
+  <color name="home_hot_text">#424242</color>
+  <color name="home_top_direct">#828282</color>
+
+  <color name="home_entrance_click">#e52222</color>
+  <color name="filter_brand_sidebar">#ccffffff</color>
+  <color name="bg_filter_choose">#fff0f0</color>
+
+  <color name="bg_toast_gray">#cc000000</color>
+
+</resources>

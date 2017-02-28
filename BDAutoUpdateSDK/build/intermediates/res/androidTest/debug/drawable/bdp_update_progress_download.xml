@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#ff475867"/>
+        </shape>
+    </item>
+	<item android:id="@android:id/progress">
+	    <clip>
+	        <shape>
+	            <solid android:color="#ff129e00"/>
+	        </shape>
+        </clip>
+	</item>
+</layer-list>
+<!-- From: file:/Users/mac/Documents/AndroidProject/android_studio_buyerapp/BDAutoUpdateSDK/src/main/res/drawable/bdp_update_progress_download.xml --><!-- From: file:/Users/mac/Documents/AndroidProject/android_studio_buyerapp/BDAutoUpdateSDK/build/intermediates/bundles/debug/res/drawable/bdp_update_progress_download.xml -->

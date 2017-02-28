@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/promote_white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/coupon_leftright"
+    android:paddingRight="@dimen/coupon_leftright"
+    >
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:minHeight="@dimen/px_30dp"
+      android:paddingLeft="@dimen/px_3dp"
+      android:text="@string/hc_exchange_coupon"
+      />
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+    <Button
+        android:id="@+id/btn_exchange"
+        style="@style/wh_w_w"
+        android:layout_width="@dimen/px_60dp"
+        android:layout_height="@dimen/px_40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px_10dp"
+        android:background="@drawable/selector_rect_red"
+        android:gravity="center"
+        android:text="@string/hc_exchange"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/linear_exchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/selector_gray_stroke_btn"
+        android:layout_toLeftOf="@id/btn_exchange"
+        >
+
+      <com.haoche51.custom.HCEditText
+          android:textSize="@dimen/font_normal"
+          android:layout_marginRight="@dimen/px_15dp"
+          android:id="@+id/et_exchange_code"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:drawablePadding="@dimen/px_5dp"
+          android:drawableRight="@drawable/icon_hc_cancel"
+          android:gravity="center_vertical"
+          android:background="@null"
+          android:hint="@string/hc_exchange_hint"
+          android:minHeight="@dimen/px_45dp"
+          android:paddingLeft="@dimen/px_3dp"
+          android:singleLine="true"
+          />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_exchange_error"
+        style="@style/wh_wrap"
+        android:layout_alignLeft="@id/linear_exchange"
+        android:layout_below="@id/linear_exchange"
+        android:layout_marginTop="@dimen/px_5dp"
+        android:text="@string/hc_right_code"
+        android:textColor="@color/reminder_red"
+        android:visibility="gone"
+        />
+
+  </RelativeLayout>
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="-2dp"
+      android:layout_marginTop="@dimen/px_5dp"
+      android:scaleType="fitXY"
+      android:src="@drawable/bg_top_coupon"
+      />
+
+</LinearLayout>

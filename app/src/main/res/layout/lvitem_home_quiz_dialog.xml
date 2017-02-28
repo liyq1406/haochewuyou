@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_40dp"
+    android:background="@drawable/selector_home_quiz_item_click"
+    >
+
+  <TextView
+      android:id="@+id/tv_quiz_item"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center_vertical"
+      android:textSize="@dimen/ip5_28px"
+      android:textColor="@color/popular_search"
+      android:drawablePadding="@dimen/px_10dp"
+      android:drawableLeft="@drawable/selector_home_quiz_item_left_click"
+      />
+
+</LinearLayout>

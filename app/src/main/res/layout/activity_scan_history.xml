@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match">
+
+
+    <com.haoche51.custom.HCPullToRefresh
+        android:id="@+id/pdv_history"
+        style="@style/wh_match"
+        android:divider="@color/promote_gray" />
+
+    <include
+        layout="@layout/lvitem_empty_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <include layout="@layout/activity_loading" />
+
+    <include layout="@layout/layout_for_net_err" />
+
+
+</FrameLayout>

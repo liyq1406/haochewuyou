@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/wh_wrap"
+    android:minWidth="@dimen/bang_mai_toast_width"
+    android:minHeight="@dimen/px_70dp"
+    android:background="@drawable/bg_for_toast"
+    android:gravity="center"
+    >
+
+  <ImageView
+      style="@style/wh_wrap"
+      android:src="@drawable/icon_bangmai"
+      />
+
+  <TextView
+      android:text="@string/hc_bangmai_success"
+      android:layout_marginTop="@dimen/px_10dp"
+      style="@style/wh_w_w"
+      />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_subtop_parent"
+    android:paddingLeft="@dimen/px_15dp"
+    android:paddingRight="@dimen/px_15dp"
+    android:paddingBottom="@dimen/px_10dp"
+    android:paddingTop="@dimen/px_10dp"
+    android:background="@drawable/selector_sub_click"
+    android:clickable="true"
+    style="@style/wh_match_wrap"
+    >
+
+  <ImageView
+      android:id="@+id/iv_subtop_icon"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:src="@drawable/icon_dropdown"
+      style="@style/wh_wrap"
+      />
+
+  <LinearLayout
+      android:id="@+id/linear_subtop_brand"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true"
+      android:minWidth="@dimen/min_brand_width"
+      android:orientation="vertical"
+      style="@style/wh_wrap"
+      >
+    <ImageView
+        android:id="@+id/iv_subtop_brand"
+        android:layout_centerInParent="true"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_brand_unlimit"
+        style="@style/wh_wrap"
+        />
+  </LinearLayout>
+
+  <RelativeLayout
+      android:layout_toLeftOf="@id/iv_subtop_icon"
+      android:layout_toRightOf="@id/linear_subtop_brand"
+      android:gravity="center_vertical"
+      style="@style/wh_match_wrap"
+      >
+
+    <TextView
+        android:id="@+id/tv_subtop_brand_desc"
+        android:layout_alignParentTop="true"
+        style="@style/wh_wrap"
+        />
+
+    <TextView
+        android:id="@+id/tv_subtop_condition_desc"
+        android:layout_alignLeft="@id/tv_subtop_brand_desc"
+        android:layout_below="@id/tv_subtop_brand_desc"
+        android:layout_marginTop="@dimen/px_2dp"
+        style="@style/wh_wrap"
+        />
+  </RelativeLayout>
+
+</RelativeLayout>

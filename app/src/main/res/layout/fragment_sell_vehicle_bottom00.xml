@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sell_vehicle_bottom00"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sell_spread_back"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/px_20dp"
+    android:paddingBottom="@dimen/px_10dp"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/sell_vehicle_bottom00_image_big"
+            android:src="@drawable/sell_vehicle_process_image_01" />
+
+        <LinearLayout
+            android:layout_width="@dimen/px_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/sell_vehicle_bottom00_text_big"
+                android:text="@string/hc_sell_process_one00" />
+
+            <TextView
+                style="@style/sell_vehicle_bottom00_text_small"
+                android:text="@string/hc_sell_process_one01" />
+
+            <TextView
+                style="@style/sell_vehicle_bottom00_text_small"
+                android:text="@string/hc_sell_process_one02" />
+
+            <TextView
+                style="@style/sell_vehicle_bottom00_text_small"
+                android:text="@string/hc_sell_process_one03" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_26dp">
+
+        <LinearLayout
+            android:layout_width="@dimen/px_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/px_15dp"
+                android:layout_height="@dimen/px_10dp"
+                android:src="@drawable/sell_vehicle_process_arrows" />
+        </LinearLayout>
+
+        <TextView style="@style/sell_vehicle_bottom00_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/sell_vehicle_bottom00_image_big"
+            android:src="@drawable/sell_vehicle_process_image_02" />
+
+        <LinearLayout
+            android:layout_width="@dimen/px_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/sell_vehicle_bottom00_text_big"
+                android:text="@string/hc_sell_process_two00" />
+
+            <TextView
+                style="@style/sell_vehicle_bottom00_text_small"
+                android:text="@string/hc_sell_process_two01" />
+
+            <TextView
+                style="@style/sell_vehicle_bottom00_text_small"
+                android:text="@string/hc_sell_process_two02" />
+
+            <TextView
+                style="@style/sell_vehicle_bottom00_text_small"
+                android:text="@string/hc_sell_process_two03" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_26dp">
+
+        <LinearLayout
+            android:layout_width="@dimen/px_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/px_15dp"
+                android:layout_height="@dimen/px_10dp"
+                android:src="@drawable/sell_vehicle_process_arrows" />
+        </LinearLayout>
+
+        <TextView style="@style/sell_vehicle_bottom00_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/sell_vehicle_bottom00_image_big"
+            android:src="@drawable/sell_vehicle_process_image_03" />
+
+        <LinearLayout
+            android:layout_width="@dimen/px_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/sell_vehicle_bottom00_text_big"
+                android:text="@string/hc_sell_process_three00" />
+
+            <TextView
+                style="@style/sell_vehicle_bottom00_text_small"
+                android:text="@string/hc_sell_process_three01" />
+
+            <TextView
+                style="@style/sell_vehicle_bottom00_text_small"
+                android:text="@string/hc_sell_process_three02" />
+
+            <TextView
+                style="@style/sell_vehicle_bottom00_text_small"
+                android:text="@string/hc_sell_process_three03" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_26dp">
+
+        <LinearLayout
+            android:layout_width="@dimen/px_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/px_15dp"
+                android:layout_height="@dimen/px_10dp"
+                android:src="@drawable/sell_vehicle_process_arrows" />
+        </LinearLayout>
+
+        <TextView style="@style/sell_vehicle_bottom00_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/sell_vehicle_bottom00_image_big"
+            android:src="@drawable/sell_vehicle_process_image_04" />
+
+        <LinearLayout
+            android:layout_width="@dimen/px_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/sell_vehicle_bottom00_text_big"
+                android:text="@string/hc_sell_process_four00" />
+
+            <TextView
+                style="@style/sell_vehicle_bottom00_text_small"
+                android:text="@string/hc_sell_process_four01" />
+
+            <TextView
+                style="@style/sell_vehicle_bottom00_text_small"
+                android:text="@string/hc_sell_process_four02" />
+
+            <TextView style="@style/sell_vehicle_bottom00_text_small" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

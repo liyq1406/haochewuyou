@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/promote_white"
+    android:orientation="vertical"
+    >
+
+  <ImageView
+      android:id="@+id/iv_carseries_logo"
+      android:layout_width="@dimen/px_40dp"
+      android:layout_height="@dimen/px_40dp"
+      android:layout_margin="@dimen/px_15dp"
+      android:layout_gravity="center_horizontal"
+      android:contentDescription="@null"
+      />
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/px_05"
+      android:background="@color/diff_deep_gray_"
+      />
+
+  <TextView
+      style="@style/hc_filter_brand_tv"
+      android:text="@string/hc_jinghao"
+      />
+
+  <TextView
+      android:id="@+id/tv_series_un_limit"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/px_44dp"
+      android:background="@drawable/selector_common_click"
+      android:clickable="true"
+      android:gravity="center_vertical"
+      android:paddingLeft="@dimen/px_15dp"
+      android:text="@string/hc_unlimit"
+      android:textSize="@dimen/ip5_28px"
+      android:textColor="@color/home_hot_text"
+      />
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/px_05"
+      android:background="@color/diff_deep_gray_"
+      />
+
+  <TextView
+      style="@style/hc_filter_brand_tv"
+      android:text="@string/hc_hot_series"
+      />
+
+</LinearLayout>

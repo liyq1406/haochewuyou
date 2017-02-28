@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/wh_match"
+    >
+  <LinearLayout
+      style="@style/wh_match"
+      android:orientation="vertical"
+      >
+
+    <include layout="@layout/fragment_subscribe_sub_top"/>
+
+    <include layout="@layout/fragment_subscribe_sub_condition_desc"/>
+
+    <include layout="@layout/empty_for_sub_no_car"/>
+
+    <com.haoche51.custom.HCPullToRefresh
+        android:id="@+id/hcptr_sub_vehicle"
+        style="@style/wh_match"
+        />
+  </LinearLayout>
+
+  <include layout="@layout/empty_for_sub"/>
+
+  <include layout="@layout/layout_for_net_err"/>
+
+</FrameLayout>

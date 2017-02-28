@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_line"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/px_15dp"
+    android:paddingTop="@dimen/px_15dp"
+    >
+
+  <TextView
+      android:id="@+id/sharesdk_wechat"
+      android:layout_width="@dimen/px_0dp"
+      android:drawablePadding="@dimen/px_5dp"
+      android:clickable="true"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:drawableTop="@drawable/share_logo_wechat"
+      android:gravity="center"
+      android:text="微信好友"
+      />
+
+  <TextView
+      android:id="@+id/sharesdk_wechatmoments"
+      android:drawablePadding="@dimen/px_5dp"
+      android:layout_width="@dimen/px_0dp"
+      android:clickable="true"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:drawableTop="@drawable/share_logo_wechatmoments"
+      android:gravity="center"
+      android:text="微信朋友圈"
+      />
+
+  <TextView
+      android:id="@+id/sharesdk_sinaweibo"
+      android:layout_width="@dimen/px_0dp"
+      android:drawablePadding="@dimen/px_5dp"
+      android:clickable="true"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:drawableTop="@drawable/share_logo_sinaweibo"
+      android:gravity="center"
+      android:text="新浪微博"
+      />
+
+  <TextView
+      android:id="@+id/sharesdk_qq"
+      android:layout_width="@dimen/px_0dp"
+      android:clickable="true"
+      android:layout_height="wrap_content"
+      android:drawablePadding="@dimen/px_5dp"
+      android:layout_weight="1"
+      android:drawableTop="@drawable/share_logo_qq"
+      android:gravity="center"
+      android:text="QQ"
+      />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/px_5dp"
+    android:paddingRight="@dimen/px_5dp"
+    android:paddingBottom="@dimen/px_10dp"
+    >
+  <FrameLayout
+      android:id="@+id/frame_filter_gridview_item"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/px_35dp"
+      android:clickable="true"
+      android:background="@drawable/filter_textview_item"
+      >
+    <TextView
+        android:id="@+id/tv_filter_gridview_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/no_limit_string"
+        android:textColor="@color/home_hot_text"
+        android:textSize="@dimen/ip5_24px"
+        android:drawablePadding="@dimen/px_3dp"
+        />
+  </FrameLayout>
+  <ImageView
+      android:id="@+id/iv_filter_gridview_item"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:visibility="gone"
+      android:src="@drawable/icon_filter_red_delete"
+      android:layout_gravity="bottom|right"
+      />
+</FrameLayout>
+
+

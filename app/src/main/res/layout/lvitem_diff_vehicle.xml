@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_diffcar_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/promote_white"
+    >
+
+  <ImageView
+      android:id="@+id/cb_diffcar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:clickable="true"
+      android:contentDescription="@null"
+      android:focusable="false"
+      android:minWidth="30dp"
+      android:padding="10dp"
+      android:src="@drawable/selector_diffvehicle"
+      />
+
+  <RelativeLayout
+      android:id="@+id/rel_sub_diffcar_parent"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toRightOf="@id/cb_diffcar"
+      >
+    <FrameLayout
+        android:id="@+id/layout_diffcar_image"
+        android:layout_alignParentLeft="true"
+        style="@style/hc_singlePic_wh"
+        >
+      <ImageView
+          android:id="@+id/iv_diffcar_image"
+          android:contentDescription="@null"
+          android:scaleType="centerCrop"
+          style="@style/hc_singlePic_wh"
+          />
+      <ImageView
+          android:id="@+id/iv_diffcar_left_top_image"
+          style="@style/hc_singlePic_left_top"
+          android:visibility="gone"
+          android:contentDescription="@null"
+          android:scaleType="centerCrop"
+          />
+      <ImageView
+          android:id="@+id/iv_diffcar_left_bottom_image"
+          style="@style/hc_singlePic_left_top"
+          android:visibility="gone"
+          android:contentDescription="@null"
+          android:layout_gravity="left|bottom"
+          android:scaleType="centerCrop"
+          />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/frame_diffcar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/layout_diffcar_image"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/layout_diffcar_image"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/layout_diffcar_image"
+        android:background="@drawable/selector_common_click"
+        >
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="90dp"
+          >
+
+        <!-- 名字 -->
+
+        <TextView
+            android:id="@+id/tv_diffcar_carname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:singleLine="true"
+            android:textColor="@color/promote_black"
+            android:textSize="16sp"
+            />
+
+        <!-- 上牌时间和行驶里程 -->
+
+        <TextView
+            android:id="@+id/tv_diffcar_car_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_diffcar_carname"
+            android:layout_marginTop="5dp"
+            android:textColor="#666666"
+            />
+
+        <!-- 售价 -->
+
+        <TextView
+            android:id="@+id/tv_diffcar_car_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:textSize="20sp"
+            />
+      </RelativeLayout>
+
+      <ImageView
+          android:id="@+id/iv_diffcar_car_sold"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="right|bottom"
+          android:layout_margin="10dp"
+          android:contentDescription="@null"
+          android:src="@drawable/icon_sold"
+          android:visibility="gone"
+          />
+    </FrameLayout>
+  </RelativeLayout>
+
+  <View
+      android:id="@+id/lvitem_line"
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:layout_below="@id/rel_sub_diffcar_parent"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      android:background="@color/promote_gray"
+      />
+
+</RelativeLayout>

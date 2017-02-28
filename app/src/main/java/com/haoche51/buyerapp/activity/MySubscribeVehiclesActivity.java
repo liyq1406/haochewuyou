@@ -1,0 +1,49 @@
+package com.haoche51.buyerapp.activity;
+
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.widget.TextView;
+import com.haoche51.buyerapp.R;
+import com.haoche51.buyerapp.fragment.MySubscribeVehiclesFragment;
+import com.umeng.analytics.MobclickAgent;
+
+public class MySubscribeVehiclesActivity extends HCCommonTitleActivity {
+
+  private final static String TAG = "MySubscribeVehiclesActivity";
+
+  @Override void initViews() {
+    MySubscribeVehiclesFragment fragment = new MySubscribeVehiclesFragment();
+    FragmentTransaction mTrans = getSupportFragmentManager().beginTransaction();
+    mTrans.add(R.id.frame_my_sub, fragment, TAG);
+    mTrans.commit();
+  }
+
+  @Override protected void onDestroy() {
+    super.onDestroy();
+    Fragment fragment = getSupportFragmentManager().findFragmentByTag(TAG);
+    if (fragment != null) {
+      getSupportFragmentManager().beginTransaction().remove(fragment).commit();
+    }
+  }
+
+  /***
+   * 默认点击按钮finish当前Activity,默认隐 最右边TextView
+   */
+  @Override void initTitleBar(TextView backTv, TextView titleTv, TextView rightTv) {
+    titleTv.setText(R.string.hc_core_title_subscribe);
+  }
+
+  @Override int getContentViewResouceId() {
+    return R.layout.activity_my_sub;
+  }
+
+  public void onResume() {
+    super.onResume();
+    MobclickAgent.onResume(this);       //统计时长
+  }
+
+  public void onPause() {
+    super.onPause();
+    MobclickAgent.onPause(this);
+  }
+}

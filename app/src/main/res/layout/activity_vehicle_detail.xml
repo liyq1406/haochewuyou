@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_loading"/>
+
+    <include layout="@layout/activity_vehicle_detail_title" />
+
+    <include layout="@layout/layout_for_net_err" />
+
+    <include layout="@layout/common_view_for_progress" />
+
+  <FrameLayout
+      style="@style/wh_match"
+      >
+
+    <WebView
+        android:id="@+id/web_browser"
+        style="@style/wh_match" />
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/linear_bottom_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_titlebar_height"
+        android:layout_gravity="bottom"
+        layout="@layout/activity_vehicle_detail_bottom"/>
+
+  </FrameLayout>
+
+</LinearLayout>

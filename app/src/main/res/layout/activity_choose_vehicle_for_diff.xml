@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/promote_white"
+    android:orientation="vertical"
+    style="@style/wh_match"
+    >
+
+
+  <include
+      android:id="@+id/diff_header"
+      layout="@layout/lvitem_diff_vehicle"
+      />
+
+  <TextView
+      android:background="@drawable/bg_bottom_line_gray"
+      android:gravity="center_vertical"
+      android:minHeight="40dp"
+      android:paddingLeft="42dp"
+      android:text="@string/hc_your_history"
+      android:textColor="@color/font_gray"
+      style="@style/wh_match_wrap"
+      />
+
+  <FrameLayout
+      style="@style/wh_match">
+
+    <com.haoche51.custom.HCPullToRefresh
+        android:id="@+id/pdv_diffvehicle"
+        style="@style/wh_match_wrap"
+        />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        layout="@layout/lvitem_empty_history"/>
+
+    <LinearLayout
+        android:id="@+id/linear_diffvehicle_bottom"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone"
+        style="@style/wh_match_wrap"
+        >
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/px_05"
+          android:background="@color/diff_bottom_btn_top_line"
+          />
+
+      <Button
+          android:id="@+id/btn_diffvehicle"
+          android:layout_gravity="bottom"
+          android:background="@drawable/rect_diff_gray"
+          android:minHeight="@dimen/px_48dp"
+          android:text="@string/hc_choose_another_for_diff"
+          android:textColor="@color/font_gray"
+          android:textSize="@dimen/font_normal"
+          style="@style/wh_match_wrap"
+          />
+    </LinearLayout>
+  </FrameLayout>
+
+</LinearLayout>

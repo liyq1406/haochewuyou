@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sell_vehicle_bottom01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/px_20dp"
+        android:text="@string/hc_sell_quick"
+        android:textSize="@dimen/font_36_px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_sell_vehicle_bottom01_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_sell_vehicle_bottom01_one"
+                style="@style/sell_vehicle_bottom01_image_triangle" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_20px">
+
+            <TextView
+                style="@style/sell_vehicle_bottom01_text_big"
+                android:text="@string/hc_sell_quick_one00" />
+
+            <LinearLayout style="@style/sell_vehicle_bottom01_layout_ivandtv">
+
+                <ImageView style="@style/sell_vehicle_bottom01_image_small" />
+
+                <TextView
+                    style="@style/sell_vehicle_bottom01_text_small"
+                    android:text="@string/hc_sell_quick_one01" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/sell_vehicle_bottom01_layout_ivandtv">
+
+                <ImageView style="@style/sell_vehicle_bottom01_image_small" />
+
+                <TextView
+                    style="@style/sell_vehicle_bottom01_text_small"
+                    android:text="@string/hc_sell_quick_one02" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_10dp"
+            android:background="@color/sell_spread_back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_sell_vehicle_bottom01_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_sell_vehicle_bottom01_two"
+                style="@style/sell_vehicle_bottom01_image_triangle" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_20px">
+
+            <TextView
+                style="@style/sell_vehicle_bottom01_text_big"
+                android:text="@string/hc_sell_quick_two00" />
+
+            <LinearLayout style="@style/sell_vehicle_bottom01_layout_ivandtv">
+
+                <ImageView style="@style/sell_vehicle_bottom01_image_small" />
+
+                <TextView
+                    style="@style/sell_vehicle_bottom01_text_small"
+                    android:text="@string/hc_sell_quick_two01" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/sell_vehicle_bottom01_layout_ivandtv">
+
+                <ImageView style="@style/sell_vehicle_bottom01_image_small" />
+
+                <TextView
+                    style="@style/sell_vehicle_bottom01_text_small"
+                    android:text="@string/hc_sell_quick_two02" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/sell_vehicle_bottom01_layout_ivandtv">
+
+                <ImageView style="@style/sell_vehicle_bottom01_image_small" />
+
+                <TextView
+                    style="@style/sell_vehicle_bottom01_text_small"
+                    android:text="@string/hc_sell_quick_two03" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_10dp"
+            android:background="@color/sell_spread_back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_sell_vehicle_bottom01_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_sell_vehicle_bottom01_three"
+                style="@style/sell_vehicle_bottom01_image_triangle" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_20px">
+
+            <TextView
+                style="@style/sell_vehicle_bottom01_text_big"
+                android:text="@string/hc_sell_quick_three00" />
+
+            <LinearLayout style="@style/sell_vehicle_bottom01_layout_ivandtv">
+
+                <ImageView style="@style/sell_vehicle_bottom01_image_small" />
+
+                <TextView
+                    style="@style/sell_vehicle_bottom01_text_small"
+                    android:text="@string/hc_sell_quick_three01" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/sell_vehicle_bottom01_layout_ivandtv">
+
+                <ImageView style="@style/sell_vehicle_bottom01_image_small" />
+
+                <TextView
+                    style="@style/sell_vehicle_bottom01_text_small"
+                    android:text="@string/hc_sell_quick_three02" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/sell_vehicle_bottom01_layout_ivandtv">
+
+                <ImageView style="@style/sell_vehicle_bottom01_image_small" />
+
+                <TextView
+                    style="@style/sell_vehicle_bottom01_text_small"
+                    android:text="@string/hc_sell_quick_three03" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_10dp"
+            android:background="@color/sell_spread_back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_sell_vehicle_bottom01_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_sell_vehicle_bottom01_four"
+                style="@style/sell_vehicle_bottom01_image_triangle" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_20px">
+
+            <TextView
+                style="@style/sell_vehicle_bottom01_text_big"
+                android:text="@string/hc_sell_quick_four00" />
+
+            <LinearLayout style="@style/sell_vehicle_bottom01_layout_ivandtv">
+
+                <ImageView style="@style/sell_vehicle_bottom01_image_small" />
+
+                <TextView
+                    style="@style/sell_vehicle_bottom01_text_small"
+                    android:text="@string/hc_sell_quick_four01" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/sell_vehicle_bottom01_layout_ivandtv">
+
+                <ImageView style="@style/sell_vehicle_bottom01_image_small" />
+
+                <TextView
+                    style="@style/sell_vehicle_bottom01_text_small"
+                    android:text="@string/hc_sell_quick_four02" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/sell_vehicle_bottom01_layout_ivandtv">
+
+                <ImageView style="@style/sell_vehicle_bottom01_image_small" />
+
+                <TextView
+                    style="@style/sell_vehicle_bottom01_text_small"
+                    android:text="@string/hc_sell_quick_four03" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

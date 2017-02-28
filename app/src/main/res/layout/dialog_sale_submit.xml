@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             style="@style/wh_match_wrap"
+             android:background="@color/hc_transcolor">
+    <LinearLayout
+        android:layout_marginTop="@dimen/px_15dp"
+        android:padding="@dimen/dp_20px"
+        android:orientation="vertical"
+        style="@style/wh_match_wrap"
+        android:background="@color/promote_white"
+        android:gravity="center"
+        >
+
+        <ImageView
+            style="@style/wh_wrap"
+            android:src="@drawable/icon_submit_success"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/px_25dp"
+            />
+
+        <TextView
+            android:text="出售信息成功！"
+            android:id="@+id/hc_submit_status_title"
+            style="@style/hc_submit_status_title"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:text="我们会尽快与您取得联系，收到上线短信后，可进行查看出售进度"
+            android:id="@+id/hc_submit_status_desc"
+            style="@style/hc_submit_status_desc"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/btn_go_sale_status"
+            style="@style/hc_go_sale_status"
+            android:text="@string/hc_go_sale_status"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_sale_submit_cancel"
+        style="@style/wh_wrap"
+        android:src="@drawable/selector_red_cancel"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="@dimen/px_10dp"
+        />
+</FrameLayout>

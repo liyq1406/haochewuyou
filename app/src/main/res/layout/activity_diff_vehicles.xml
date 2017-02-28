@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/promote_white"
+              android:orientation="vertical">
+
+    <include layout="@layout/activity_loading"/>
+
+    <include layout="@layout/layout_for_net_err"/>
+
+    <include layout="@layout/activity_diff_vehicles_sub_headtitle"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/activity_diff_vehicles_sub_pics"/>
+
+            <include layout="@layout/activity_diff_vehicles_sub_overview"/>
+
+            <include layout="@layout/activity_diff_vehicles_sub_checkreport"/>
+
+            <include layout="@layout/activity_diff_vehicles_sub_mainparam"/>
+
+            <include layout="@layout/activity_diff_vehicles_sub_evaluate"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/activity_diff_vehicles_sub_bottom"/>
+
+</LinearLayout>

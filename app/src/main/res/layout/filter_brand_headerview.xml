@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/promote_white"
+    android:orientation="vertical"
+    >
+
+  <TextView
+      style="@style/hc_filter_brand_tv"
+      android:text="@string/hc_hotbrand"
+      />
+
+  <com.haoche51.custom.HCGridView
+      android:id="@+id/gv_filter_brand_header"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:listSelector="@android:color/transparent"
+      android:layout_marginRight="@dimen/px_20dp"
+      android:layout_marginLeft="@dimen/px_15dp"
+      android:layout_marginTop="@dimen/px_15dp"
+      android:layout_marginBottom="@dimen/px_15dp"
+      android:numColumns="4"
+      />
+
+  <TextView
+      style="@style/hc_filter_brand_tv"
+      android:text="@string/hc_jinghao"
+      />
+
+  <TextView
+      android:id="@+id/tv_allbrand"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/brand_lv_item_height"
+      android:background="@drawable/selector_common_click"
+      android:clickable="true"
+      android:gravity="center_vertical"
+      android:paddingLeft="@dimen/px_15dp"
+      android:text="@string/hc_allbrand"
+      android:textSize="@dimen/ip5_28px"
+      android:textColor="@color/home_hot_text"
+      />
+
+</LinearLayout>

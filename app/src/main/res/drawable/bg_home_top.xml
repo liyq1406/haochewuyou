@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item>
+    <shape>
+      <solid android:color="@color/home_top_two"/>
+    </shape>
+  </item>
+  <item android:bottom="@dimen/px_05">
+    <shape>
+      <solid android:color="@color/home_top_enter"/>
+    </shape>
+  </item>
+  <item android:bottom="@dimen/px_1dp">
+    <shape>
+      <solid android:color="@color/home_top_one"/>
+    </shape>
+  </item>
+
+</layer-list>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/promote_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+  <TextView
+      android:id="@+id/tv_for_hot_city"
+      style="@style/hc_filter_city_hot"
+      />
+  <TextView
+      android:id="@+id/tv_for_hot_city_name"
+      android:layout_toRightOf="@id/tv_for_hot_city"
+      style="@style/hc_filter_city_hot_name"
+      />
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/px_05"
+      android:layout_below="@id/tv_for_hot_city"
+      android:background="@color/vehicle_shadow"
+      />
+
+  <com.haoche51.custom.HCGridView
+      android:id="@+id/gv_city_list"
+      android:layout_below="@id/tv_for_hot_city"
+      style="@style/hc_filter_city_gv"
+      />
+  <TextView
+      android:id="@+id/tv_city_hint"
+      android:layout_below="@id/gv_city_list"
+      style="@style/hc_filter_city_hint"
+      />
+</RelativeLayout>

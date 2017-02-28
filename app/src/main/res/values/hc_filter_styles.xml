@@ -1,0 +1,108 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="hc_filter_city_hot">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">@dimen/px_50dp</item>
+    <item name="android:layout_marginLeft">@dimen/px_25dp</item>
+    <item name="android:textSize">@dimen/ip5_26px</item>
+    <item name="android:gravity">center</item>
+    <item name="android:text">@string/hc_recommend_city</item>
+  </style>
+
+  <style name="hc_filter_city_hot_name">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">@dimen/px_50dp</item>
+    <item name="android:layout_marginLeft">@dimen/px_25dp</item>
+    <item name="android:textSize">@dimen/ip5_26px</item>
+    <item name="android:gravity">center</item>
+    <item name="android:text">@string/city_bj</item>
+    <item name="android:textColor">@color/font_black</item>
+  </style>
+
+  <style name="hc_filter_city_gv">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginTop">@dimen/px_12dp</item>
+    <item name="android:layout_marginBottom">@dimen/px_15dp</item>
+    <item name="android:numColumns">3</item>
+  </style>
+
+  <style name="hc_filter_city_hint">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:paddingBottom">@dimen/px_30dp</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textSize">@dimen/ip5_20px</item>
+    <item name="android:textColor">@color/diff_bottom_btn_top_line</item>
+    <item name="android:text">@string/hc_other_city_open</item>
+  </style>
+
+
+  <style name="hc_filter_price_tv_ensure">
+    <item name="android:layout_width">@dimen/px_60dp</item>
+    <item name="android:layout_height">@dimen/px_30dp</item>
+    <item name="android:visibility">gone</item>
+    <item name="android:layout_alignParentRight">true</item>
+    <item name="android:layout_marginRight">@dimen/px_10dp</item>
+    <item name="android:background">@drawable/filter_ensure</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textSize">@dimen/ip5_28px</item>
+    <item name="android:textColor">@color/self_white</item>
+    <item name="android:text">@string/confirm_string</item>
+  </style>
+
+  <style name="hc_filter_tv_hint">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">@dimen/px_44dp</item>
+    <item name="android:layout_marginLeft">@dimen/px_15dp</item>
+    <item name="android:textSize">@dimen/ip5_28px</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:textColor">@color/home_hot_text</item>
+  </style>
+
+  <style name="hc_filter_tv">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">@dimen/px_44dp</item>
+    <item name="android:layout_marginRight">@dimen/px_15dp</item>
+    <item name="android:textSize">@dimen/ip5_24px</item>
+    <item name="android:drawablePadding">@dimen/px_5dp</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:textColor">@color/home_hot</item>
+  </style>
+
+  <style name="hc_filter_gv">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginLeft">@dimen/px_10dp</item>
+    <item name="android:layout_marginRight">@dimen/px_10dp</item>
+    <item name="android:layout_marginBottom">@dimen/px_5dp</item>
+    <item name="android:numColumns">3</item>
+  </style>
+
+  <style name="hc_filter_seek_bar">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:paddingLeft">@dimen/px_10dp</item>
+    <item name="android:paddingRight">@dimen/px_10dp</item>
+  </style>
+
+  <style name="hc_filter_brand_tv">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/px_20dp</item>
+    <item name="android:paddingLeft">@dimen/px_10dp</item>
+    <item name="android:background">@color/home_hot_normal</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:textSize">@dimen/ip5_24px</item>
+    <item name="android:textColor">@color/home_hot</item>
+  </style>
+
+  <style name="hc_filter_top_tv">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/px_45dp</item>
+    <item name="android:background">@drawable/bg_bottom_line_light_gray</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textSize">@dimen/ip5_34px</item>
+    <item name="android:textColor">@color/home_hot_text</item>
+  </style>
+
+</resources>

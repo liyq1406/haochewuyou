@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/diff_item_heigh"
+              android:orientation="horizontal"
+              android:paddingTop="@dimen/px_05"
+              android:weightSum="8.0">
+
+    <RelativeLayout
+        style="@style/hc_diffrb_rel"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_diffrb_left"
+            style="@style/hc_diffrb_tv"
+            android:layout_alignParentRight="true"/>
+
+        <LinearLayout
+            android:id="@+id/linear_diffrb_left"
+            style="@style/hc_diffrb_linear"
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@id/tv_diffrb_left"
+            android:gravity="right|center_vertical"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_diffrb_middle"
+        style="@style/diff_item_tv_middle"/>
+
+    <RelativeLayout style="@style/hc_diffrb_rel">
+
+        <TextView
+            android:id="@+id/tv_diffrb_right"
+            style="@style/hc_diffrb_tv"
+            android:layout_alignParentLeft="true"/>
+
+        <LinearLayout
+            android:id="@+id/linear_diffrb_right"
+            style="@style/hc_diffrb_linear"
+            android:layout_toRightOf="@id/tv_diffrb_right"/>
+    </RelativeLayout>
+
+</LinearLayout>

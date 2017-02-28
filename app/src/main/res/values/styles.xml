@@ -1,0 +1,874 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="hc_base_style"
+      parent="@android:style/Theme.Light.NoTitleBar">
+    <item name="android:windowAnimationStyle">@style/HCWindowAnimTheme</item>
+  </style>
+
+
+  <style name="hc_splash_fullscreen_and_translucent"
+      parent="android:Theme">
+    <item name="android:windowBackground">@color/promote_white</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+
+
+  <style name="HCWindowAnimTheme"
+      parent="@android:style/Animation.Activity">
+    <item name="android:activityOpenEnterAnimation">@anim/trans_in_right_left</item>
+    <item name="android:activityOpenExitAnimation">@anim/anim_activity_main</item>
+    <item name="android:activityCloseEnterAnimation">@anim/anim_activity_main</item>
+    <item name="android:activityCloseExitAnimation">@anim/trans_out_left_right</item>
+  </style>
+
+  <style name="DialogAnimation">
+    <item name="android:windowEnterAnimation">@anim/anim_sub_tran_in</item>
+    <item name="android:windowExitAnimation">@anim/anim_sub_tran_out</item>
+  </style>
+
+
+  <style name="HC_Search_style"
+      parent="android:Theme.Dialog">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowFrame">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowAnimationStyle">@style/hc_search_anim</item>
+  </style>
+
+  <style name="hc_search_anim"
+      parent="@android:style/Animation.Dialog">
+    <item name="android:windowEnterAnimation">@anim/anim_search_in</item>
+    <item name="android:windowExitAnimation">@anim/anim_search_out</item>
+  </style>
+
+
+  <style name="promoteDialog"
+      parent="android:Theme.Dialog">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowFrame">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:backgroundDimEnabled">true</item>
+  </style>
+
+  <style name="dialog_loading_noDim"
+      parent="android:style/Theme.Dialog">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowFrame">@null</item>
+    <!-- 无边框 -->
+    <item name="android:windowNoTitle">true</item>
+    <!-- 没有标题 -->
+    <item name="android:windowIsTranslucent">true</item>
+    <!-- 背景是否半透明 -->
+    <item name="android:backgroundDimEnabled">false</item>
+    <!-- 背景是否模糊 -->
+  </style>
+
+  <style name="dialog_just_dim"
+      parent="android:style/Theme.Dialog">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowFrame">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:backgroundDimEnabled">true</item>
+  </style>
+
+  <style name="dialog_detail"
+      parent="android:Animation">
+    <item name="android:windowEnterAnimation">@anim/trans_in_right_left</item>
+    <item name="android:windowExitAnimation">@anim/trans_out_left_right</item>
+  </style>
+
+  <style name="wh_wrap">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="wh_match">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+  </style>
+
+  <style name="wh_match_wrap">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="hc_singlePic_wh">
+    <item name="android:layout_width">@dimen/px_125dp</item>
+    <item name="android:layout_height">@dimen/px_94dp</item>
+  </style>
+
+  <style name="hc_singlePic_left_top">
+    <item name="android:layout_width">@dimen/px_21dp</item>
+    <item name="android:layout_height">@dimen/px_21dp</item>
+  </style>
+
+  <style name="hc_singlePic_activity">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">@color/promote_white</item>
+    <item name="android:background">@drawable/bg_limit_activity</item>
+    <item name="android:textSize">@dimen/ip5_20px</item>
+    <item name="android:layout_marginLeft">@dimen/px_5dp</item>
+    <item name="android:paddingTop">@dimen/px_2dp</item>
+    <item name="android:paddingBottom">@dimen/px_2dp</item>
+    <item name="android:paddingLeft">@dimen/px_3dp</item>
+    <item name="android:paddingRight">@dimen/px_3dp</item>
+  </style>
+
+  <style name="hc_singlePic_activity_hint">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">@color/home_hot_text</item>
+    <item name="android:textSize">@dimen/ip5_24px</item>
+    <item name="android:layout_marginLeft">@dimen/px_5dp</item>
+  </style>
+
+  <style name="home_ex_tv"
+      parent="@style/wh_wrap">
+    <item name="android:ems">8</item>
+    <item name="android:textColor">@color/lp_font_gray</item>
+    <item name="android:drawablePadding">@dimen/px_5dp</item>
+    <item name="android:singleLine">true</item>
+  </style>
+
+  <style name="profile_top_style"
+      parent="wh_match">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:orientation">vertical</item>
+    <item name="android:layout_weight">1.0</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="wh_wrap_match">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">match_parent</item>
+  </style>
+
+  <style name="hc_base_lv"
+      parent="@style/wh_match">
+    <item name="android:dividerHeight">0dp</item>
+    <item name="android:listSelector">@color/hc_transcolor</item>
+  </style>
+
+
+  <style name="tv_48"
+      parent="@style/wh_wrap">
+    <item name="android:minHeight">@dimen/px_48dp</item>
+    <item name="android:minWidth">@dimen/px_48dp</item>
+  </style>
+
+
+  <style name="gray_line">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/px_05</item>
+    <item name="android:background">@color/new_line_gray</item>
+  </style>
+
+
+  <!-- 首页筛选textView -->
+  <style name="filter_bar_rel_style">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">@dimen/filter_bar_height</item>
+    <item name="android:layout_weight">1.0</item>
+  </style>
+
+
+  <style name="filter_bar_tv_style"
+      parent="@style/wh_wrap">
+    <item name="android:layout_centerInParent">true</item>
+    <item name="android:textColor">@color/hc_tab_text_color</item>
+    <item name="android:textSize">@dimen/ip5_28px</item>
+    <item name="android:drawablePadding">@dimen/px_5dp</item>
+    <item name="android:drawableRight">@drawable/icon_close</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:ellipsize">end</item>
+  </style>
+
+  File res/drawable-xhdpi-v4
+
+  <style name="tab_style">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_weight">1.0</item>
+    <item name="android:layout_gravity">bottom|center_vertical</item>
+    <item name="android:button">@null</item>
+    <item name="android:clickable">true</item>
+    <item name="android:gravity">center_vertical|center_horizontal</item>
+    <item name="android:textColor">@drawable/text_color_tab</item>
+    <item name="android:textSize">10sp</item>
+    <item name="android:drawablePadding">1dp</item>
+    <item name="android:paddingLeft">0dp</item>
+  </style>
+
+  <!-- 空数据button -->
+  <style name="empty_btn">
+    <item name="android:layout_width">@dimen/empty_btn_width</item>
+    <item name="android:layout_height">@dimen/empty_btn_height</item>
+    <item name="android:layout_marginTop">@dimen/empty_btn_margin</item>
+    <item name="android:textColor">@color/promote_white</item>
+  </style>
+
+
+  <!-- introducation dialog -->
+  <style name="introduction_dialog_theme"
+      parent="android:Theme.Dialog">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">fill_parent</item>
+    <!-- No backgrounds, titles or window float -->
+    <item name="android:windowBackground">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">false</item>
+    <item name="android:windowAnimationStyle">@style/introduction_anim</item>
+  </style>
+
+  <style name="introduction_anim"
+      parent="@android:style/Animation.Dialog">
+    <item name="android:windowEnterAnimation">@anim/trans_in_up_down</item>
+    <item name="android:windowExitAnimation">@anim/trans_out_up_down</item>
+  </style>
+  <!-- introducation dialog -->
+
+
+  <!-- 普通dialog -->
+  <style name="normal_dialog"
+      parent="@android:style/Theme.Dialog">
+    <item name="android:windowFrame">@null</item>
+    <!-- Dialog的windowFrame框为无 -->
+    <item name="android:windowIsFloating">true</item>
+    <!-- 是否浮现在activity之上 -->
+    <item name="android:windowIsTranslucent">false</item>
+    <!-- 是否半透明 -->
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowBackground">@color/hc_transcolor</item>
+    <item name="android:backgroundDimEnabled">true</item>
+  </style>
+  <!-- 普通dialog -->
+
+
+  <!-- 展示订阅条件的dialog -->
+  <style name="sub_condition_dialog"
+      parent="@style/normal_dialog">
+    <item name="android:windowAnimationStyle">@style/sub_condition_anim</item>
+  </style>
+
+  <style name="sub_condition_anim"
+      parent="@android:style/Animation.Dialog">
+    <item name="android:windowEnterAnimation">@anim/trans_in_down_up</item>
+    <item name="android:windowExitAnimation">@anim/trans_out_up_down</item>
+  </style>
+
+  <!-- 展示订阅条件的dialog -->
+
+  <!-- 热门价格TextView -->
+  <style name="hot_price_rb">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_weight">1.0</item>
+    <item name="android:gravity">center_vertical|center_horizontal</item>
+    <item name="android:paddingLeft">0dp</item>
+    <item name="android:layout_marginRight">@dimen/px_05</item>
+    <item name="android:layout_marginLeft">@dimen/px_05</item>
+    <item name="android:textColor">@color/home_hot_text</item>
+    <item name="android:button">@null</item>
+    <item name="android:textSize">@dimen/ip5_24px</item>
+    <item name="android:background">@drawable/selector_hot_price_and_brand_click</item>
+  </style>
+
+  <!-- city Dialog -->
+
+  <style name="city_dialog_theme"
+      parent="android:Theme.Dialog">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <!-- No backgrounds, titles or window float -->
+    <item name="android:windowBackground">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">false</item>
+    <item name="android:windowAnimationStyle">@style/city_anim</item>
+  </style>
+
+  <style name="city_anim"
+      parent="@android:style/Animation.Dialog">
+    <item name="android:windowEnterAnimation">@anim/trans_in_up_down</item>
+    <item name="android:windowExitAnimation">@anim/trans_out_down_up</item>
+  </style>
+  <!-- city Dialog -->
+
+
+  <style name="linear_average_v">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:orientation">vertical</item>
+  </style>
+
+
+  <!-- profile -->
+  <style name="profile_reminder"
+      parent="@style/wh_w_w">
+    <item name="android:layout_marginRight">@dimen/px_5dp</item>
+    <item name="android:layout_centerVertical">true</item>
+    <item name="android:background">@drawable/red_oval</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textSize">@dimen/font_19_px</item>
+    <item name="android:visibility">invisible</item>
+  </style>
+
+  <style name="profile_item_rel">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">45dp</item>
+    <item name="android:background">@drawable/selector_common_click</item>
+    <item name="android:clickable">true</item>
+    <item name="android:paddingLeft">15dp</item>
+    <item name="android:paddingRight">15dp</item>
+  </style>
+
+  <style name="profile_item_tv_left"
+      parent="@style/wh_wrap">
+    <item name="android:layout_centerVertical">true</item>
+    <item name="android:textColor">@color/self_gray</item>
+  </style>
+
+  <style name="profile_item_tv_right"
+      parent="@style/wh_wrap">
+    <item name="android:layout_centerVertical">true</item>
+    <item name="android:textColor">@color/zy_font_gray</item>
+    <item name="android:layout_alignParentRight">true</item>
+    <item name="android:drawableRight">@drawable/icon_arrow_right</item>
+    <item name="android:drawablePadding">@dimen/px_5dp</item>
+    <item name="android:gravity">right</item>
+  </style>
+  <!-- profile -->
+
+  <style name="hc_sub_linear"
+      parent="@style/wh_match_wrap">
+    <item name="android:orientation">vertical</item>
+  </style>
+
+  <style name="hc_sub_title">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">50dp</item>
+    <item name="android:background">@color/promote_white</item>
+    <item name="android:gravity">bottom|center_horizontal</item>
+    <item name="android:paddingBottom">12dp</item>
+    <item name="android:textColor">@color/sub_title_color</item>
+    <item name="android:textSize">@dimen/font_28_px</item>
+  </style>
+
+  <style name="diff_item_tv">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:gravity">center</item>
+    <item name="android:background">@color/diff_light_gray</item>
+    <item name="android:layout_weight">3.0</item>
+  </style>
+
+  <style name="diff_item_tv_middle"
+      parent="@style/diff_item_tv">
+    <item name="android:background">@color/diff_deep_gray_</item>
+    <item name="android:layout_weight">2.0</item>
+  </style>
+
+  <!-- diff_vehicle_rating -->
+  <style name="hc_diffrb_rel">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">@dimen/diff_item_heigh</item>
+    <item name="android:background">@color/diff_light_gray</item>
+    <item name="android:layout_weight">3.0</item>
+    <item name="android:padding">5dp</item>
+  </style>
+
+  <style name="hc_diffrb_linear">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_centerVertical">true</item>
+    <item name="android:orientation">horizontal</item>
+  </style>
+
+  <style name="hc_diffrb_tv">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">@dimen/diff_item_heigh</item>
+    <item name="android:gravity">center</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:minWidth">15dp</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:padding">10dp</item>
+    <item name="android:textColor">@color/vehicle_ratingbar_color</item>
+  </style>
+  <!-- diff_vehicle_rating -->
+
+
+  <!-- diff_detail -->
+  <style name="hc_ddetail_rel">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_margin">2dp</item>
+    <item name="android:layout_weight">1.0</item>
+    <item name="android:background">@color/promote_white</item>
+  </style>
+
+  <style name="hc_ddetail_iv">
+    <item name="android:layout_width">35dp</item>
+    <item name="android:layout_height">35dp</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:scaleType">centerCrop</item>
+  </style>
+
+  <style name="hc_ddetail_linear">
+    <item name="android:layout_width">45dp</item>
+    <item name="android:layout_height">45dp</item>
+    <item name="android:layout_centerVertical">true</item>
+    <item name="android:layout_marginLeft">5dp</item>
+    <item name="android:layout_marginRight">5dp</item>
+    <item name="android:background">@color/promote_white</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="hc_ddetail_btn">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:textColor">@color/promote_white</item>
+    <item name="android:layout_centerVertical">true</item>
+    <item name="android:background">@drawable/selector_rect_red</item>
+    <item name="android:text">@string/hc_reserve_vehicle</item>
+    <item name="android:textSize">16sp</item>
+  </style>
+  <!-- diff_detail -->
+
+
+  <!-- login item -->
+  <style name="hc_login_linear"
+      parent="@style/wh_match_wrap">
+    <item name="android:background">@color/promote_white</item>
+    <item name="android:minHeight">@dimen/profile_item_heigt</item>
+    <item name="android:orientation">horizontal</item>
+    <item name="android:paddingLeft">@dimen/px_15dp</item>
+  </style>
+
+  <style name="hc_login_tv"
+      parent="@style/wh_wrap">
+    <item name="android:layout_marginRight">@dimen/px_10dp</item>
+    <item name="android:layout_gravity">center_vertical</item>
+  </style>
+
+  <style name="hc_login_et"
+      parent="@style/wh_match_wrap">
+    <item name="android:background">@null</item>
+    <item name="android:layout_gravity">center_vertical</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:textColorHint">@color/hc_hint_color</item>
+    <item name="android:textSize">@dimen/font_24_px</item>
+  </style>
+  <!-- login item -->
+
+  <style name="hc_big_btn"
+      parent="@style/wh_match_wrap">
+    <item name="android:textColor">@color/promote_white</item>
+    <item name="android:textSize">@dimen/font_28_px</item>
+    <item name="android:minHeight">@dimen/px_45dp</item>
+    <item name="android:background">@drawable/selector_rect_red</item>
+    <item name="android:layout_marginTop">@dimen/px_30dp</item>
+    <item name="android:layout_marginLeft">@dimen/px_10dp</item>
+    <item name="android:layout_marginRight">@dimen/px_10dp</item>
+  </style>
+
+  <!-- regist item -->
+  <style name="hc_regist_rel"
+      parent="@style/wh_match_wrap">
+    <item name="android:background">@color/promote_white</item>
+    <item name="android:minHeight">@dimen/profile_item_heigt</item>
+  </style>
+
+
+  <!-- coupon item -->
+  <style name="wh_w_w"
+      parent="@style/wh_wrap">
+    <item name="android:textColor">@color/promote_white</item>
+  </style>
+  <!-- coupon item -->
+
+
+  <!-- 首页入口icon-->
+  <style name="hc_home_enter"
+      parent="@style/wh_wrap">
+    <item name="android:layout_weight">1.0</item>
+    <item name="android:gravity">center</item>
+    <item name="android:drawablePadding">@dimen/home_enter_padding</item>
+  </style>
+  <!-- 首页入口icon-->
+
+  <!--出售爱车服务人数-->
+  <style name="hc_s_service_count"
+      parent="@style/wh_wrap">
+    <item name="android:layout_centerVertical">true</item>
+    <item name="android:textSize">@dimen/font_65_px</item>
+    <item name="android:textColor">@color/self_black</item>
+    <item name="android:layout_gravity">center_horizontal</item>
+  </style>
+  <!--出售爱车服务文案-->
+  <style name="hc_s_service_desc"
+      parent="@style/wh_wrap">
+    <item name="android:layout_centerVertical">true</item>
+    <item name="android:textSize">@dimen/font_25_px</item>
+    <item name="android:textColor">@color/self_black</item>
+  </style>
+  <!--出售爱车服务文案Layout-->
+  <style name="hc_s_service_ll"
+      parent="@style/wh_wrap">
+    <item name="android:orientation">vertical</item>
+    <item name="android:layout_gravity">center_horizontal</item>
+    <item name="android:padding">@dimen/px_20dp</item>
+  </style>
+  <!--出售爱车电话输入-->
+  <style name="hc_seller_phone_et">
+    <item name="android:background">@drawable/sale_phone_input_shap</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_gravity">center_horizontal</item>
+    <item name="android:padding">@dimen/px_13dp</item>
+    <item name="android:layout_marginLeft">@dimen/px_15dp</item>
+    <item name="android:layout_marginRight">@dimen/px_15dp</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:textSize">@dimen/font_25_px</item>
+  </style>
+  <!--出售爱车提交按钮-->
+  <style name="hc_seller_submit_btn"
+      parent="@style/wh_match_wrap">
+    <item name="android:layout_gravity">center_horizontal</item>
+    <item name="android:padding">@dimen/px_10dp</item>
+    <item name="android:layout_margin">@dimen/px_15dp</item>
+    <item name="android:background">@drawable/selector_rect_red</item>
+    <item name="android:textSize">@dimen/font_28_px</item>
+    <item name="android:textColor">@color/self_white</item>
+  </style>
+  <!--出售爱车服务文案-->
+  <style name="hc_contact_phone"
+      parent="@style/wh_wrap">
+    <item name="android:layout_centerVertical">true</item>
+    <item name="android:textSize">@dimen/font_20_px</item>
+    <item name="android:paddingTop">@dimen/px_5dp</item>
+    <item name="android:paddingBottom">@dimen/px_5dp</item>
+    <item name="android:textColor">@color/self_black</item>
+  </style>
+  <!--出售爱车提交提示文案-->
+  <style name="hc_contact_tip"
+      parent="@style/hc_contact_phone">
+    <item name="android:layout_gravity">center_horizontal</item>
+    <item name="android:textColor">@color/reminder_red</item>
+  </style>
+
+  <!--出售爱车提交后提示标题-->
+  <style name="hc_submit_status_title"
+      parent="@style/wh_wrap">
+    <item name="android:layout_gravity">center_horizontal</item>
+    <item name="android:textSize">@dimen/font_28_px</item>
+    <item name="android:gravity">center</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:padding">@dimen/px_5dp</item>
+    <item name="android:textColor">@color/self_black</item>
+  </style>
+  <!--出售爱车提交后提示描述-->
+  <style name="hc_submit_status_desc"
+      parent="@style/wh_match_wrap">
+    <item name="android:layout_gravity">center_horizontal</item>
+    <item name="android:paddingTop">@dimen/px_5dp</item>
+    <item name="android:paddingBottom">@dimen/px_5dp</item>
+    <item name="android:paddingLeft">@dimen/px_15dp</item>
+    <item name="android:paddingRight">@dimen/px_15dp</item>
+    <item name="android:state_multiline">true</item>
+    <item name="android:maxLines">3</item>
+    <item name="android:lineSpacingMultiplier">1.5</item>
+
+    <item name="android:textSize">@dimen/font_24_px</item>
+    <item name="android:textColor">@color/self_gray</item>
+  </style>
+  <!--出售爱车提示弹层按钮-->
+  <style name="hc_go_sale_status"
+      parent="@style/wh_wrap">
+    <item name="android:layout_gravity">center_horizontal</item>
+    <item name="android:padding">@dimen/px_10dp</item>
+    <item name="android:layout_margin">@dimen/px_15dp</item>
+    <item name="android:background">@drawable/selector_rect_red</item>
+    <item name="android:textSize">@dimen/font_28_px</item>
+    <item name="android:textColor">@color/self_white</item>
+  </style>
+
+
+  <style name="zongyong_gray_line"
+      parent="gray_line">
+    <item name="android:background">@color/zy_gray</item>
+  </style>
+
+
+  <style name="zy_profile_diliver"
+      parent="wh_match">
+    <item name="android:layout_height">@dimen/px_10dp</item>
+    <item name="android:background">@color/filter_bar_color</item>
+  </style>
+
+
+  <style name="name_zy_profile_rel">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">45dp</item>
+    <item name="android:background">@drawable/selector_common_click_bottom_gray_line</item>
+    <item name="android:clickable">true</item>
+    <item name="android:paddingLeft">15dp</item>
+    <item name="android:paddingRight">10dp</item>
+  </style>
+
+  <!--出售爱车底部卖车解答-->
+  <style name="sell_vehicle_bottom02_q">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">@color/home_grx_red</item>
+    <item name="android:textSize">@dimen/font_25_px</item>
+  </style>
+
+  <style name="sell_vehicle_bottom02_question">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">@dimen/font_25_px</item>
+  </style>
+
+  <style name="sell_vehicle_bottom02_answer">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">@color/font_gray</item>
+    <item name="android:textSize">@dimen/font_20_px</item>
+  </style>
+
+  <!--出售爱车底部 快速卖好价-->
+  <style name="sell_vehicle_bottom01_text_small">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:typeface">sans</item>
+    <item name="android:layout_marginLeft">@dimen/px_5dp</item>
+    <item name="android:textSize">@dimen/font_24_px</item>
+  </style>
+
+  <style name="sell_vehicle_bottom01_text_big">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:layout_marginBottom">@dimen/px_5dp</item>
+    <item name="android:textSize">@dimen/font_28_px</item>
+  </style>
+
+  <style name="sell_vehicle_bottom01_image_small">
+    <item name="android:layout_width">@dimen/px_10dp</item>
+    <item name="android:layout_height">@dimen/px_10dp</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:scaleType">fitXY</item>
+    <item name="android:src">@drawable/icon_green_nike</item>
+  </style>
+
+  <style name="sell_vehicle_bottom01_layout_ivandtv">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginBottom">@dimen/px_2dp</item>
+    <item name="android:orientation">horizontal</item>
+  </style>
+
+  <style name="sell_vehicle_bottom01_image_triangle">
+    <item name="android:layout_width">@dimen/px_15dp</item>
+    <item name="android:layout_height">@dimen/px_15dp</item>
+    <item name="android:layout_gravity">center|bottom</item>
+    <item name="android:background">@color/promote_white</item>
+    <item name="android:visibility">gone</item>
+  </style>
+
+  <!--出售爱车底部 卖车流程-->
+  <style name="sell_vehicle_bottom00_image_big">
+    <item name="android:layout_width">@dimen/px_0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_weight">2</item>
+    <item name="android:paddingLeft">@dimen/px_20dp</item>
+    <item name="android:paddingRight">@dimen/px_20dp</item>
+    <item name="android:paddingTop">@dimen/px_5dp</item>
+    <item name="android:paddingBottom">@dimen/px_20dp</item>
+    <item name="android:scaleType">centerCrop</item>
+  </style>
+
+  <style name="sell_vehicle_bottom00_text_big">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginBottom">@dimen/px_5dp</item>
+    <item name="android:textSize">@dimen/font_28_px</item>
+  </style>
+
+  <style name="sell_vehicle_bottom00_text_small">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginBottom">@dimen/px_2dp</item>
+    <item name="android:textSize">@dimen/font_24_px</item>
+  </style>
+
+  <style name="sell_vehicle_bottom00_line">
+    <item name="android:layout_width">@dimen/px_0dp</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_weight">5</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:textColor">@color/zy_gray</item>
+    <item name="android:text">—————————————————</item>
+  </style>
+
+  <style name="home_explain_tv">
+    <item name="android:layout_height">@dimen/px_0dp</item>
+    <item name="android:drawablePadding">@dimen/px_5dp</item>
+    <item name="android:layout_marginLeft">@dimen/px_20dp</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_weight">1.0</item>
+    <item name="android:textColor">@color/home_hot_text</item>
+    <item name="android:textSize">@dimen/ip5_24px</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="filter_hint_text_before">
+    <item name="android:textSize">@dimen/ip5_26px</item>
+  </style>
+
+  <style name="filter_hint_text_after">
+    <item name="android:textSize">@dimen/ip5_20px</item>
+  </style>
+
+  <style name="home_text_before">
+    <item name="android:textSize">@dimen/ip5_28px</item>
+  </style>
+
+  <style name="home_text_after">
+    <item name="android:textSize">@dimen/ip5_36px</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="hc_custom_toast_anim">
+    <item name="@android:windowEnterAnimation">@anim/anim_custom_toast_in</item>
+    <item name="@android:windowExitAnimation">@anim/anim_custom_toast_out</item>
+  </style>
+
+  <style name="home_title_city">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:padding">@dimen/px_5dp</item>
+    <item name="android:textColor">@color/font_black</item>
+    <item name="android:drawableLeft">@drawable/icon_black_location</item>
+    <item name="android:gravity">center</item>
+    <item name="android:drawablePadding">@dimen/hc_icon_padding</item>
+    <item name="android:textSize">@dimen/ip5_24px</item>
+    <item name="android:layout_alignParentLeft">true</item>
+    <item name="android:text">@string/city_bj</item>
+  </style>
+
+  <style name="home_title_split">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_marginLeft">@dimen/px_10dp</item>
+    <item name="android:textSize">@dimen/ip5_26px</item>
+    <item name="android:textColor">@color/font_black</item>
+    <item name="android:text">@string/hc_search_split</item>
+  </style>
+
+  <style name="home_title_right_layout">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_marginLeft">@dimen/px_20dp</item>
+    <item name="android:layout_centerVertical">true</item>
+  </style>
+
+  <style name="home_title_right_search"
+      parent="@style/wh_w_w">
+    <item name="android:text">@string/hc_search_hint</item>
+    <item name="android:drawablePadding">@dimen/px_5dp</item>
+    <item name="android:drawableLeft">@drawable/icon_black_search</item>
+    <item name="android:textSize">@dimen/ip5_24px</item>
+    <item name="android:textColor">@color/font_black</item>
+  </style>
+
+  <style name="home_entrance_layout">
+    <item name="android:layout_width">@dimen/px_0dp</item>
+    <item name="android:layout_height">@dimen/px_48dp</item>
+    <item name="android:layout_weight">1.0</item>
+    <item name="android:background">@drawable/bg_bottom_home_top</item>
+    <item name="android:paddingBottom">@dimen/px_3dp</item>
+  </style>
+
+  <style name="home_entrance_tv">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:textColor">@color/promote_white</item>
+    <item name="android:background">@drawable/selector_home_entrance</item>
+    <item name="android:clickable">true</item>
+    <item name="android:textSize">@dimen/ip5_40px</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="home_entrance_iv">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_gravity">bottom|left</item>
+  </style>
+
+  <style name="home_quick_choose_gv">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:listSelector">@android:color/transparent</item>
+    <item name="android:layout_marginTop">@dimen/px_1dp</item>
+    <item name="android:layout_marginRight">@dimen/px_20dp</item>
+    <item name="android:layout_marginLeft">@dimen/px_20dp</item>
+    <item name="android:numColumns">4</item>
+  </style>
+
+  <style name="home_store_frame">
+    <item name="android:layout_width">@dimen/px_0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_weight">1</item>
+  </style>
+
+  <style name="home_store_linear">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginTop">@dimen/px_67dp</item>
+    <item name="android:orientation">vertical</item>
+    <item name="android:background">@drawable/icon_home_store_bottom</item>
+    <item name="android:gravity">center_horizontal</item>
+  </style>
+
+  <style name="home_store_iv">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/px_79dp</item>
+    <item name="android:scaleType">centerCrop</item>
+    <item name="android:src">@drawable/default_template</item>
+  </style>
+
+  <style name="home_store_brand_iv">
+    <item name="android:layout_width">@dimen/px_20dp</item>
+    <item name="android:layout_height">@dimen/px_20dp</item>
+    <item name="android:src">@drawable/empty_brand</item>
+    <item name="android:scaleType">fitXY</item>
+  </style>
+
+  <style name="home_store_name">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:gravity">center</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:ellipsize">end</item>
+    <item name="android:textSize">@dimen/ip5_24px</item>
+    <item name="android:textColor">@color/popular_search</item>
+  </style>
+
+  <style name="home_store_price">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textSize">@dimen/ip5_24px</item>
+    <item name="android:textColor">@color/home_grx_red</item>
+  </style>
+
+</resources>

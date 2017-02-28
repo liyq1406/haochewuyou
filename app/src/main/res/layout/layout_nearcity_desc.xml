@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_62dp"
+    android:background="@drawable/bg_bottom_near_city_line"
+    >
+
+  <ImageView
+      android:id="@+id/iv_nearcity"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="@dimen/px_10dp"
+      android:src="@drawable/icon_nearcity"
+      style="@style/wh_wrap"
+      />
+
+  <RelativeLayout
+      android:layout_marginLeft="@dimen/px_12dp"
+      android:layout_toRightOf="@id/iv_nearcity"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/px_62dp"
+      >
+
+    <TextView
+        android:layout_marginTop="@dimen/px_12dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/tv_nearcity_match"
+        android:text="@string/hc_nearcity_match"
+        style="@style/wh_match_wrap"
+        />
+
+    <TextView
+        android:layout_marginBottom="@dimen/px_12dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/hc_nearcity_buy"
+        android:textColor="@color/font_gray"
+        style="@style/wh_match_wrap"
+        />
+
+  </RelativeLayout>
+
+</RelativeLayout>

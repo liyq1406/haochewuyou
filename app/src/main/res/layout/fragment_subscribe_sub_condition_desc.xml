@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_subcounts_parent"
+    android:paddingLeft="@dimen/px_15dp"
+    android:paddingRight="@dimen/px_15dp"
+    android:paddingBottom="@dimen/px_10dp"
+    android:paddingTop="@dimen/px_10dp"
+    android:background="@drawable/selector_sub_click"
+    android:clickable="true"
+    style="@style/wh_match_wrap"
+    >
+
+  <ImageView
+      android:id="@+id/iv_subcounts_brand"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true"
+      android:src="@drawable/icon_brand_unlimit"
+      style="@style/wh_wrap"
+      />
+
+  <ImageView
+      android:id="@+id/iv_subcounts_icon"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:src="@drawable/icon_dropdown"
+      style="@style/wh_wrap"
+      android:layout_marginLeft="@dimen/px_3dp"
+      />
+
+  <TextView
+      android:layout_marginLeft="@dimen/px_10dp"
+      android:id="@+id/tv_subcounts_counts"
+      style="@style/wh_wrap"
+      android:layout_centerVertical="true"
+      android:layout_toRightOf="@id/iv_subcounts_brand"
+      android:layout_toLeftOf="@id/iv_subcounts_icon"
+      />
+
+</RelativeLayout>

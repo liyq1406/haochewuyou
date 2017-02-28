@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="@dimen/px_05"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_45dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/bg_bottom_line_light_gray"
+    android:paddingLeft="@dimen/px_10dp"
+    >
+  <View
+      android:layout_width="@dimen/px_5dp"
+      android:layout_height="@dimen/px_10dp"
+      android:background="@drawable/bg_for_grx"
+      />
+
+  <TextView
+      android:paddingLeft="@dimen/px_9dp"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/px_45dp"
+      android:textSize="@dimen/ip5_28px"
+      android:textColor="@color/popular_search"
+      android:text="@string/recommend_indicator"
+      android:gravity="center_vertical"
+      />
+</LinearLayout>
+

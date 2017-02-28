@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_singlepic_parent"
+    android:layout_margin="@dimen/px_15dp"
+    android:background="@color/promote_white"
+    style="@style/wh_match_wrap"
+    >
+
+  <FrameLayout
+      android:id="@+id/layout_singlepic_vehicle_image"
+      android:layout_width="@dimen/px_127dp"
+      android:layout_height="@dimen/px_94dp"
+      android:layout_alignParentLeft="true"
+      >
+    <ImageView
+        android:id="@+id/iv_singlepic_vehicle_image"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        style="@style/hc_singlePic_wh"
+        />
+    <ImageView
+        android:id="@+id/iv_singlepic_vehicle_left_top_image"
+        style="@style/hc_singlePic_left_top"
+        android:contentDescription="@null"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        />
+    <ImageView
+        android:id="@+id/iv_singlepic_vehicle_left_bottom_image"
+        style="@style/hc_singlePic_left_top"
+        android:contentDescription="@null"
+        android:visibility="gone"
+        android:layout_gravity="left|bottom"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/iv_singlepic_vehicle_presell_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/px_2dp"
+        android:contentDescription="@null"
+        android:visibility="visible"
+        android:src="@drawable/icon_presell"
+        android:layout_gravity="right|top"
+        />
+
+    <ImageView
+        android:id="@+id/iv_singlepic_vehicle_cheap_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:visibility="gone"
+        android:src="@drawable/icon_cheap"
+        android:layout_gravity="right|bottom"
+        />
+  </FrameLayout>
+
+  <FrameLayout
+      android:layout_alignBottom="@id/layout_singlepic_vehicle_image"
+      android:layout_alignTop="@id/layout_singlepic_vehicle_image"
+      android:layout_marginLeft="@dimen/px_10dp"
+      android:layout_toRightOf="@id/layout_singlepic_vehicle_image"
+      android:layout_height="@dimen/px_94dp"
+      android:layout_width="match_parent"
+      >
+
+    <RelativeLayout
+        android:layout_height="@dimen/px_94dp"
+        android:layout_width="match_parent"
+        >
+
+      <!-- 名字 -->
+      <TextView
+          android:layout_marginTop="@dimen/px_m05"
+          android:id="@+id/tv_singlepic_vehicle_name"
+          android:layout_alignParentTop="true"
+          android:textColor="@color/home_hot_text"
+          android:textSize="@dimen/ip5_28px"
+          style="@style/wh_match_wrap"
+          android:includeFontPadding="false"
+          android:lineSpacingExtra="@dimen/px_3dp"
+          />
+
+      <!-- 上牌时间和行驶里程 -->
+      <TextView
+          android:id="@+id/tv_singlepic_vehicle_detail"
+          android:layout_below="@id/tv_singlepic_vehicle_name"
+          android:layout_marginTop="@dimen/px_6dp"
+          android:textColor="@color/home_hot"
+          android:textSize="@dimen/ip5_24px"
+          style="@style/wh_wrap"
+          android:includeFontPadding="false"
+          />
+
+      <!-- 售价 -->
+      <TextView
+          android:id="@+id/tv_singlepic_vehicle_price"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true"
+          android:singleLine="true"
+          android:textSize="@dimen/ip5_32px"
+          style="@style/wh_wrap"
+          android:includeFontPadding="false"
+          />
+
+      <TextView
+          android:id="@+id/tv_singlepic_vehicle_price_pay"
+          android:layout_alignParentBottom="true"
+          android:layout_toRightOf="@id/tv_singlepic_vehicle_price"
+          android:singleLine="true"
+          android:textSize="@dimen/ip5_24px"
+          android:layout_marginLeft="@dimen/px_5dp"
+          style="@style/wh_wrap"
+          android:includeFontPadding="false"
+          />
+
+      <ImageView
+          android:id="@+id/tv_singlepic_vehicle_warranty"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:visibility="gone"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:src="@drawable/icon_warranty"
+          />
+
+    </RelativeLayout>
+
+    <!-- 已售出标签-->
+    <ImageView
+        android:id="@+id/iv_singlepic_vehicle_sold"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/icon_sold"
+        android:visibility="gone"
+        style="@style/wh_wrap"
+        />
+  </FrameLayout>
+
+  <RelativeLayout
+      android:id="@+id/layout_singlepic_vehicle_activity"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="gone"
+      android:layout_below="@id/layout_singlepic_vehicle_image"
+      android:layout_toRightOf="@id/layout_singlepic_vehicle_image"
+      android:layout_marginLeft="@dimen/px_10dp"
+      >
+    <View
+        android:id="@+id/v_singlepic_vehicle_activity_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_05"
+        android:background="@color/diff_light_gray"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/px_10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/v_singlepic_vehicle_activity_line"
+        >
+      <ImageView
+          android:id="@+id/iv_singlepic_vehicle_activity_icon"
+          android:layout_width="@dimen/px_45dp"
+          android:layout_height="@dimen/px_18dp"
+          />
+      <TextView
+          android:id="@+id/tv_singlepic_vehicle_activity_common"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:singleLine="true"
+          android:ellipsize="end"
+          android:layout_marginLeft="@dimen/px_15dp"
+          android:textColor="@color/home_hot_text"
+          android:textSize="@dimen/ip5_24px"
+          />
+      <LinearLayout
+          android:id="@+id/linear_singlepic_activity_layout"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:visibility="gone"
+          android:orientation="horizontal"
+          >
+        <TextView
+            android:id="@+id/tv_singlepic_vehicle_activity_time_one"
+            style="@style/hc_singlePic_activity"
+            />
+        <TextView
+            android:id="@+id/tv_singlepic_vehicle_activity_time_one_hint"
+            style="@style/hc_singlePic_activity_hint"
+            />
+        <TextView
+            android:id="@+id/tv_singlepic_vehicle_activity_time_two"
+            style="@style/hc_singlePic_activity"
+            />
+        <TextView
+            android:id="@+id/tv_singlepic_vehicle_activity_time_two_hint"
+            style="@style/hc_singlePic_activity_hint"
+            />
+      </LinearLayout>
+    </LinearLayout>
+  </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_titlebar_height"
+    android:background="@drawable/bg_top_line_gray"
+    >
+
+
+  <LinearLayout
+      style="@style/wh_match"
+      android:orientation="horizontal"
+      >
+
+    <RelativeLayout
+        android:id="@+id/rel_detail_similar"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/selector_rect_red_no_raduis"
+        >
+
+      <ImageView
+          android:id="@+id/iv_similar"
+          style="@style/wh_w_w"
+          android:src="@drawable/icon_white_phone"
+          android:layout_centerVertical="true"
+          />
+
+      <TextView
+          android:layout_toRightOf="@id/iv_similar"
+          android:id="@+id/tv_similar"
+          android:layout_gravity="center"
+          style="@style/wh_w_w"
+          android:text="@string/hc_similar_vehicle"
+          android:textSize="@dimen/font_32_px"
+          android:layout_centerInParent="true"
+          android:layout_marginLeft="@dimen/px_10dp"
+          />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rel_detail_advisory"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/selector_common_click"
+        >
+
+      <ImageView
+          android:id="@+id/iv_advisory"
+          style="@style/wh_w_w"
+          android:src="@drawable/icon_red_phone"
+          android:layout_centerVertical="true"
+          />
+
+      <TextView
+          android:layout_toRightOf="@id/iv_advisory"
+          android:id="@+id/tv_advisory"
+          android:layout_gravity="center"
+          style="@style/wh_w_w"
+          android:textColor="@color/reminder_red"
+          android:text="@string/hc_phone_advisory"
+          android:textSize="@dimen/font_32_px"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/px_10dp"
+          />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rel_detail_reverse"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_rect_red_no_raduis"
+        >
+
+      <TextView
+          style="@style/wh_w_w"
+          android:text="@string/hc_reserve_vehicle"
+          android:layout_centerInParent="true"
+          android:textSize="@dimen/font_32_px"
+          />
+
+    </RelativeLayout>
+
+
+  </LinearLayout>
+
+
+</LinearLayout>

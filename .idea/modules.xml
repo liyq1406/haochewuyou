@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BDAutoUpdateSDK/BDAutoUpdateSDK.iml" filepath="$PROJECT_DIR$/BDAutoUpdateSDK/BDAutoUpdateSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QHAutoUpdateSDK/QHAutoUpdateSDK.iml" filepath="$PROJECT_DIR$/QHAutoUpdateSDK/QHAutoUpdateSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XMAutoUpdateSDK/XMAutoUpdateSDK.iml" filepath="$PROJECT_DIR$/XMAutoUpdateSDK/XMAutoUpdateSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android_studio_buyerapp.iml" filepath="$PROJECT_DIR$/android_studio_buyerapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

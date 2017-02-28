@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/Users/mac/Documents/AndroidProject/android_studio_buyerapp/XMAutoUpdateSDK/build/intermediates/bundles/debug/res/values/values.xml -->
+    <eat-comment/>
+    <string name="xiaomi_bytes_unit"><ns1:g id="size">%1$s</ns1:g>B</string>
+    <string name="xiaomi_connect_download_manager_fail">Connect Download Manager failed, please check the Download Manager state in the Application Management.</string>
+    <string name="xiaomi_external_storage_unavailable">Storage unavailable, please check the SD card.</string>
+    <string name="xiaomi_kilobytes_unit"><ns1:g id="size">%1$s</ns1:g>KB</string>
+    <string name="xiaomi_megabytes_unit"><ns1:g id="size">%1$s</ns1:g>MB</string>
+    <string name="xiaomi_update_dialog_message">Introducing version <ns1:g id="version_name">%1$s</ns1:g>\nSize: <ns1:g id="app_size">%2$s</ns1:g></string>
+    <string name="xiaomi_update_dialog_message_diff">Introducing version <ns1:g id="version_name">%1$s</ns1:g>\nDelta update size: <ns1:g id="app_size">%2$s</ns1:g></string>
+    <string name="xiaomi_update_dialog_title"><ns1:g id="app_name">%1$s</ns1:g> update!</string>
+</resources>

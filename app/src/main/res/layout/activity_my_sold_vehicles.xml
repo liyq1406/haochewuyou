@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match"
+    android:orientation="vertical"
+    >
+
+  <include layout="@layout/activity_loading"/>
+
+  <include layout="@layout/layout_for_net_err"/>
+
+  <RelativeLayout
+      style="@style/wh_match"
+      android:layout_gravity="center"
+      >
+
+    <TextView
+        android:id="@+id/tv_sold_consultative"
+        style="@style/wh_match_wrap"
+        android:minHeight="@dimen/px_45dp"
+        android:background="@drawable/selector_rect_red_no_raduis"
+        android:text="@string/hc_consultative_salor"
+        android:textSize="@dimen/font_vehicle_name"
+        android:textColor="@color/promote_white"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        />
+
+    <com.haoche51.custom.HCScrollView
+        android:layout_above="@id/tv_sold_consultative"
+        android:id="@+id/sv_sold"
+        style="@style/wh_match"
+        android:fillViewport="true"
+        >
+
+      <LinearLayout
+          style="@style/wh_match"
+          android:background="@color/filter_bar_color"
+          android:orientation="vertical"
+          >
+
+        <include
+            layout="@layout/activity_my_sold_vehicles_sub_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <include
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/activity_my_sold_vehicles_sub_normal"
+            />
+
+        <include
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/activity_my_sold_vehicles_sub_offline"
+            android:visibility="gone"
+            />
+
+        <include
+            layout="@layout/activity_my_sold_vehicles_sub_not_online"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            />
+
+        <include
+            layout="@layout/activity_my_sold_vehicles_sub_not_submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            />
+
+      </LinearLayout>
+
+    </com.haoche51.custom.HCScrollView>
+
+  </RelativeLayout>
+
+</LinearLayout>
+
+

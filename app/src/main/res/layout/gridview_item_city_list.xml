@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/px_6dp"
+    android:paddingBottom="@dimen/px_6dp"
+    android:paddingLeft="@dimen/px_12dp"
+    android:paddingRight="@dimen/px_12dp"
+    >
+  <TextView
+      android:id="@+id/tv_city_gridview_item"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/px_30dp"
+      android:text="@string/city_bj"
+      android:gravity="center"
+      android:textColor="@color/font_black"
+      android:textSize="@dimen/ip5_26px"
+      />
+</LinearLayout>
+
+

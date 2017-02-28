@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match"
+    android:orientation="vertical"
+    >
+
+  <include layout="@layout/common_titlebar"/>
+
+  <FrameLayout
+      android:id="@+id/frame_content_container"
+      style="@style/wh_match"
+      >
+  </FrameLayout>
+
+</LinearLayout>

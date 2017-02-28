@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/self_common"
+    style="@style/wh_match"
+    android:orientation="vertical"
+    >
+
+  <include layout="@layout/activity_loading"/>
+
+  <include layout="@layout/layout_for_net_err"/>
+
+  <com.haoche51.custom.HCPullToRefresh
+      android:id="@+id/hcptr_recommand_list"
+      style="@style/wh_match"
+      />
+
+</LinearLayout>
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_net_refresh"
+    android:orientation="vertical"
+    android:clickable="false"
+    style="@style/wh_match"
+    android:gravity="center"
+    android:visibility="gone"
+    android:background="@color/promote_white"
+    >
+
+  <TextView
+      android:drawableTop="@drawable/icon_net_err"
+      android:layout_margin="@dimen/px_5dp"
+      style="@style/wh_wrap"
+      android:text="@string/hc_net_err_retry"
+      android:drawablePadding="@dimen/px_10dp"
+      />
+
+  <TextView
+      android:id="@+id/tv_err_refresh"
+      android:text="@string/hc_click_refresh"
+      android:padding="@dimen/px_5dp"
+      android:textColor="@drawable/text_color_refresh"
+      style="@style/wh_wrap"
+      />
+
+</LinearLayout>

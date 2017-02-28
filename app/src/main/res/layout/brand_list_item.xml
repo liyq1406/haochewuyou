@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rel_brand_parent"
+    android:orientation="vertical"
+    >
+
+  <TextView
+      android:id="@+id/brand_letter"
+      style="@style/hc_filter_brand_tv"
+      android:text="@string/UMAppUpdate"
+      />
+
+  <TextView
+      android:id="@+id/brand_name"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/brand_lv_item_height"
+      android:layout_below="@id/brand_letter"
+      android:paddingLeft="@dimen/px_15dp"
+      android:background="@drawable/selector_common_click"
+      android:drawableLeft="@drawable/empty_brand"
+      android:drawablePadding="@dimen/px_15dp"
+      android:gravity="center_vertical"
+      android:textColor="@color/home_hot_text"
+      android:textSize="@dimen/ip5_28px"
+      android:text="未知"
+      />
+
+  <View
+      android:id="@+id/brand_line"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/px_05"
+      android:background="@color/diff_deep_gray_"
+      android:layout_below="@id/brand_name"
+      />
+
+</RelativeLayout>

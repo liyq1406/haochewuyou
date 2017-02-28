@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match_wrap"
+    android:background="@color/promote_white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/px_15dp"
+    >
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="@dimen/ip5_24px"
+      android:textColor="@color/home_hot"
+      android:layout_marginLeft="@dimen/px_20dp"
+      android:text="@string/hc_quick_hot"
+      android:drawablePadding="@dimen/px_5dp"
+      android:drawableLeft="@drawable/icon_home_quick_choose_car"
+      android:gravity="center_vertical"
+      android:layout_marginBottom="@dimen/px_10dp"
+      />
+
+  <RadioGroup
+      android:id="@+id/hot_rg_0"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/px_40dp"
+      android:layout_marginRight="@dimen/px_20dp"
+      android:layout_marginLeft="@dimen/px_20dp"
+      android:gravity="center"
+      android:orientation="horizontal"
+      >
+
+    <RadioButton
+        android:id="@+id/rb_price_0"
+        style="@style/hot_price_rb"
+        android:text="@string/hc_price_0"
+        />
+
+    <RadioButton
+        android:id="@+id/rb_price_1"
+        style="@style/hot_price_rb"
+        android:text="@string/hc_price_1"
+        />
+
+    <RadioButton
+        android:id="@+id/rb_price_2"
+        style="@style/hot_price_rb"
+        android:text="@string/hc_price_2"
+        />
+
+    <RadioButton
+        android:id="@+id/rb_price_3"
+        style="@style/hot_price_rb"
+        android:text="@string/hc_price_3"
+        />
+  </RadioGroup>
+
+  <com.haoche51.custom.HCGridView
+      android:id="@+id/gv_home_brand"
+      style="@style/home_quick_choose_gv"
+      />
+
+</LinearLayout>

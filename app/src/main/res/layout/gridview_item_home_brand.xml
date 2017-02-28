@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_home_brand_grid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/promote_white"
+    android:descendantFocusability="afterDescendants"
+    >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/px_40dp"
+      android:layout_marginLeft="@dimen/px_05"
+      android:layout_marginRight="@dimen/px_05"
+      android:background="@drawable/selector_hot_price_and_brand_click"
+      android:gravity="center"
+      >
+    <TextView
+        android:id="@+id/tv_home_brand_item"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:drawablePadding="@dimen/px_2dp"
+        android:drawableLeft="@drawable/b1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:text="@string/hc_brand"
+        android:textColor="@color/home_hot_text"
+        android:textSize="@dimen/ip5_24px"
+        />
+  </LinearLayout>
+
+</RelativeLayout>

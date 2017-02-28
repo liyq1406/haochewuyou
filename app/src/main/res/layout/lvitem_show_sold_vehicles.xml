@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/promote_white"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_45dp"
+    android:paddingLeft="@dimen/coupon_leftright"
+    android:paddingRight="@dimen/coupon_leftright"
+    >
+
+  <ImageView
+      android:id="@+id/iv_ss"
+      style="@style/wh_wrap"
+      android:src="@drawable/icon_sub_choosed"
+      android:layout_centerVertical="true"
+      android:layout_alignParentRight="true"
+      android:visibility="gone"
+      />
+
+  <TextView
+      android:id="@+id/tv_ss"
+      style="@style/wh_wrap"
+      android:layout_centerVertical="true"
+      android:layout_toLeftOf="@id/iv_ss"
+      android:textColor="@color/font_black"
+      android:singleLine="true"
+      android:layout_alignParentLeft="true"
+      />
+
+</RelativeLayout>

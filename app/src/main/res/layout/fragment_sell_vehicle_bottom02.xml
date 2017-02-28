@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sell_vehicle_bottom02"
+    style="@style/wh_match"
+    android:background="@color/sell_spread_back"
+    android:orientation="vertical"
+    android:padding="@dimen/px_15dp">
+
+    <TextView
+        style="@style/wh_match_wrap"
+        android:gravity="center"
+        android:padding="@dimen/px_5dp"
+        android:text="@string/hc_sell_answer"
+        android:textSize="@dimen/font_36_px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/px_5dp"
+        android:paddingTop="@dimen/px_5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/sell_vehicle_bottom02_q"
+                android:text="@string/hc_sell_q1" />
+
+            <TextView
+                style="@style/sell_vehicle_bottom02_question"
+                android:text="@string/hc_sell_question01" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/sell_vehicle_bottom02_answer"
+            android:text="@string/hc_sell_answer01" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/px_5dp"
+        android:paddingTop="@dimen/px_5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/sell_vehicle_bottom02_q"
+                android:text="@string/hc_sell_q2" />
+
+            <TextView
+                style="@style/sell_vehicle_bottom02_question"
+                android:text="@string/hc_sell_question02" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/sell_vehicle_bottom02_answer"
+            android:text="@string/hc_sell_answer02" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/px_5dp"
+        android:paddingTop="@dimen/px_5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/sell_vehicle_bottom02_q"
+                android:text="@string/hc_sell_q3" />
+
+            <TextView
+                style="@style/sell_vehicle_bottom02_question"
+                android:text="@string/hc_sell_question03" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/sell_vehicle_bottom02_answer"
+            android:text="@string/hc_sell_answer03" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/px_5dp"
+        android:paddingTop="@dimen/px_5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/sell_vehicle_bottom02_q"
+                android:text="@string/hc_sell_q4" />
+
+            <TextView
+                style="@style/sell_vehicle_bottom02_question"
+                android:text="@string/hc_sell_question04" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/sell_vehicle_bottom02_answer"
+            android:text="@string/hc_sell_answer04" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/px_5dp"
+        android:paddingTop="@dimen/px_5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/sell_vehicle_bottom02_q"
+                android:text="@string/hc_sell_q5" />
+
+            <TextView
+                style="@style/sell_vehicle_bottom02_question"
+                android:text="@string/hc_sell_question05" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/sell_vehicle_bottom02_answer"
+            android:text="@string/hc_sell_answer05" />
+    </LinearLayout>
+
+</LinearLayout>

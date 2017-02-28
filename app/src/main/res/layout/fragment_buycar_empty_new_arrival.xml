@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_buycar_empty_parent_new_arrival"
+    style="@style/wh_match"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone"
+    >
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:drawablePadding="@dimen/empty_icon_padding"
+      android:drawableTop="@drawable/icon_empty_car"
+      android:text="@string/hc_empty_car"
+      android:textColor="@color/empty_tv_gray"
+      />
+
+  <Button
+      android:id="@+id/btn_buycar_empty_seeallcar_new_arrival"
+      style="@style/empty_btn"
+      android:background="@drawable/selector_rect_red"
+      android:text="@string/hc_seeall_car_new_arrival"
+      />
+
+  <Button
+      android:id="@+id/btn_buycar_empty_helpbuy_new_arrival"
+      style="@style/empty_btn"
+      android:background="@drawable/selector_rect_orange"
+      android:text="@string/hc_helpbuy_car"
+      />
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:gravity="center"
+      android:text="@string/hc_helpbuy_car_hint"
+      android:textColor="@color/empty_tv_gray"
+      />
+
+</LinearLayout>

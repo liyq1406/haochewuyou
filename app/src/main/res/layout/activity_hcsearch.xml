@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/wh_match"
+    android:background="@color/promote_white"
+    >
+
+  <RelativeLayout
+      android:background="@color/promote_white"
+      style="@style/wh_match_wrap"
+      android:minHeight="@dimen/px_60dp"
+      android:layout_marginLeft="@dimen/coupon_leftright"
+      android:layout_marginRight="@dimen/coupon_leftright"
+      >
+
+    <TextView
+        android:id="@+id/tv_search_cancel"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/hc_cancel"
+        android:gravity="center"
+        style="@style/tv_48"
+        />
+
+    <FrameLayout
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/tv_search_cancel"
+        style="@style/wh_match_wrap"
+        android:background="@drawable/bg_autocomplete_gray_border"
+        >
+
+      <AutoCompleteTextView
+          android:drawableLeft="@drawable/icon_black_search"
+          android:textSize="@dimen/font_normal"
+          android:background="@null"
+          android:drawablePadding="@dimen/hc_icon_padding"
+          android:id="@+id/actv_input"
+          android:imeOptions="actionSearch"
+          android:singleLine="true"
+          android:gravity="left|center_vertical"
+          android:paddingLeft="@dimen/px_10dp"
+          android:dropDownSelector="@drawable/selector_common_click"
+          android:hint="@string/hc_search_hint"
+          android:completionThreshold="1"
+          style="@style/wh_match_wrap"
+          android:minHeight="@dimen/px_40dp"
+          />
+
+      <ImageView
+          android:visibility="gone"
+          android:id="@+id/iv_for_clear"
+          android:layout_gravity="right|center_vertical"
+          style="@style/wh_wrap"
+          android:src="@drawable/icon_hc_cancel"
+          android:padding="@dimen/px_10dp"
+          />
+    </FrameLayout>
+  </RelativeLayout>
+
+  <include layout="@layout/activity_loading"/>
+
+  <include layout="@layout/layout_for_net_err" />
+
+  <LinearLayout
+      style="@style/wh_match_wrap"
+      android:orientation="vertical"
+      >
+
+    <ListView
+        android:scrollbars="none"
+        android:id="@+id/lv_search_history"
+        android:cacheColorHint="@color/hc_transcolor"
+        android:divider="@color/zy_gray"
+        android:dividerHeight="@dimen/px_05"
+        android:listSelector="@drawable/selector_common_click"
+        style="@style/wh_match"
+        />
+
+  </LinearLayout>
+
+</LinearLayout>

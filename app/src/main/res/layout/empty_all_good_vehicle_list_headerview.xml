@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 全部好车 emptyView -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/wh_match"
+    android:background="@color/grx_diff_gray"
+    android:paddingBottom="@dimen/px_5dp"
+    >
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/px_107dp"
+      android:background="@color/promote_white"
+      android:textSize="@dimen/ip5_26px"
+      android:textColor="@color/grx_empty_gray"
+      android:text="@string/hc_empty_car"
+      android:gravity="center"
+      />
+
+</LinearLayout>
+

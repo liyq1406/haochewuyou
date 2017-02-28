@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="one_hcgv_id" type="id"/>
+    <item name="two_hcgv_id" type="id"/>
+    <item name="view_tag_story" type="id"/>
+    <item name="view_tag_city" type="id"/>
+    <item name="city_gv_item" type="id"/>
+    <item name="filter_gv_item" type="id"/>
+    <item name="city_for_click" type="id"/>
+    <item name="brand_hot_brand_tv_id" type="id"/>
+
+    <item name="home_brand_click" type="id"/>
+
+
+    <item name="brand_convert_tag" type="id"/>
+
+    <item name="for_brand_pos" type="id"/>
+
+    <item name="view_tag_diffvehicle" type="id"/>
+
+
+    <!-- 我的订阅列表 convertview tag-->
+    <item name="view_tag_mysubmanager_list" type="id"/>
+
+    <item name="view_tag_choosecoupon" type="id"/>
+
+    <item name="view_tag_click_condition" type="id"/>
+
+    <item name="view_for_sub_dim" type="id"/>
+    <!-- 筛选更多的id-->
+    <item name="filter_more_car_age" type="id"/>
+    <item name="filter_more_distance" type="id"/>
+    <item name="filter_more_speedbox" type="id"/>
+    <item name="filter_more_standard" type="id"/>
+    <item name="filter_more_cartype" type="id"/>
+    <item name="filter_more_emissions" type="id"/>
+    <item name="filter_more_country" type="id"/>
+    <item name="filter_more_color" type="id"/>
+
+    <item name="filter_choose_condition" type="id"/>
+
+</resources>

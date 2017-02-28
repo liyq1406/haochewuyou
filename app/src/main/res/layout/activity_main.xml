@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/self_common"
+    style="@style/wh_match"
+    >
+
+  <include
+      android:id="@+id/indicator"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      layout="@layout/bottom_navigation_bar"
+      android:gravity="center_vertical"
+      />
+
+  <FrameLayout
+      android:id="@+id/fragment_container"
+      android:layout_above="@id/indicator"
+      style="@style/wh_match"
+      />
+
+  <include
+      layout="@layout/activity_loading"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      />
+
+  <FrameLayout
+      android:id="@+id/frame_core_filter"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      />
+
+</RelativeLayout>

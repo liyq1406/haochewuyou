@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_coupon_item_parent"
+    android:layout_marginLeft="@dimen/coupon_leftright"
+    android:layout_marginRight="@dimen/coupon_leftright"
+    android:layout_marginTop="@dimen/coupon_top_dimen"
+    android:background="@drawable/bg_valid_coupon"
+    style="@style/wh_match_wrap"
+    android:layout_height="100dp"
+    >
+
+  <RelativeLayout
+      android:orientation="vertical"
+      style="@style/wh_match_wrap"
+      >
+
+    <RelativeLayout
+        android:id="@+id/rel_item_coupon_top"
+        style="@style/wh_match_wrap"
+        >
+
+      <TextView
+          android:id="@+id/tv_item_coupon_yuan"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/px_20dp"
+          android:paddingTop="@dimen/px_15dp"
+          android:text="@string/hc_yuan"
+          android:textSize="@dimen/font_25_px"
+          style="@style/wh_w_w"
+          />
+
+      <TextView
+          android:id="@+id/tv_item_coupon_price"
+          style="@style/wh_w_w"
+          android:layout_centerVertical="true"
+          android:layout_marginBottom="@dimen/px_24dp"
+          android:layout_marginLeft="@dimen/px_5dp"
+          android:layout_marginTop="@dimen/px_24dp"
+          android:layout_toRightOf="@id/tv_item_coupon_yuan"
+          android:textSize="@dimen/font_coupon_big"
+          />
+
+      <ImageView
+          android:id="@+id/iv_item_coupon_icon"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="@dimen/px_10dp"
+          android:contentDescription="@null"
+          android:src="@drawable/icon_coupon_arrow"
+          style="@style/wh_wrap"
+          />
+
+      <TextView
+          android:id="@+id/tv_item_coupon_name"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/px_15dp"
+          android:layout_toLeftOf="@id/iv_item_coupon_icon"
+          android:layout_toRightOf="@id/tv_item_coupon_price"
+          android:singleLine="true"
+          android:textSize="@dimen/font_normal"
+          style="@style/wh_w_w"
+          />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        style="@style/wh_match_wrap"
+        android:layout_alignParentBottom="true"
+        >
+
+      <ImageView
+          android:id="@+id/iv_for_clock"
+          android:layout_centerVertical="true"
+          android:layout_margin="@dimen/px_5dp"
+          android:src="@drawable/icon_clock"
+          style="@style/wh_wrap"
+          />
+
+      <TextView
+          android:id="@+id/tv_item_coupon_time"
+          android:layout_toRightOf="@id/iv_for_clock"
+          android:gravity="center_vertical"
+          android:paddingBottom="@dimen/px_5dp"
+          android:paddingTop="@dimen/px_5dp"
+          android:textColor="@color/promote_black"
+          android:textSize="@dimen/font_22_px"
+          style="@style/wh_match_wrap"
+          />
+
+    </RelativeLayout>
+
+  </RelativeLayout>
+
+  <ImageView
+      android:id="@+id/iv_item_coupon_valid"
+      style="@style/wh_wrap"
+      android:layout_gravity="bottom|right"
+      android:layout_marginRight="@dimen/px_10dp"
+      android:layout_marginTop="@dimen/px_3dp"
+      android:contentDescription="@null"
+      android:src="@drawable/icon_coupon_invalid"
+      android:visibility="gone"
+      />
+
+</FrameLayout>

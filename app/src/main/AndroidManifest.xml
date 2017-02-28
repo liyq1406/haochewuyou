@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.haoche51.buyerapp"
+    >
+
+  <!--versionCode versionName
+    minSdkVersion
+    targetSdkVersion  在build.gradle中配置
+    -->
+
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+  <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+  <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <uses-permission android:name="android.permission.GET_TASKS"/>
+  <uses-permission android:name="android.permission.READ_LOGS"/>
+  <uses-permission android:name="android.permission.CALL_PHONE"/>
+  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+  <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+  <permission
+      android:name="com.haoche51.buyerapp.permission.MIPUSH_RECEIVE"
+      android:protectionLevel="signature"
+      />
+  <!--这里com.xiaomi.mipushdemo改成app的包名-->
+  <uses-permission android:name="com.haoche51.buyerapp.permission.MIPUSH_RECEIVE"/>
+  <!--这里com.xiaomi.mipushdemo改成app的包名-->
+
+  <supports-screens
+      android:anyDensity="true"
+      android:normalScreens="true"
+      android:smallScreens="true"
+      >
+  </supports-screens>
+
+  <application
+      android:name=".HCApplication"
+      android:allowBackup="true"
+      android:icon="@drawable/ic_launcher"
+      android:label="@string/app_name"
+      android:theme="@style/hc_base_style"
+      tools:replace="android:theme"
+      >
+    <activity
+        android:launchMode="singleTask"
+        android:name=".activity.MainActivity"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden|adjustPan"
+        >
+    </activity>
+    <activity
+        android:name=".activity.WebBrowserActivity"
+        android:screenOrientation="portrait"
+        />
+    <activity
+        android:name=".activity.SplashActivity"
+        android:launchMode="singleTop"
+        android:screenOrientation="portrait"
+        android:theme="@style/hc_splash_fullscreen_and_translucent"
+        >
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity
+        android:name=".activity.VehicleDetailActivity"
+        android:screenOrientation="portrait"
+        >
+    </activity>
+    <activity
+        android:name=".activity.SettingActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".activity.ChooseVehicleForDiffActivity"
+        android:screenOrientation="portrait"
+        />
+    <activity
+        android:name=".activity.DiffVehiclesActivity"
+        android:screenOrientation="portrait"
+        />
+    <activity
+        android:name=".activity.LoginActivity"
+        android:screenOrientation="portrait"
+        >
+    </activity>
+    <activity
+        android:name=".activity.CouponListActivity"
+        android:windowSoftInputMode="stateHidden|adjustPan"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".activity.FeedBackActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".activity.ManageMySubActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".activity.MySubscribeVehiclesActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".activity.MyCollectionActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".activity.MyBookingVehicleActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".activity.UseCouponActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".activity.HCSearchActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/HC_Search_style"
+        />
+
+    <activity
+        android:name=".activity.MySoldVehiclesActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".activity.ScanHistoryActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".activity.RecommendVehicleActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".activity.SellVehicleActivity"
+        android:screenOrientation="portrait"
+        />
+
+
+    <service android:name=".HCPollService"/>
+
+    <!-- 友盟apikey正式 -->
+    <meta-data
+        android:name="UMENG_APPKEY"
+        android:value="54754211fd98c50f4a0009eb"
+        >
+    </meta-data>
+
+    <meta-data
+        android:name="UMENG_CHANNEL"
+        android:value="${UMENG_CHANNEL_VALUE}"
+        />
+
+    <activity android:name="com.umeng.fb.ConversationActivity"/>
+    <!-- 友盟相关-->
+
+    <!--Baidu push service sdk start-->
+    <activity
+        android:name="com.baidu.android.pushservice.PushKeepAlive"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        />
+    <!-- 用于接收系统消息以保证PushService正常运行 -->
+    <receiver
+        android:name="com.baidu.android.pushservice.PushServiceReceiver"
+        android:process=":bdservice_v1"
+        >
+      <intent-filter android:priority="1000">
+        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+        <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+        <action android:name="com.baidu.android.pushservice.action.notification.SHOW"/>
+        <action android:name="com.baidu.android.pushservice.action.media.CLICK"/>
+        <!-- 以下四项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+        <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+        <action android:name="android.intent.action.USER_PRESENT"/>
+        <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+        <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+      </intent-filter>
+    </receiver>
+    <!-- Push服务接收客户端发送的各种请求-->
+    <receiver
+        android:name="com.baidu.android.pushservice.RegistrationReceiver"
+        android:process=":bdservice_v1"
+        >
+      <intent-filter>
+        <action android:name="com.baidu.android.pushservice.action.METHOD"/>
+        <action android:name="com.baidu.android.pushservice.action.BIND_SYNC"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+        <data android:scheme="package"/>
+      </intent-filter>
+    </receiver>
+
+    <service
+        android:name="com.baidu.android.pushservice.PushService"
+        android:exported="true"
+        android:process=":bdservice_v1"
+        >
+      <intent-filter android:priority="1000">
+        <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE"/>
+      </intent-filter>
+    </service>
+    <!-- 4.4版本新增的CommandService声明，提升小米和魅族手机上的实际推送到达率 -->
+    <service
+        android:name="com.baidu.android.pushservice.CommandService"
+        android:exported="true"
+        />
+
+
+    <!-- 此处Receiver名字修改为当前包名路径 -->
+    <receiver android:name=".push.BDPushMessageReceiver">
+      <intent-filter>
+        <!-- 接收push消息 -->
+        <action android:name="com.baidu.android.pushservice.action.MESSAGE"/>
+        <!-- 接收bind、setTags等method的返回结果-->
+        <action android:name="com.baidu.android.pushservice.action.RECEIVE"/>
+        <!-- 接收通知点击事件，和通知自定义内容 -->
+        <action android:name="com.baidu.android.pushservice.action.notification.CLICK"/>
+      </intent-filter>
+    </receiver>
+    <!--Baidu push service sdk end-->
+
+
+    <!--XiaoMi push service sdk start-->
+    <service
+        android:enabled="true"
+        android:process=":pushservice"
+        android:name="com.xiaomi.push.service.XMPushService"
+        />
+    <service
+        android:enabled="true"
+        android:exported="true"
+        android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+        />
+    <service
+        android:enabled="true"
+        android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+        />
+    <!--注：此service必须在2.2.5版本以后（包括2.2.5版本）加入-->
+    <receiver
+        android:exported="true"
+        android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+        >
+      <intent-filter>
+        <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </receiver>
+    <receiver
+        android:exported="false"
+        android:process=":pushservice"
+        android:name="com.xiaomi.push.service.receivers.PingReceiver"
+        >
+      <intent-filter>
+        <action android:name="com.xiaomi.push.PING_TIMER"/>
+      </intent-filter>
+    </receiver>
+
+    <receiver
+        android:exported="true"
+        android:name="com.haoche51.buyerapp.push.XMPushMessageReceiver"
+        >
+      <!--这里com.xiaomi.mipushdemo.DemoMessageRreceiver改成app中定义的完整类名-->
+      <intent-filter>
+        <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.xiaomi.mipush.ERROR"/>
+      </intent-filter>
+    </receiver>
+    <!--XiaoMi push service sdk end-->
+
+    <!-- share sdk -->
+    <activity
+        android:name="cn.sharesdk.framework.ShareSDKUIShell"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:windowSoftInputMode="stateHidden|adjustResize"
+        >
+      <intent-filter>
+        <data android:scheme="tencent100371282"/>
+
+        <action android:name="android.intent.action.VIEW"/>
+
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity
+        android:name="com.haoche51.buyerapp.wxapi.WXEntryActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:exported="true"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        />
+
+    <!-- baidu 定位sdk -->
+    <service
+        android:name="com.baidu.location.f"
+        android:enabled="true"
+        android:process=":remote"
+        >
+    </service>
+
+    <meta-data
+        android:name="com.baidu.lbsapi.API_KEY"
+        android:value="WpNluisyIEkP59mrlLfAxtzZ"
+        />
+
+    <!-- baidu 定位sdk -->
+
+    <!-- Sensors  sdk -->
+    <meta-data
+        android:name="com.sensorsdata.analytics.android.FlushInterval"
+        android:value="30000"
+        />
+    <meta-data
+        android:name="com.sensorsdata.analytics.android.FlushBulkSize"
+        android:value="10"
+        />
+    <meta-data
+        android:name="com.sensorsdata.analytics.android.VTrack"
+        android:value="true"
+        />
+    <!-- Sensors  sdk -->
+  </application>
+
+</manifest>

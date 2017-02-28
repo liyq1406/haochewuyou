@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_sub_for_empty"
+    android:orientation="vertical"
+    android:background="@color/home_hot_normal"
+    android:gravity="center"
+    style="@style/wh_match"
+    android:visibility="gone"
+    >
+
+  <ImageView
+      style="@style/wh_wrap"
+      android:src="@drawable/bg_sub_for_login"
+      />
+
+  <Button
+      android:id="@+id/btn_sub_find_car"
+      android:textColor="@color/promote_white"
+      android:layout_marginTop="@dimen/px_15dp"
+      android:layout_width="@dimen/px_125dp"
+      android:layout_height="@dimen/px_32dp"
+      android:text="@string/hc_find_car_now"
+      android:textSize="@dimen/ip5_28px"
+      android:background="@drawable/selector_rect_red"
+      />
+
+</LinearLayout>

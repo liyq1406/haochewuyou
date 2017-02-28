@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/promote_white"
+              android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_couponuseage_title"
+        style="@style/wh_wrap"
+        android:layout_margin="@dimen/px_10dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/font_31_px"
+        android:text="@string/hc_coupon_usage"
+        />
+
+    <TextView
+        android:id="@+id/tv_coupoun_content"
+        android:padding="@dimen/px_15dp"
+        style="@style/wh_wrap"
+        android:textSize="@dimen/font_25_px"
+        android:lineSpacingExtra="@dimen/px_10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/hc_coupon_useage"
+        />
+
+    <Button
+        android:id="@+id/btn_known"
+        style="@style/wh_w_w"
+        android:minWidth="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/px_20dp"
+        android:layout_marginTop="@dimen/px_20dp"
+        android:background="@drawable/selector_rect_red"
+        android:padding="@dimen/px_10dp"
+        android:text="@string/hc_i_known"
+        />
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/coupon_leftright"
+                android:background="@color/self_common">
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/iv_use_coupon"
+        style="@style/wh_wrap"
+        android:src="@drawable/selector_diffvehicle"
+        />
+
+    <include
+        android:layout_marginLeft="@dimen/coupon_leftright"
+        android:layout_toRightOf="@id/iv_use_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/lvitem_common_coupon_item"/>
+
+</RelativeLayout>

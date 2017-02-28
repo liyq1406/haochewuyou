@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_sub_vehicle_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/px_15dp"
+    android:clickable="true"
+    android:paddingBottom="@dimen/px_10dp"
+    android:paddingTop="@dimen/px_10dp"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+  <ImageView
+      android:focusable="false"
+      android:id="@+id/iv_sub_arrow"
+      style="@style/wh_wrap"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:src="@drawable/icon_subscribe_arrow"
+      />
+
+  <CheckBox
+      android:id="@+id/cb_sub_chekck"
+      style="@style/wh_wrap"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:layout_marginRight="@dimen/px_10dp"
+      android:background="@null"
+      android:button="@drawable/selector_sub_choose"
+      android:checked="true"
+      android:clickable="false"
+      android:focusable="false"
+      android:focusableInTouchMode="false"
+      android:visibility="gone"
+      />
+
+  <RelativeLayout
+      android:id="@+id/linear_sub_brand"
+      style="@style/wh_wrap"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true"
+      android:minWidth="@dimen/min_brand_width"
+      >
+
+    <ImageView
+        android:focusable="false"
+        android:id="@+id/iv_sub_brand"
+        style="@style/wh_wrap"
+        android:layout_centerInParent="true"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        />
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_toRightOf="@id/linear_sub_brand"
+      android:layout_toLeftOf="@id/cb_sub_chekck"
+      android:gravity="center_vertical"
+      >
+
+    <TextView
+        android:id="@+id/tv_sub_vehicle_brand"
+        style="@style/wh_wrap"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_sub_vehicle_detail"
+        style="@style/wh_wrap"
+        android:layout_alignLeft="@id/tv_sub_vehicle_brand"
+        android:layout_below="@id/tv_sub_vehicle_brand"
+        android:layout_marginTop="@dimen/px_2dp"
+        />
+  </RelativeLayout>
+</RelativeLayout>

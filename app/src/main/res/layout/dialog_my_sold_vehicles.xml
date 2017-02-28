@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/promote_white"
+    android:orientation="vertical"
+    style="@style/wh_match_wrap"
+    >
+
+  <ListView
+      android:id="@+id/lv_dialg_sold"
+      style="@style/wh_match_wrap"
+      />
+
+</LinearLayout>

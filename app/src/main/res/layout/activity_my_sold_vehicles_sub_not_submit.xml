@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match"
+    android:id="@+id/rel_sold_not_submit"
+    android:layout_gravity="top"
+    >
+
+  <!-- 出售爱车  未提交出售信息-->
+
+  <TextView
+      android:id="@+id/tv_sold_not_submit_phone"
+      style="@style/wh_wrap"
+      android:layout_centerHorizontal="true"
+      android:text="@string/hc_customer_service"
+      android:textColor="@color/font_gray"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="@dimen/px_40dp"
+      />
+
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:gravity="center"
+      style="@style/wh_match"
+      android:layout_centerInParent="true"
+      >
+
+    <TextView
+        style="@style/wh_wrap"
+        android:id="@+id/tv_sold_not_submit_ownner"
+        android:textColor="@color/font_black"
+        android:textSize="@dimen/font_vehicle_name"
+        android:text="@string/hc_hi_ownner"
+        android:drawableTop="@drawable/icon_empty_car"
+        android:drawablePadding="@dimen/px_15dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_sold_hint"
+        style="@style/wh_wrap"
+        android:text="@string/hc_not_sell_now"
+        android:textColor="@color/font_gray"
+        android:layout_margin="@dimen/px_15dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_sold_not_submit_sold_vehicle"
+        style="@style/wh_w_w"
+        android:background="@drawable/selector_rect_red"
+        android:text="@string/sold_indicator"
+        android:paddingLeft="@dimen/px_25dp"
+        android:paddingRight="@dimen/px_25dp"
+        android:paddingTop="@dimen/px_10dp"
+        android:paddingBottom="@dimen/px_10dp"
+        />
+
+  </LinearLayout>
+
+
+</RelativeLayout>

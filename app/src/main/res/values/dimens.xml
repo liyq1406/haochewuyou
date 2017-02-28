@@ -1,0 +1,249 @@
+<resources>
+
+  <!-- Default screen margins, per the Android Design guidelines. -->
+  <dimen name="activity_horizontal_margin">16dp</dimen>
+  <dimen name="activity_vertical_margin">16dp</dimen>
+  <dimen name="pulldown_headerview_height">70dp</dimen>
+  <dimen name="pulldown_move_deviation">38dp</dimen>
+  <dimen name="pulldown_auto_incremental">6dp</dimen>
+  <dimen name="list_divider_height">20dp</dimen>
+  <dimen name="indicator_radius">5dp</dimen>
+  <dimen name="promote_photo_height">140dp</dimen>
+  <dimen name="progress_width">60dp</dimen>
+  <dimen name="loading_width">160dp</dimen>
+  <dimen name="filter_bar_height">45dp</dimen>
+  <dimen name="filter_padding">8dp</dimen>
+  <dimen name="sort_margin">10dp</dimen>
+  <dimen name="common_item_height">40dp</dimen>
+  <dimen name="btn_min_height">48dp</dimen>
+  <dimen name="drawable_padding">5dp</dimen>
+  <dimen name="detail_min_height">280dp</dimen>
+  <dimen name="brand_margin">3dp</dimen>
+  <dimen name="grid_margin">5dp</dimen>
+  <dimen name="grid_item_radius">2dp</dimen>
+  <dimen name="triange_width">5dp</dimen>
+  <dimen name="main_titlebar_height">45dp</dimen>
+  <dimen name="tab_parent_height">45dp</dimen>
+  <dimen name="empty_icon_padding">15dp</dimen>
+  <dimen name="empty_btn_width">120dp</dimen>
+  <dimen name="empty_btn_height">35dp</dimen>
+  <dimen name="empty_btn_margin">18dp</dimen>
+  <dimen name="empty_tv_margin">30dp</dimen>
+  <dimen name="common_linear_height">48dp</dimen>
+  <dimen name="common_btn_radius">2dp</dimen>
+  <dimen name="common_btn_margin">5dp</dimen>
+  <dimen name="common_btn_height">35dp</dimen>
+  <dimen name="common_btn_width">120dp</dimen>
+  <dimen name="common_btn_stroke">0.5dp</dimen>
+  <dimen name="common_titlebar_height">45dp</dimen>
+  <dimen name="brand_lv_item_height">50dp</dimen>
+
+  <!--  -->
+  <dimen name="letter_toast_width">75dp</dimen>
+  <dimen name="letter_text_size">10sp</dimen>
+  <dimen name="progress_radius">5dp</dimen>
+  <dimen name="middle_item_height">60dp</dimen>
+  <dimen name="diff_item_heigh">50dp</dimen>
+  <!-- 首页价格高度 -->
+  <dimen name="home_price_parent_height">160dp</dimen>
+
+  <!-- 首页热门品牌高度 -->
+  <dimen name="home_brand_parent_height">240dp</dimen>
+
+  <!-- 首页两端间隔 -->
+  <dimen name="home_margin">27dp</dimen>
+
+  <!-- 首页shadow高度 -->
+  <dimen name="home_shadow_high">10dp</dimen>
+
+  <!-- 好车故事标题和内容 -->
+  <dimen name="story_margin">5dp</dimen>
+
+  <!-- 热门品牌spacing -->
+  <dimen name="grid_space">15dp</dimen>
+
+  <!-- 更多按钮高度 -->
+  <dimen name="more_btn_height">40dp</dimen>
+  <dimen name="more_btn_width">110dp</dimen>
+
+  <!-- 100dp -->
+  <dimen name="brand_item">100dp</dimen>
+
+  <!-- 好车故事头高度 -->
+  <dimen name="vehicle_story_title_height">200dp</dimen>
+
+  <!-- 好车故事阴影 -->
+  <dimen name="vehicle_story_shadow_height">123dp</dimen>
+
+  <!-- 好车故事图片 -->
+  <dimen name="vehicle_story_pic">173dp</dimen>
+
+  <!-- 城市高度 -->
+  <dimen name="city_height">50dp</dimen>
+
+  <!-- 其他城市陆续开放中 -->
+  <dimen name="other_city_height">60dp</dimen>
+  <dimen name="feedback_hint_height">57dp</dimen>
+
+  <!-- 我的item高度 -->
+  <dimen name="profile_item_heigt">45dp</dimen>
+  <!-- 出售爱车头部imageView 高度-->
+  <dimen name="sell_vehicle_image_heigh">130dp</dimen>
+  <!-- 车系返回margin -->
+  <dimen name="carseries_back_margin">13dp</dimen>
+  <dimen name="px_m10">-10dp</dimen>
+  <dimen name="px_m7">-7dp</dimen>
+  <dimen name="px_m23">-23dp</dimen>
+  <dimen name="px_m48">-48dp</dimen>
+  <dimen name="px_05">0.5dp</dimen>
+  <dimen name="px_m05">-0.5dp</dimen>
+  <dimen name="px_0dp">0dp</dimen>
+  <dimen name="px_015dp">1.5dp</dimen>
+  <dimen name="px_025dp">2.5dp</dimen>
+  <dimen name="px_1dp">1dp</dimen>
+  <dimen name="px_2dp">2dp</dimen>
+  <dimen name="px_3dp">3dp</dimen>
+  <dimen name="px_4dp">4dp</dimen>
+  <dimen name="px_5dp">5dp</dimen>
+  <dimen name="px_6dp">6dp</dimen>
+  <dimen name="px_7dp">7dp</dimen>
+  <dimen name="px_8dp">8dp</dimen>
+  <dimen name="px_9dp">9dp</dimen>
+  <dimen name="px_10dp">10dp</dimen>
+  <dimen name="px_11dp">11dp</dimen>
+  <dimen name="px_12dp">12dp</dimen>
+  <dimen name="px_13dp">13dp</dimen>
+  <dimen name="px_14dp">14dp</dimen>
+  <dimen name="px_15dp">15dp</dimen>
+  <dimen name="px_16dp">16dp</dimen>
+  <dimen name="px_18dp">18dp</dimen>
+  <dimen name="px_19dp">19dp</dimen>
+  <dimen name="px_20dp">20dp</dimen>
+  <dimen name="px_20.5dp">20.5dp</dimen>
+  <dimen name="px_21dp">21dp</dimen>
+  <dimen name="px_23dp">23dp</dimen>
+  <dimen name="px_24dp">24dp</dimen>
+  <dimen name="px_25dp">25dp</dimen>
+  <dimen name="px_26dp">26dp</dimen>
+  <dimen name="px_27dp">27dp</dimen>
+  <dimen name="px_28dp">28dp</dimen>
+  <dimen name="px_29dp">2dp</dimen>
+
+  <dimen name="px_30dp">30dp</dimen>
+  <dimen name="px_32dp">32dp</dimen>
+  <dimen name="px_35dp">35dp</dimen>
+  <dimen name="px_37dp">37dp</dimen>
+  <dimen name="px_40dp">40dp</dimen>
+  <dimen name="px_44dp">44dp</dimen>
+  <dimen name="px_45dp">45dp</dimen>
+  <dimen name="px_46dp">46dp</dimen>
+  <dimen name="px_47dp">47dp</dimen>
+  <dimen name="px_48dp">48dp</dimen>
+  <dimen name="px_50dp">50dp</dimen>
+  <dimen name="px_52dp">52dp</dimen>
+  <dimen name="px_55dp">55dp</dimen>
+  <dimen name="px_56dp">56dp</dimen>
+  <dimen name="px_58dp">58dp</dimen>
+  <dimen name="px_60dp">60dp</dimen>
+  <dimen name="px_62dp">62dp</dimen>
+  <dimen name="px_65dp">65dp</dimen>
+  <dimen name="px_67dp">67dp</dimen>
+  <dimen name="px_70dp">70dp</dimen>
+  <dimen name="px_72dp">72dp</dimen>
+  <dimen name="px_75dp">75dp</dimen>
+  <dimen name="px_79dp">79dp</dimen>
+  <dimen name="px_80dp">80dp</dimen>
+  <dimen name="px_90dp">90dp</dimen>
+  <dimen name="px_94dp">94dp</dimen>
+  <dimen name="px_97dp">97dp</dimen>
+  <dimen name="px_100dp">100dp</dimen>
+
+  <dimen name="px_107dp">107dp</dimen>
+  <dimen name="px_110dp">110dp</dimen>
+  <dimen name="px_111dp">111dp</dimen>
+  <dimen name="px_120dp">120dp</dimen>
+  <dimen name="px_125dp">125dp</dimen>
+  <dimen name="px_127dp">127dp</dimen>
+  <dimen name="px_130dp">130dp</dimen>
+  <dimen name="px_140dp">140dp</dimen>
+  <dimen name="px_146dp">146dp</dimen>
+  <dimen name="px_150dp">150dp</dimen>
+  <dimen name="px_166dp">166dp</dimen>
+  <dimen name="px_320dp">320dp</dimen>
+  <dimen name="px_380dp">380dp</dimen>
+  <dimen name="font_coupon_big">30sp</dimen>
+  <dimen name="dp_20px">13dp</dimen>
+
+  <!-- 通用drawablepadding -->
+  <dimen name="hc_icon_padding">5dp</dimen>
+
+
+  <!-- 优惠券相关属性值 -->
+  <dimen name="coupon_top_dimen">15dp</dimen>
+  <dimen name="coupon_leftright">12dp</dimen>
+  <dimen name="coupon_height">86.5dp</dimen>
+  <dimen name="coupon_itxem_height">105dp</dimen>
+
+  <!-- profile 下拉的scrollview属性值 -->
+  <dimen name="profile_headview_height">300dp</dimen>
+  <dimen name="profile_headview_visible_height">100dp</dimen>
+
+
+  <!-- 品牌图标最小宽高-->
+  <dimen name="min_brand_dimen">48dp</dimen>
+  <dimen name="swipe_width">72dp</dimen>
+
+
+  <!-- ^^^^^^^^^^^^^字体相关^^^^^^^^^^^^^ -->
+  <dimen name="font_14_px">8sp</dimen>
+  <dimen name="font_15_px">9sp</dimen>
+  <dimen name="font_16_px">9sp</dimen>
+  <dimen name="font_17_px">10sp</dimen>
+  <dimen name="font_18_px">10sp</dimen>
+  <dimen name="font_19_px">11sp</dimen>
+  <dimen name="font_20_px">12sp</dimen>
+  <dimen name="font_22_px">13sp</dimen>
+  <dimen name="font_24_px">14sp</dimen>
+  <dimen name="font_25_px">15sp</dimen>
+  <dimen name="font_28_px">16sp</dimen>
+  <dimen name="font_30_px">17sp</dimen>
+  <dimen name="font_31_px">18sp</dimen>
+  <dimen name="font_32_px">19sp</dimen>
+  <dimen name="font_33_px">19sp</dimen>
+  <dimen name="font_34_px">20sp</dimen>
+  <dimen name="font_35_px">20sp</dimen>
+  <dimen name="font_36_px">21sp</dimen>
+  <dimen name="font_65_px">35sp</dimen>
+  <dimen name="font_normal">14sp</dimen>
+  <dimen name="font_mid">12sp</dimen>
+  <dimen name="font_title">18sp</dimen>
+  <dimen name="font_vehicle_name">16sp</dimen>
+  <dimen name="font_vehicle_price">18sp</dimen>
+
+
+  <dimen name="ip5_60px">30sp</dimen>
+  <dimen name="ip5_40px">20sp</dimen>
+  <dimen name="ip5_36px">18sp</dimen>
+  <dimen name="ip5_34px">17sp</dimen>
+  <dimen name="ip5_32px">16sp</dimen>
+  <dimen name="ip5_30px">15sp</dimen>
+  <dimen name="ip5_28px">14sp</dimen>
+  <dimen name="ip5_26px">13sp</dimen>
+  <dimen name="ip5_24px">12sp</dimen>
+  <dimen name="ip5_22px">11sp</dimen>
+  <dimen name="ip5_20px">10sp</dimen>
+  <dimen name="ip5_18px">9sp</dimen>
+  <dimen name="ip5_16px">8sp</dimen>
+
+
+  <!-- ^^^^^^^^^^^^^字体相关^^^^^^^^^^^^^ -->
+
+
+  <dimen name="home_enter_padding">5dp</dimen>
+
+  <dimen name="min_brand_width">60dp</dimen>
+
+  <dimen name="bang_mai_toast_width">220dp</dimen>
+
+
+</resources>

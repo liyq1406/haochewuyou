@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_52dp"
+    android:background="@color/common_gray"
+    android:paddingLeft="@dimen/px_15dp"
+    android:paddingRight="@dimen/px_15dp"
+    android:visibility="gone"
+    android:id="@+id/rel_choose_parent"
+    >
+  <TextView
+      android:clickable="true"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:id="@+id/tv_filter_subscribe"
+      android:layout_height="@dimen/px_32dp"
+      android:layout_width="@dimen/px_67dp"
+      android:gravity="center"
+      android:textColor="@color/self_white"
+      android:background="@drawable/bg_filter_condition"
+      android:text="@string/filter_subscribe"
+      android:textSize="@dimen/ip5_24px"
+      />
+  <HorizontalScrollView
+      android:overScrollMode="never"
+      android:layout_toLeftOf="@id/tv_filter_subscribe"
+      android:id="@+id/hsv_filter_choosed"
+      android:layout_centerVertical="true"
+      android:layout_marginRight="@dimen/px_12dp"
+      style="@style/wh_match"
+      android:scrollbars="none"
+      >
+    <LinearLayout
+        android:id="@+id/linear_filter_choosed"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        />
+  </HorizontalScrollView>
+
+</RelativeLayout>

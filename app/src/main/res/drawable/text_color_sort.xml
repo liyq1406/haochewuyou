@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <!-- 排序文字的颜色selector-->
+
+  <item android:state_pressed="true"
+      android:color="@color/reminder_red"/>
+
+  <item android:state_pressed="false"
+      android:color="@color/font_black"/>
+
+</selector>

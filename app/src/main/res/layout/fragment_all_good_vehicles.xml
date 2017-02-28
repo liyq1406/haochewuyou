@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match"
+    android:id="@+id/frame_parent_vehicle_list"
+    android:background="@color/common_gray"
+    >
+
+  <LinearLayout
+      style="@style/wh_match"
+      android:orientation="vertical"
+      >
+
+    <include layout="@layout/layout_for_net_err"/>
+
+    <include layout="@layout/activity_loading"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_45dp"
+        />
+
+    <com.haoche51.custom.HCPullToRefresh
+        android:layout_marginTop="@dimen/px_50dp"
+        android:layout_marginBottom="-50dp"
+        android:id="@+id/hcptr_buy_list"
+        style="@style/wh_match"
+        />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/linear_for_animate"
+      style="@style/wh_match_wrap"
+      android:layout_marginTop="@dimen/px_45dp"
+      android:orientation="vertical"
+      >
+
+    <include layout="@layout/filter_choosed"/>
+
+  </LinearLayout>
+
+
+</FrameLayout>

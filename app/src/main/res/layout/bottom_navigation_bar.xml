@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+  <RadioGroup
+      android:id="@+id/navigation_bar"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/tab_parent_height"
+      android:background="@drawable/bg_main_bottom_tab"
+      android:gravity="center"
+      android:orientation="horizontal"
+      >
+
+    <RadioButton
+        android:id="@+id/rb_tab_home_page"
+        style="@style/tab_style"
+        android:drawableTop="@drawable/selector_tab_home"
+        android:text="@string/hc_home_page"
+        />
+
+    <RadioButton
+        android:id="@+id/rb_tab_core_vehicle"
+        style="@style/tab_style"
+        android:drawableTop="@drawable/selector_tab_buycar"
+        android:text="@string/hc_tab_buycar"
+        />
+
+    <com.haoche51.custom.NavigationButton
+        android:id="@+id/rb_tab_forum"
+        style="@style/tab_style"
+        android:drawableTop="@drawable/selector_tab_forum"
+        android:text="@string/hc_tab_forum"
+        />
+
+    <com.haoche51.custom.NavigationButton
+        android:id="@+id/rb_tab_profile"
+        style="@style/tab_style"
+        android:drawableTop="@drawable/selector_tab_profile"
+        android:text="@string/hc_tab_profile"
+        />
+  </RadioGroup>
+
+</LinearLayout>

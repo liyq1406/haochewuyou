@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_today_parent"
+    style="@style/wh_match"
+    android:background="@color/promote_white"
+    >
+
+  <LinearLayout
+      style="@style/wh_match"
+      android:orientation="vertical"
+      >
+
+    <include layout="@layout/layout_for_net_err"/>
+
+    <FrameLayout
+        style="@style/wh_match"
+        >
+
+      <LinearLayout
+          android:id="@+id/linear_today_parent"
+          style="@style/wh_match"
+          android:orientation="vertical"
+          >
+
+        <com.haoche51.custom.HCPullToRefresh
+            android:id="@+id/hcptr_today_list"
+            style="@style/wh_match"
+            />
+
+      </LinearLayout>
+
+      <include layout="@layout/fragment_buycar_empty_new_arrival"/>
+
+    </FrameLayout>
+
+  </LinearLayout>
+
+</FrameLayout>

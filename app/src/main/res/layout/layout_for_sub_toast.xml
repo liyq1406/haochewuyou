@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/wh_wrap"
+    android:minWidth="@dimen/px_166dp"
+    android:minHeight="@dimen/px_75dp"
+    android:background="@drawable/bg_for_sub_toast"
+    android:gravity="center"
+    >
+
+  <TextView
+      style="@style/wh_wrap"
+      android:drawableLeft="@drawable/icon_sub_success"
+      android:drawablePadding="@dimen/px_2dp"
+      android:textSize="@dimen/ip5_28px"
+      android:textColor="@color/promote_white"
+      android:text="@string/hc_sub_success"
+      />
+
+  <TextView
+      style="@style/wh_wrap"
+      android:layout_marginTop="@dimen/px_10dp"
+      android:textSize="@dimen/ip5_24px"
+      android:textColor="@color/home_hot"
+      android:text="@string/hc_sub_success_hint"
+      />
+
+</LinearLayout>

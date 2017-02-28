@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match_wrap"
+    >
+
+  <ImageView
+      android:layout_marginTop="@dimen/px_20dp"
+      android:id="@+id/iv_redcircle"
+      style="@style/wh_wrap"
+      android:src="@drawable/bg_red_circle"
+      />
+
+  <TextView
+      android:id="@+id/tv_solditem_text"
+      android:layout_marginTop="@dimen/px_15dp"
+      style="@style/wh_match_wrap"
+      android:textColor="@color/font_black"
+      android:layout_toRightOf="@id/iv_redcircle"
+      android:layout_marginLeft="@dimen/px_20dp"
+      android:gravity="left"
+      />
+
+  <TextView
+      android:singleLine="true"
+      android:id="@+id/tv_solditem_time"
+      android:layout_alignLeft="@id/tv_solditem_text"
+      android:layout_below="@id/tv_solditem_text"
+      android:layout_marginTop="@dimen/px_15dp"
+      android:textColor="@color/font_gray"
+      android:layout_toRightOf="@id/iv_redcircle"
+      android:layout_marginBottom="@dimen/px_15dp"
+      style="@style/wh_match_wrap"
+      />
+
+  <View
+      android:id="@+id/view_for_divider"
+      android:layout_below="@id/tv_solditem_time"
+      android:layout_marginLeft="@dimen/px_20dp"
+      style="@style/zongyong_gray_line"
+      />
+
+</RelativeLayout>

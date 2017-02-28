@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/mac/Documents/AndroidProject/android_studio_buyerapp/BDAutoUpdateSDK/build/intermediates/res/merged/androidTest/debug/drawable/bdp_update_bg_dialog_btn.xml",
+        "source": "/Users/mac/Documents/AndroidProject/android_studio_buyerapp/BDAutoUpdateSDK/build/intermediates/bundles/debug/res/drawable/bdp_update_bg_dialog_btn.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/AndroidProject/android_studio_buyerapp/BDAutoUpdateSDK/build/intermediates/res/merged/androidTest/debug/drawable/bdp_update_bg_dialog_content.xml",
+        "source": "/Users/mac/Documents/AndroidProject/android_studio_buyerapp/BDAutoUpdateSDK/build/intermediates/bundles/debug/res/drawable/bdp_update_bg_dialog_content.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/AndroidProject/android_studio_buyerapp/BDAutoUpdateSDK/build/intermediates/res/merged/androidTest/debug/drawable/bdp_update_progress_download.xml",
+        "source": "/Users/mac/Documents/AndroidProject/android_studio_buyerapp/BDAutoUpdateSDK/build/intermediates/bundles/debug/res/drawable/bdp_update_progress_download.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/AndroidProject/android_studio_buyerapp/BDAutoUpdateSDK/build/intermediates/res/merged/androidTest/debug/drawable/bdp_update_bg_dialog_title.xml",
+        "source": "/Users/mac/Documents/AndroidProject/android_studio_buyerapp/BDAutoUpdateSDK/build/intermediates/bundles/debug/res/drawable/bdp_update_bg_dialog_title.xml"
+    }
+]

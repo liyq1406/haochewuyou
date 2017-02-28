@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="@dimen/px_32dp"
+    android:layout_width="wrap_content"
+    android:layout_marginRight="@dimen/px_10dp"
+    >
+  <TextView
+      android:id="@+id/tv_filter_choosed_item"
+      android:clickable="true"
+      android:paddingLeft="@dimen/px_10dp"
+      android:paddingRight="@dimen/px_10dp"
+      android:layout_height="@dimen/px_32dp"
+      android:layout_width="wrap_content"
+      android:gravity="center"
+      android:textColor="@color/hc_tab_text_color"
+      android:background="@drawable/bg_filter_choosed_item"
+      android:text="@string/hc_price_1"
+      android:textSize="@dimen/ip5_24px"
+      />
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/icon_filter_gray_delete"
+      android:layout_gravity="bottom|end"
+      />
+</FrameLayout>

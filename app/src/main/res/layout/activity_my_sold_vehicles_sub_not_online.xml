@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match"
+    android:background="@color/filter_bar_color"
+    android:id="@+id/rel_sold_not_online"
+    >
+
+  <!-- 出售爱车,未上线-->
+
+  <TextView
+      android:id="@+id/tv_sold_not_online_hint"
+      android:background="@color/filter_bar_color"
+      android:minHeight="@dimen/px_60dp"
+      android:text="@string/hc_vehicle_not_online"
+      android:textColor="@color/font_gray"
+      android:gravity="center"
+      style="@style/wh_match_wrap"
+      android:layout_centerHorizontal="true"
+      android:drawablePadding="@dimen/px_20dp"
+      android:layout_alignParentTop="true"
+      android:visibility="gone"
+      />
+
+  <TextView
+      android:id="@+id/tv_sold_not_online_owner"
+      android:background="@color/promote_white"
+      android:paddingTop="@dimen/px_20dp"
+      android:drawableTop="@drawable/icon_pingushi"
+      android:layout_below="@id/tv_sold_not_online_hint"
+      style="@style/wh_match_wrap"
+      android:text="@string/hc_hi_owner_not_online"
+      android:drawablePadding="@dimen/px_10dp"
+      android:lineSpacingExtra="@dimen/px_10dp"
+      android:gravity="center"
+      />
+
+  <TextView
+      android:id="@+id/tv_sold_wait"
+      style="@style/wh_match_wrap"
+      android:gravity="center"
+      android:background="@color/promote_white"
+      android:text="@string/hc_please_wait"
+      android:textColor="@color/font_gray"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@id/tv_sold_not_online_owner"
+      android:padding="@dimen/px_20dp"
+      />
+
+  <ImageView
+      android:layout_marginTop="@dimen/px_20dp"
+      android:layout_below="@id/tv_sold_wait"
+      android:layout_centerHorizontal="true"
+      style="@style/wh_wrap"
+      android:src="@drawable/bg_sold_process"
+      android:id="@+id/iv_sold_process"
+      />
+
+  <TextView
+      android:id="@+id/tv_notonline_phone"
+      android:layout_below="@id/iv_sold_process"
+      android:layout_marginTop="@dimen/px_25dp"
+      style="@style/wh_wrap"
+      android:layout_centerHorizontal="true"
+      android:textColor="@color/font_gray"
+      android:paddingBottom="@dimen/px_20dp"
+      />
+
+</RelativeLayout>

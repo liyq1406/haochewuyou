@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match"
+    android:orientation="vertical"
+    >
+
+  <LinearLayout
+      style="@style/wh_match_wrap"
+      android:background="@color/diff_light_gray"
+      android:orientation="vertical"
+      >
+
+    <include layout="@layout/fragment_home_page_direct"/>
+
+    <include layout="@layout/fragment_home_sub_entrance"/>
+
+    <include layout="@layout/fragment_home_sub_quick_choose"/>
+
+    <include layout="@layout/fragment_home_sub_new_arrival"/>
+
+    <include layout="@layout/fragment_home_sub_explain"/>
+
+    <include layout="@layout/fragment_home_page_banner"/>
+
+    <include layout="@layout/fragment_home_sub_forum"/>
+
+  </LinearLayout>
+
+</LinearLayout>

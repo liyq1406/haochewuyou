@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/diff_item_heigh"
+              android:orientation="horizontal"
+              android:paddingTop="@dimen/px_05"
+              android:weightSum="8.0">
+
+    <TextView
+        android:id="@+id/tv_item_left"
+        style="@style/diff_item_tv"/>
+
+    <TextView
+        android:id="@+id/tv_item_middle"
+        style="@style/diff_item_tv_middle"/>
+
+    <TextView
+        android:id="@+id/tv_item_right"
+        style="@style/diff_item_tv"/>
+
+</LinearLayout>

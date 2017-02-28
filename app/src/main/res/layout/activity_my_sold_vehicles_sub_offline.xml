@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match"
+    android:background="@color/promote_white"
+    android:id="@+id/rel_sold_offline"
+    >
+
+  <!-- 出售爱车,下线-->
+  <TextView
+      style="@style/wh_wrap"
+      android:drawablePadding="@dimen/px_10dp"
+      android:drawableTop="@drawable/icon_empty_car"
+      android:layout_centerInParent="true"
+      android:text="@string/hc_hi_ownner"
+      android:id="@+id/tv_sold_offline_owner"
+      />
+
+  <TextView
+      android:layout_below="@id/tv_sold_offline_owner"
+      style="@style/wh_wrap"
+      android:text="@string/hc_already_offline"
+      android:textColor="@color/font_gray"
+      android:paddingTop="@dimen/px_10dp"
+      android:layout_centerHorizontal="true"
+      android:id="@+id/tv_sold_offline_desc"
+      />
+
+  <TextView
+      android:id="@+id/tv_sold_offline_service_phone"
+      android:layout_below="@id/iv_sold_process"
+      android:layout_marginTop="@dimen/px_25dp"
+      style="@style/wh_wrap"
+      android:layout_centerHorizontal="true"
+      android:layout_alignParentBottom="true"
+      android:text="@string/hc_buyvehicle_advisory"
+      android:textColor="@color/font_gray"
+      android:paddingBottom="@dimen/px_20dp"
+      />
+
+</RelativeLayout>

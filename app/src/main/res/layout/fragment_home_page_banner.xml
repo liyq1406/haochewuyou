@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match"
+    android:id="@+id/frame_home_banner"
+    android:layout_marginTop="@dimen/px_10dp"
+    android:visibility="gone"
+    >
+
+  <com.haoche51.custom.ImageCycleView
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:id="@+id/adCycleView"
+      android:layout_width="match_parent"
+      android:layout_height="90dp"
+      android:visibility="gone"
+      android:background="@color/hc_half_trans"
+      app:bgColor="@drawable/color_cycle_un_selected"
+      app:fgColor="@drawable/color_cycle_selected_red"
+      app:position="center"
+      />
+
+</FrameLayout>

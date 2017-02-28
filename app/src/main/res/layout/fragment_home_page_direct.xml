@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+      <com.haoche51.custom.ImageCycleView
+          xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:id="@+id/adCycleView_direct"
+          android:layout_width="match_parent"
+          android:layout_height="350dp"
+          android:background="@color/hc_half_trans"
+          app:bgColor="@drawable/color_cycle_un_selected_direct"
+          app:fgColor="@drawable/color_cycle_selected_white"
+          app:position="left"
+          />
+    </FrameLayout>
+    <include layout="@layout/fragment_home_sub_propaganda"/>
+
+  </LinearLayout>
+
+  <ImageView
+      android:id="@+id/iv_home_search"
+      android:layout_width="@dimen/px_46dp"
+      android:layout_height="@dimen/px_46dp"
+      android:layout_gravity="bottom|right"
+      android:layout_marginRight="@dimen/px_19dp"
+      android:layout_marginBottom="@dimen/px_47dp"
+      android:scaleType="fitXY"
+      android:background="@drawable/icon_home_search_normal"
+      />
+</FrameLayout>

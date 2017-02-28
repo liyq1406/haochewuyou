@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/promote_white"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/diff_item_heigh">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:baselineAligned="true"
+            android:gravity="center"
+            android:text="@string/hc_reserve_vehicle"
+            android:textColor="@color/sub_title_color"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/iv_reserve_vehicle_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_margin="@dimen/px_6dp"
+            android:contentDescription="@null"
+            android:padding="@dimen/px_5dp"
+            android:src="@drawable/icon_hc_cancel"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_reserve_vehicle_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/diff_item_heigh"
+        android:background="@color/diff_deep_gray_"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_reserve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_15dp"
+        android:layout_marginRight="@dimen/px_15dp"
+        android:minHeight="@dimen/diff_item_heigh">
+
+        <ImageView
+            android:id="@+id/iv_reserve_phone_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_hc_phone"/>
+
+        <FrameLayout
+            android:id="@+id/frame_reserve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_reserve_phone_icon"
+            android:minHeight="@dimen/diff_item_heigh">
+
+            <EditText
+                android:id="@+id/et_reserve_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:ems="11"
+                android:gravity="center"
+                android:textSize="@dimen/font_normal"
+                android:hint="@string/hc_input_phone_hint"
+                android:inputType="phone"
+                android:textColorHint="@color/hc_hint_color"
+                android:maxLength="11"
+                android:singleLine="true"/>
+
+            <ImageView
+                android:id="@+id/iv_input_clear"
+                android:visibility="gone"
+                style="@style/wh_wrap"
+                android:layout_gravity="right|center_vertical"
+                android:contentDescription="@null"
+                android:padding="@dimen/px_5dp"
+                android:src="@drawable/icon_hc_cancel"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1dp"
+            android:layout_below="@id/frame_reserve"
+            android:background="@color/diff_deep_gray_"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/diff_item_heigh"
+        android:gravity="center"
+        android:text="@string/hc_operator_connect_you"
+        android:textColor="@color/font_gray"/>
+
+    <Button
+        android:id="@+id/btn_reserve_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_rect_red_no_raduis"
+        android:minHeight="@dimen/diff_item_heigh"
+        android:text="@string/hc_confirm"
+        android:textColor="@color/promote_white"
+        android:textSize="18sp"/>
+
+</LinearLayout>

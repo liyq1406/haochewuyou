@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    >
+
+  <corners android:radius="@dimen/px_3dp"/>
+
+  <solid
+      android:color="@color/reminder_red"
+      />
+
+  <size android:width="@dimen/px_15dp"
+      android:height="@dimen/px_8dp"
+      />
+
+</shape>

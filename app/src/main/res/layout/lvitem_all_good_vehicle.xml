@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/promote_white"
+    style="@style/wh_match_wrap"
+    >
+
+  <include
+      android:id="@+id/rel_singlepic_parent"
+      layout="@layout/lvitem_singlepic_vehicle_sub_child"
+      />
+
+  <View
+      android:id="@+id/view_allgood_divider"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/px_5dp"
+      android:layout_below="@id/rel_singlepic_parent"
+      android:background="@drawable/bg_top_line_gray_list"
+      />
+
+  <ImageView
+      android:contentDescription="@null"
+      android:id="@+id/iv_allgood_ad"
+      style="@style/wh_match_wrap"
+      />
+  <View
+      android:id="@+id/view_allgood_ad_divider"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/px_5dp"
+      android:layout_below="@id/iv_allgood_ad"
+      android:background="@color/grx_diff_gray"
+      />
+
+  <include
+      android:id="@+id/view_bangmai"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="gone"
+      layout="@layout/layout_bangmai"
+      />
+
+  <include
+      android:id="@+id/view_nearcity"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      layout="@layout/layout_nearcity_desc"
+      android:visibility="gone"
+      />
+
+</RelativeLayout>

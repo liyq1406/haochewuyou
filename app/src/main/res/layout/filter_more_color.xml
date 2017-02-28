@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg_bottom_line_light_gray"
+    style="@style/wh_match_wrap"
+    >
+  <RelativeLayout
+      android:id="@+id/rel_filter_color"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+    <TextView
+        style="@style/hc_filter_tv_hint"
+        android:text="@string/hc_filter_color_hint"
+        />
+    <TextView
+        android:id="@+id/tv_filter_color"
+        style="@style/hc_filter_tv"
+        android:layout_alignParentRight="true"
+        android:text="@string/no_limit_string"
+        android:drawableRight="@drawable/icon_close"
+        />
+  </RelativeLayout>
+  <com.haoche51.custom.HCGridView
+      android:id="@+id/gv_filter_color"
+      android:visibility="gone"
+      style="@style/hc_filter_gv"
+      />
+</LinearLayout>

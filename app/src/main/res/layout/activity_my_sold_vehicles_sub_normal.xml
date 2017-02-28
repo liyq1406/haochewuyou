@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_sold_inner"
+    style="@style/wh_match_wrap"
+    android:orientation="vertical"
+    >
+
+  <FrameLayout style="@style/wh_match_wrap">
+
+    <ImageView
+        android:id="@+id/iv_sold_vehicle_pic"
+        style="@style/wh_match_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:src="@drawable/default_template"
+        />
+
+    <RelativeLayout
+        style="@style/wh_match_wrap"
+        android:layout_gravity="bottom"
+        android:background="@color/hc_half_trans"
+        android:minHeight="@dimen/px_30dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/coupon_leftright"
+        android:paddingRight="@dimen/coupon_leftright"
+        >
+
+      <TextView
+          android:id="@+id/tv_sold_vehicle_number"
+          style="@style/wh_w_w"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          android:textSize="@dimen/font_20_px"
+          />
+
+      <TextView
+          android:textSize="@dimen/font_20_px"
+          style="@style/wh_w_w"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:gravity="center"
+          android:text="@string/hc_click_for_detail"
+          />
+
+    </RelativeLayout>
+
+  </FrameLayout>
+
+  <FrameLayout
+      style="@style/wh_match_wrap"
+      >
+
+    <LinearLayout
+        style="@style/wh_match_wrap"
+        android:orientation="vertical"
+        >
+
+      <TextView
+          android:id="@+id/tv_sold_correct_number"
+          android:paddingLeft="@dimen/coupon_leftright"
+          style="@style/wh_match_wrap"
+          android:minHeight="@dimen/px_45dp"
+          android:gravity="center_vertical"
+          android:text="@string/hc_redress_brand"
+          android:textColor="@color/font_gray"
+          android:textSize="13sp"
+          android:singleLine="true"
+          />
+
+      <LinearLayout
+          style="@style/wh_match_wrap"
+          android:orientation="vertical"
+          android:background="@color/promote_white"
+          android:gravity="center"
+          android:paddingTop="@dimen/px_15dp"
+          >
+
+        <TextView
+            android:id="@+id/tv_sold_price_title"
+            style="@style/wh_wrap"
+            android:text="@string/hc_your_quote"
+            android:textSize="@dimen/font_36_px"
+            />
+
+        <TextView
+            android:id="@+id/tv_sold_quote_price"
+            style="@style/wh_wrap"
+            android:textSize="@dimen/font_36_px"
+            android:layout_marginBottom="@dimen/px_10dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_05"
+            android:background="@color/filter_bar_color"
+            />
+
+        <LinearLayout
+            android:id="@+id/linear_sold_suggestion"
+            android:layout_marginTop="@dimen/px_15dp"
+            android:layout_marginBottom="@dimen/px_15dp"
+            style="@style/wh_match_wrap"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+          <LinearLayout
+              style="@style/wh_match_wrap"
+              android:orientation="horizontal"
+              android:gravity="center"
+              >
+
+            <TextView
+                android:id="@+id/tv_sold_suggestion_price_title"
+                style="@style/wh_wrap"
+                android:gravity="center"
+                android:text="@string/hc_price_too_high"
+                />
+
+            <TextView
+                android:id="@+id/tv_sold_suggestion_price"
+                style="@style/wh_wrap"
+                android:textColor="@color/reminder_red"
+                android:gravity="center"
+                />
+
+          </LinearLayout>
+
+
+          <TextView
+              android:id="@+id/tv_sold_adjust_price"
+              android:layout_marginTop="@dimen/px_10dp"
+              style="@style/wh_w_w"
+              android:text="@string/hc_adjust_price"
+              android:textColor="@color/reminder_red"
+              android:background="@drawable/bg_red_border"
+              android:paddingLeft="@dimen/px_14dp"
+              android:paddingRight="@dimen/px_14dp"
+              android:paddingTop="@dimen/px_8dp"
+              android:paddingBottom="@dimen/px_8dp"
+              android:textSize="@dimen/font_mid"
+              />
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_sold_soldicon"
+        style="@style/wh_wrap"
+        android:src="@drawable/icon_sold"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/px_35dp"
+        android:layout_marginRight="@dimen/px_10dp"
+        />
+
+  </FrameLayout>
+
+  <LinearLayout
+      style="@style/wh_match_wrap"
+      android:background="@color/promote_white"
+      android:layout_marginTop="@dimen/px_10dp"
+      android:orientation="vertical"
+      >
+
+    <TextView
+        style="@style/wh_match_wrap"
+        android:minHeight="@dimen/px_45dp"
+        android:text="@string/hc_sold_progress"
+        android:textSize="@dimen/font_36_px"
+        android:gravity="center"
+        />
+
+    <View
+        android:padding="@dimen/px_15dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_05"
+        android:background="#dadada"
+        />
+
+    <FrameLayout
+        style="@style/wh_match_wrap"
+        android:layout_marginLeft="@dimen/px_15dp"
+        android:layout_marginRight="@dimen/px_15dp"
+        >
+
+      <com.haoche51.custom.ConstListView
+          android:id="@+id/lv_sold_main"
+          style="@style/wh_match_wrap"
+          android:listSelector="@color/hc_transcolor"
+          android:dividerHeight="0dp"
+          android:divider="@null"
+          />
+
+      <View
+          android:layout_marginTop="@dimen/px_20dp"
+          android:layout_marginLeft="@dimen/px_5dp"
+          android:id="@+id/view_sold_redline"
+          android:layout_width="@dimen/px_1dp"
+          android:background="@color/reminder_red"
+          android:layout_height="match_parent"
+          />
+
+      <TextView
+          android:id="@+id/tv_sold_empty"
+          android:visibility="gone"
+          style="@style/wh_match_wrap"
+          android:text="@string/hc_sold_empty"
+          android:textColor="#9a9a9a"
+          android:gravity="center"
+          android:drawableTop="@drawable/icon_empty_car"
+          android:drawablePadding="@dimen/px_10dp"
+          android:layout_marginTop="@dimen/px_20dp"
+          android:layout_marginBottom="@dimen/px_20dp"
+          />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        style="@style/wh_match_wrap"
+        android:background="@color/filter_bar_color"
+        >
+
+      <RelativeLayout
+          android:layout_marginBottom="@dimen/px_10dp"
+          style="@style/wh_match_wrap"
+          android:background="@drawable/bg_top_line_gray"
+          android:minHeight="@dimen/px_45dp"
+          android:paddingLeft="@dimen/px_15dp"
+          android:paddingRight="@dimen/px_15dp"
+          >
+
+        <TextView
+            android:id="@+id/tv_sold_status"
+            style="@style/wh_wrap"
+            android:textColor="@color/font_gray"
+            android:layout_alignParentLeft="true"
+            android:text="自己已售出,申请下线"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_sold_apply_offline"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            style="@style/wh_wrap"
+            android:text="@string/hc_offline"
+            android:padding="@dimen/px_8dp"
+            android:textSize="@dimen/font_mid"
+            android:background="@drawable/bg_border_black"
+            />
+
+      </RelativeLayout>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</LinearLayout>
+

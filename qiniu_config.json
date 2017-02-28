@@ -1,0 +1,9 @@
+{
+    "src":          "",
+    "dest":         "qiniu:access_key=qpOZXTjCkdoiKbQSVxhwVOK6A2kPpJdgibe1R0x-&secret_key=gaXhJKKqVow-iPV-kRUqcf_xzIPdPLq5-Fbop08Q&bucket=appdownload&key_prefix=channels/&threshold=1",
+    "debug_level":  0
+}
+
+
+
+

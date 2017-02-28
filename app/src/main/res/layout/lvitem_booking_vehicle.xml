@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/promote_white"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/coupon_leftright"
+        android:paddingRight="@dimen/coupon_leftright">
+
+        <RelativeLayout
+            android:id="@+id/rel_booking_status"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_60dp"
+            android:layout_gravity="top"
+            android:background="@drawable/bg_bottom_line_gray"
+            android:minHeight="@dimen/px_60dp">
+
+            <TextView
+                android:id="@+id/tv_booking_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textSize="@dimen/font_28_px" />
+
+            <TextView
+                android:id="@+id/tv_booking_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_red_border"
+                android:gravity="center"
+                android:padding="@dimen/px_5dp"
+                android:text="@string/hc_use_coupon"
+                android:textColor="@color/reminder_red"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_booking_coupon_used_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_58dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:padding="@dimen/px_5dp"
+                android:textColor="@color/font_gray"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_booking_status"
+            style="@style/wh_wrap"
+            android:layout_gravity="bottom"
+            android:src="@drawable/icon_coupon_dealed"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel_sub_booking_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/coupon_leftright"
+        android:layout_marginTop="@dimen/coupon_leftright"
+        android:paddingLeft="@dimen/coupon_leftright"
+        android:paddingRight="@dimen/coupon_leftright">
+
+        <FrameLayout
+            android:id="@+id/frame_booking_image"
+            android:layout_width="120dp"
+            android:layout_height="90dp">
+
+            <ImageView
+                android:id="@+id/iv_booking_image"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/iv_sold_status"
+                style="@style/wh_w_w"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_has_sold"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/frame_booking_image"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/frame_booking_image"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/frame_booking_image"
+            android:background="@drawable/selector_common_click">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <TextView
+                    android:id="@+id/tv_booking_carname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:singleLine="true"
+                    android:textColor="@color/promote_black"
+                    android:textSize="16sp" />
+
+                <!-- 上牌时间和行驶里程 -->
+                <TextView
+                    android:id="@+id/tv_booking_car_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_booking_carname"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:textColor="#666666" />
+
+                <!-- 售价 -->
+                <TextView
+                    android:id="@+id/tv_booking_car_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:singleLine="true"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+        </FrameLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fafafa"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/coupon_leftright"
+        android:paddingRight="@dimen/coupon_leftright">
+
+        <TextView
+            android:id="@+id/tv_booking_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_time"
+            android:drawablePadding="@dimen/px_5dp"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/px_58dp" />
+
+        <View
+            android:id="@+id/line_time"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/bg_bottom_dash"
+            android:layerType="software" />
+
+        <TextView
+            android:id="@+id/tv_booking_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_address"
+            android:drawablePadding="@dimen/px_5dp"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/px_58dp" />
+
+        <View
+            android:id="@+id/line_address"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/bg_bottom_dash"
+            android:layerType="software" />
+
+        <LinearLayout
+            android:id="@+id/linear_booking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/px_58dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_booking_man"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:drawableLeft="@drawable/icon_people"
+                android:drawablePadding="@dimen/px_5dp"
+                android:gravity="center_vertical" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/px_20dp"
+                android:layout_marginBottom="@dimen/px_5dp"
+                android:layout_marginRight="@dimen/px_20dp"
+                android:layout_marginTop="@dimen/px_5dp"
+                android:background="@color/promote_gray" />
+
+            <TextView
+                android:id="@+id/tv_booking_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:autoLink="phone"
+                android:textColorLink="@color/reminder_red"
+                android:drawableLeft="@drawable/icon_phone"
+                android:drawablePadding="@dimen/px_5dp"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_booking_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="phone|web"
+        android:textColorLink="@color/reminder_red"
+        android:padding="@dimen/coupon_leftright" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="phone"
+        android:background="#fafafa"
+        android:gravity="center_vertical|left"
+        android:minHeight="@dimen/px_40dp"
+        android:paddingLeft="@dimen/coupon_leftright"
+        android:textColorLink="@color/reminder_red"
+        android:text="@string/hc_sub_comment"
+        android:textColor="@color/font_gray" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_16dp"
+        android:background="@color/vehicle_shadow" />
+
+</LinearLayout>
+
+

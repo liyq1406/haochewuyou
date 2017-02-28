@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match_wrap"
+    android:orientation="vertical"
+    android:background="@color/promote_white"
+    >
+
+  <TextView
+      android:id="@+id/tv_bangmai_title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textColor="@color/font_black"
+      android:text="@string/hc_try_bangmai"
+      android:layout_marginTop="@dimen/px_16dp"
+      android:layout_marginLeft="@dimen/px_12dp"
+      android:drawableLeft="@drawable/icon_light"
+      />
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textColor="@color/font_gray"
+      android:text="@string/hc_bangmai_desc"
+      android:layout_marginTop="@dimen/px_10dp"
+      android:layout_marginLeft="@dimen/px_30dp"
+      />
+
+  <EditText
+      android:id="@+id/et_bangmai_condition"
+      android:background="@drawable/sale_phone_input_shap"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/px_40dp"
+      android:layout_marginLeft="@dimen/px_10dp"
+      android:layout_marginRight="@dimen/px_10dp"
+      android:layout_marginBottom="@dimen/px_12dp"
+      android:layout_marginTop="@dimen/px_15dp"
+      android:paddingLeft="@dimen/px_10dp"
+      android:textSize="@dimen/font_24_px"
+      android:textColor="@color/reminder_red"
+      android:gravity="center_vertical"
+      />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/px_40dp"
+      android:layout_marginLeft="@dimen/px_10dp"
+      android:layout_marginRight="@dimen/px_10dp"
+      android:orientation="horizontal"
+      android:background="@drawable/sale_phone_input_shap"
+      >
+
+    <EditText
+        android:id="@+id/et_bangmai_phone"
+        android:gravity="center_vertical"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/font_24_px"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:background="@color/hc_transcolor"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:hint="@string/hc_input_phone_hint"
+        android:paddingLeft="@dimen/px_10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_helpme_buy"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@drawable/selector_rect_red_no_raduis"
+        android:textColor="@color/promote_white"
+        android:text="@string/hc_helpme_buy"
+        android:gravity="center"
+        />
+
+  </LinearLayout>
+
+  <LinearLayout
+      style="@style/wh_match_wrap"
+      android:orientation="vertical"
+      android:layout_marginLeft="@dimen/px_11dp"
+      android:layout_marginRight="@dimen/px_11dp"
+      android:layout_marginTop="@dimen/px_20dp"
+      >
+
+    <TextView
+        android:id="@+id/tv_bangmai_count"
+        style="@style/wh_match_wrap"
+        android:textColor="@color/font_black"
+        android:text="@string/hc_bangmai_count"
+        android:layout_marginBottom="@dimen/px_16dp"
+        />
+
+    <TextView
+        style="@style/wh_match_wrap"
+        android:textColor="@color/font_black"
+        android:text="@string/hc_bangmai_r1"
+        android:drawableLeft="@drawable/bangmai_left_icon"
+        android:drawablePadding="@dimen/px_8dp"
+        android:layout_marginBottom="@dimen/px_15dp"
+        />
+
+    <TextView
+        style="@style/wh_match_wrap"
+        android:textColor="@color/font_black"
+        android:text="@string/hc_bangmai_r2"
+        android:drawableLeft="@drawable/bangmai_left_icon"
+        android:drawablePadding="@dimen/px_8dp"
+        android:layout_marginBottom="@dimen/px_15dp"
+        />
+
+    <TextView
+        style="@style/wh_match_wrap"
+        android:textColor="@color/font_black"
+        android:text="@string/hc_bangmai_r3"
+        android:drawableLeft="@drawable/bangmai_left_icon"
+        android:drawablePadding="@dimen/px_8dp"
+        android:layout_marginBottom="@dimen/px_15dp"
+        />
+
+  </LinearLayout>
+
+  <include
+      android:id="@+id/view_allgood_guess"
+      layout="@layout/empty_all_good_guess_you_like"
+      android:visibility="gone"
+      />
+
+</LinearLayout>

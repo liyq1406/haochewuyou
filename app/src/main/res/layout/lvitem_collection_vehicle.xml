@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.haoche51.custom.swipe.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeLayout_collection"
+    style="@style/wh_match_wrap"
+    app:clickToClose="true"
+    >
+
+  <TextView
+      android:id="@+id/tv_collection_delete"
+      android:layout_width="@dimen/swipe_width"
+      android:layout_height="match_parent"
+      android:textColor="@color/promote_white"
+      android:background="@color/reminder_red"
+      android:text="@string/hc_delete"
+      android:gravity="center"
+      />
+
+  <include layout="@layout/lvitem_singlepic_vehicle"/>
+
+</com.haoche51.custom.swipe.SwipeLayout>

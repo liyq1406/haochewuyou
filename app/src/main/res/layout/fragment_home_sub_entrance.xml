@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/self_white"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/px_20dp"
+    android:paddingRight="@dimen/px_20dp"
+    android:paddingBottom="@dimen/px_10dp"
+    >
+
+  <FrameLayout
+      style="@style/home_entrance_layout"
+      android:layout_marginRight="@dimen/px_8dp"
+      >
+    <TextView
+        android:id="@+id/tv_home_entrance_buy"
+        style="@style/home_entrance_tv"
+        android:text="@string/hc_home_entrance_buy"
+        />
+    <ImageView
+        style="@style/home_entrance_iv"
+        android:contentDescription="@null"
+        android:src="@drawable/icon_home_buy_car"
+        />
+  </FrameLayout>
+
+  <FrameLayout
+      style="@style/home_entrance_layout"
+      >
+
+    <TextView
+        android:id="@+id/tv_home_entrance_sell"
+        style="@style/home_entrance_tv"
+        android:text="@string/hc_home_entrance_sell"
+        />
+
+    <ImageView
+        style="@style/home_entrance_iv"
+        android:contentDescription="@null"
+        android:src="@drawable/icon_home_sell_car"
+        />
+
+  </FrameLayout>
+
+
+</LinearLayout>

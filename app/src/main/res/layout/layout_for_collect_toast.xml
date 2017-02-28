@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/wh_wrap"
+    android:minWidth="@dimen/px_110dp"
+    android:minHeight="@dimen/px_70dp"
+    android:background="@drawable/bg_for_toast"
+    android:gravity="center"
+    >
+
+  <ImageView
+      android:id="@+id/iv_toast_icon"
+      style="@style/wh_wrap"
+      android:src="@drawable/icon_collected"
+      />
+
+  <TextView
+      android:id="@+id/tv_toast_msg"
+      android:text="@string/hc_has_collected"
+      android:layout_marginTop="@dimen/px_10dp"
+      style="@style/wh_w_w"
+      />
+
+</LinearLayout>

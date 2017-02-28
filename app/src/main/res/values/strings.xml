@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="hc_core_title_all">全部</string>
+  <string name="hc_core_title_direct">直营店</string>
+  <string name="hc_core_title_today">新上</string>
+  <string name="hc_core_title_subscribe">上新提醒</string>
+  <string name="hc_core_title_collection">收藏</string>
+
+  <string name="hc_total_vehicle">为您找到%d辆超值好车</string>
+
+  <string name="hc_sort_title">排序</string>
+
+  <string name="app_name">好车无忧二手车</string>
+
+  <string-array name="trans_status">
+    <item>提交预约</item>
+    <item>试驾取消订单</item>
+    <item>试驾完成后并支付定金</item>
+    <item>试驾完成后并全额支付</item>
+    <item>交易完成</item>
+    <item>毁约</item>
+  </string-array>
+
+  <string-array name="status">
+    <item></item>
+    <item>已预约</item>
+    <item>已看车,未预定</item>
+    <item>已看车,未预定</item>
+    <item>已预定</item>
+    <item>成交自行过户使用优惠券</item>
+    <item>成交自行过户未使用优惠券</item>
+    <item>成交公司过户已用券</item>
+    <item>成交公司公户未用券</item>
+  </string-array>
+
+  <string-array name="price_filter">
+    <item>价格低到高</item>
+    <item>价格高到低</item>
+  </string-array>
+  <string-array name="age_filter">
+    <item>车龄低到高</item>
+    <item>车龄高到低</item>
+  </string-array>
+  <string-array name="array_job">
+    <item>高管</item>
+    <item>外企精英</item>
+    <item>外企白领</item>
+    <item>公司白领</item>
+    <item>工程师</item>
+    <item>IT程序员</item>
+    <item>公务员</item>
+    <item>全职妈妈</item>
+    <item>其他</item>
+  </string-array>
+  <string-array name="gearbox_array">
+    <item>未知</item>
+    <item>手动</item>
+    <item>自动</item>
+    <item>双离合</item>
+    <item>手自一体</item>
+    <item>无级变速</item>
+  </string-array>
+  <string-array name="array_city">
+    <item>北京</item>
+    <item>深圳</item>
+  </string-array>
+
+  <!-- filter 相关元素 -->
+  <string name="cancel_filter">清除筛选</string>
+  <string name="sort_order">排序及筛选</string>
+  <string name="order_string">排序方式</string>
+  <string name="price_filter">价格筛选</string>
+  <string name="cancel_return">取消</string>
+  <string name="to_string">至</string>
+  <string name="price_hint_string">万元</string>
+  <string name="gearbox_filter">变速箱及筛选</string>
+  <string name="no_limit_string">不限</string>
+  <string name="gearbox_auto">自动</string>
+  <string name="gearbox_manual">手动</string>
+  <string name="brand_filter">品牌及筛选</string>
+  <string name="confirm_string">确定</string>
+  <string name="my_love_string">我的关注</string>
+
+  <!-- location -->
+  <string name="choose_city_string">选择城市</string>
+  <string name="choose_city_tips">请选择车源所在地</string>
+  <string name="city_bj">北京</string>
+  <string name="city_sz">深圳</string>
+  <string name="empty_tips">对不起，\n暂时没有找到您想要的车源</string>
+  <string name="to_new_vehicle_tips">看看最新车源</string>
+  <string name="sold_tips">已出售</string>
+  <string name="app_tips">已预订</string>
+
+  <!-- base indicator -->
+  <string name="recommend_indicator">猜你喜欢</string>
+  <string name="sold_indicator">出售爱车</string>
+  <string name="concern_indicator">我的</string>
+  <string name="my_favorite_string">我的关注</string>
+  <!-- system update -->
+  <string name="system_update">版本更新</string>
+  <string name="check_update">检测更新</string>
+  <string name="about_us">关于我们</string>
+  <string name="recommend_app">热门推荐</string>
+  <string name="evaluate_app">使用评价</string>
+  <string name="give_haoche_zan">给好车无忧点赞</string>
+  <string name="promote_content">喜欢的话,给我们五星支持吧!</string>
+  <string name="promote_ok">乐意支持</string>
+  <string name="promote_cancel">咬牙狠心拒绝</string>
+  <!-- return -->
+  <string name="return_string">返回</string>
+  <string name="hc_loading">加载中...</string>
+  <string name="hc_sort">综合排序</string>
+  <string name="hc_brand">品牌</string>
+  <string name="hc_series">车系</string>
+  <string name="hc_price">价格</string>
+  <string name="hc_filter">筛选</string>
+  <string name="hc_cancel">取消</string>
+  <string name="hc_confirm">确认</string>
+  <string name="hc_back">返回</string>
+  <string name="hc_unlimit">不限</string>
+  <string name="hc_clearall">清除全部</string>
+  <string name="hc_allbrand">全部品牌</string>
+  <string name="hc_hotbrand">热门</string>
+  <string name="hc_morebrand">更多品牌</string>
+  <string name="hc_jinghao">#</string>
+  <string name="hc_home_page">首页</string>
+  <string name="hc_tab_buycar">买车</string>
+  <string name="hc_tab_forum">社区</string>
+  <string name="hc_tab_profile">我的</string>
+  <string name="hc_empty_car_sub">还没有符合您要求的车</string>
+  <string name="hc_empty_car">抱歉,没有找到你想要的车</string>
+  <string name="hc_history_empty">抱歉,您一辆车都没看过</string>
+  <string name="hc_quick_see_car">马上去看车</string>
+  <string name="hc_seeall_car">查看全部二手车</string>
+  <string name="hc_seeall_car_new_arrival">查看全部今日新上</string>
+  <string name="hc_seeall_car_direct">查看全部直营店</string>
+  <string name="hc_helpbuy_car">试试帮买服务</string>
+  <string name="hc_helpbuy_car_hint">您提需求我们帮你找车</string>
+  <string name="hc_helpbuy_wap_title">帮买服务</string>
+  <string name="hc_profile">我的</string>
+  <string name="hc_sell_love_vehicle">出售爱车</string>
+  <string name="default_city">北京</string>
+  <string name="hc_copyright">Copyright © 2015  All Rights Reserved.</string>
+  <string name="hc_recommand_seeall">去看看车</string>
+  <string name="hc_diff">比一比</string>
+  <string name="hc_choose_another_for_diff">请再选择一辆车进行对比</string>
+  <string name="hc_dofiff">对比</string>
+  <string name="hc_diff_detail">对比详情</string>
+  <string name="hc_quick_hot">热门</string>
+  <string name="hc_head_line">买家分享</string>
+  <string name="hc_more_share">更多分享</string>
+  <string name="hc_text_explain">无忧质保</string>
+  <string name="hc_hot_price">选择价格</string>
+  <string name="hc_hot_brand">选择品牌</string>
+  <string name="hc_hot_series">选择车系</string>
+  <string name="hc_share">分享</string>
+  <string name="hc_scan_history">我看过的车</string>
+  <string name="hc_your_history">您看过的车</string>
+  <string name="hc_vehicle_story">好车故事</string>
+  <string name="hc_more_story">更多故事</string>
+  <string name="hc_seeall_history">查看全部浏览记录</string>
+
+  <!-- toast strings -->
+  <string name="hc_checking">检测中</string>
+  <string name="hc_already_newest">您的版本已经是最新</string>
+  <string name="hc_wifi_update">请在wifi环境下更新</string>
+  <string name="hc_connection_timeout">连接超时</string>
+  <string name="hc_check_update">检测更新</string>
+  <string name="hc_check_update_error">检查更新失败,请稍后再试!</string>
+  <string name="hc_other_city_open">其他城市陆续开通中...</string>
+  <string name="hc_feedback">意见反馈</string>
+  <string name="hc_commit">提交</string>
+  <string name="hc_feedback_tv_hint">感谢您提出宝贵的意见...</string>
+  <string name="hc_feedback_et_hint">请写下您的宝贵意见</string>
+  <string name="hc_feedback_empty">总要说点什么哦~</string>
+  <string name="hc_feedback_succ">提交成功!感谢您的宝贵意见!</string>
+  <string name="hc_test">  onTouch() - This return</string>
+  <string name="hc_used_vehicle">二手车商</string>
+  <string name="hc_new_vehicle_intro">新车指导</string>
+  <string name="hc_setting">设置</string>
+  <!-- toast strings -->
+
+  <string name="hc_reserve_vehicle">预约看车</string>
+  <string name="hc_vehicle_overview">概况</string>
+  <string name="hc_vehicle_checkreport">车检报告</string>
+  <string name="hc_vehicle_mainparam">主要参数</string>
+  <string name="hc_vehicle_evaluate">评价</string>
+  <string name="hc_vehicle_sold">已售出</string>
+
+  <!-- 首页价格所需要的数据 -->
+  <string name="hc_price_0">3~5万</string>
+  <string name="hc_price_1">5~7万</string>
+  <string name="hc_price_2">7~9万</string>
+  <string name="hc_price_3">9~12万</string>
+  <string-array name="home_hot_price_key">
+    <item>3~5万</item>
+    <item>5~7万</item>
+    <item>7~9万</item>
+    <item>9~12万</item>
+  </string-array>
+  <string-array name="home_hot_price">
+    <item>3-5万</item>
+    <item>5-7万</item>
+    <item>7-9万</item>
+    <item>9-12万</item>
+  </string-array>
+  <!-- 首页价格所需要的数据 -->
+
+  <string-array name="hc_diff_overview">
+    <item>售价</item>
+    <item>新车指导价</item>
+    <item>公里数</item>
+    <item>上牌时间</item>
+    <item>过户次数</item>
+    <item>标准油耗\nL/100km</item>
+  </string-array>
+  <string-array name="hc_diff_checkreport">
+    <item>外观</item>
+    <item>内饰</item>
+    <item>设备</item>
+    <item>机械</item>
+  </string-array>
+  <string-array name="hc_diff_mainparam">
+    <item>车身结构</item>
+    <item>变速箱</item>
+    <item>排放</item>
+    <item>天窗</item>
+    <item>真皮座椅</item>
+    <item>空调</item>
+    <item>长宽高\nmm</item>
+    <item>发动机</item>
+    <item>燃油</item>
+    <item>最大马力\nPs</item>
+    <item>最大扭矩\nN*m</item>
+    <item>进气形式</item>
+    <item>汽缸数</item>
+    <item>驱动方式</item>
+    <item>轴距\nmm</item>
+  </string-array>
+  <string-array name="hc_diff_evaluator">
+    <item>车主说</item>
+    <item>评估师\n购车建议</item>
+  </string-array>
+
+  <string name="hc_please_choose_city">请选择城市</string>
+
+  <string name="hc_yuan">￥</string>
+  <string name="hc_input_phone_hint">请输入您的手机号</string>
+  <string name="hc_operator_connect_you">您的购车顾问将马上与您联系</string>
+  <string name="hc_reserve_succ">提交成功.客服会尽快联系您</string>
+  <string name="hc_net_unreachable">当前网络不好,请稍候重试</string>
+  <string name="hc_login">登录</string>
+  <string name="hc_login_regist">登录 / 注册</string>
+  <string name="hc_mobile_number">手机号</string>
+  <string name="hc_pass">密码</string>
+  <string name="hc_new_pass">新密码</string>
+  <string name="hc_repeat_pass">重复密码</string>
+  <string name="hc_pass_not_empty">密码不能为空</string>
+  <string name="hc_vcode_not_empty">验证码不能为空</string>
+  <string name="hc_pass_not_equal">两次输入密码不一致,请查证后输入</string>
+  <string name="hc_verify_code">验证码</string>
+  <string name="hc_get_verify_code">获取验证码</string>
+  <string name="hc_logout">退出登录</string>
+  <string name="hc_is_logout">确定退出登录吗?</string>
+  <string name="hc_my_coupon">我的优惠券</string>
+  <string name="hc_empty_coupon">您还没有优惠券哦!</string>
+  <string name="hc_next_step">下一步</string>
+  <string name="hc_valid_time">有效期</string>
+  <string name="hc_coupon_code">优惠码</string>
+  <string name="hc_noregist_tologin">免注册,输入手机号即可登录</string>
+  <string name="hc_send_verify_succ">验证码成功发送,请注意查收</string>
+  <string name="hc_send_voice_req_succ">成功，请注意接听来电</string>
+  <string name="hc_recommend_city">[推荐城市]</string>
+  <string name="hc_back_again_exit">再按一次退出程序</string>
+
+
+  <string name="hc_now_updating">更新中...</string>
+  <string name="hc_loadmore">加载更多</string>
+  <string name="hc_nomore_data">没有更多车源了</string>
+  <string name="hc_no_more_coupon">没有更多优惠券了</string>
+  <string name="hc_home_no_more_forum">— 刷完了，一会再过来看看吧！ —</string>
+  <string name="hc_share_succ">分享成功</string>
+
+
+  <string name="hc_home_enter_buy_vehicle">选购好车</string>
+  <string name="hc_home_enter_scan_history">浏览记录</string>
+  <string name="hc_home_enter_subscribe">我的提醒</string>
+
+  <string name="hc_my_sub_manager">修改我的提醒</string>
+  <string name="hc_delete">删除</string>
+  <string name="hc_swipe_left_delete">左滑可以删除提醒</string>
+
+  <string name="hc_sub_counts">全部%s个提醒</string>
+
+  <string name="hc_sub_till_limit">您的提醒已达5条上限</string>
+
+  <string name="hc_sub_duplicate">您已提醒过相同条件</string>
+
+  <string name="hc_sub_delete_hint">左滑可以删除提醒,最多可添加5条提醒</string>
+
+  <string name="hc_exchange_coupon">兑换优惠券</string>
+  <string name="hc_use_coupon">使用优惠券</string>
+  <string name="hc_exchange">兑换</string>
+  <string name="hc_right_code">请输入正确的兑换码</string>
+  <string name="hc_exchange_hint">请输入兑换码</string>
+
+  <string name="hc_coupon_intro">已成交的订单,才可以使用优惠券哦.\n赶紧完成订单吧~</string>
+  <string name="hc_coupon_uncomplate">您的订单已过期,\n规则请参见优惠券使用说明</string>
+  <string name="hc_i_known">我知道了</string>
+
+
+  <string name="hc_book_vehicle">我的预约</string>
+  <string name="hc_coupon_usage">优惠券使用说明</string>
+  <string name="hc_use_now">立即使用</string>
+  <string name="hc_no_choose_coupon">没有选择优惠券</string>
+  <string name="hc_choose_coupon">选择优惠券</string>
+
+  <string name="hc_coupon_useage">1.优惠券一次只可以使用一张,不可以叠加使用或与其他优惠券一起使用\n2.过期或不符合活动要求的优惠券不可以使用</string>
+
+  <string name="hc_sub_comment">如需修改订单,请联系客服 400-696-8390</string>
+
+  <string name="hc_has_used_coupon">已使用%s元优惠券</string>
+
+  <string name="filter_subscribe">上新提醒</string>
+  <string name="hc_has_subbed">成功提醒</string>
+  <string name="hc_sub_success">已成功提醒</string>
+  <string name="hc_sub_success_hint">可在我的-上新提醒中查看</string>
+
+  <string name="popular_search">大家都在找</string>
+  <string name="hc_search_hint">请输入品牌/车系</string>
+  <string name="hc_search_split">|</string>
+  <string name="hc_search_history">历史搜索</string>
+
+  <string name="hc_all_good_vehicle">全部好车</string>
+
+  <string name="hc_history_count">%s辆看过的车</string>
+
+  <string name="hc_buyvehicle_advisory">客服热线: %s</string>
+  <string name="hc_home_customer_service">咨询电话: %s</string>
+
+  <string name="hc_look_now">立即查看</string>
+
+  <string name="hc_find_car_now">立即找车</string>
+
+  <string name="hc_coupon_counts">你有%s张优惠券</string>
+
+  <string name="hc_no_booking">你还有没有预约的车</string>
+
+  <string name="hc_advisory_phone">咨询</string>
+
+  <string name="hc_login_look_vehicle">通过手机号登陆即可匹配到你的在售车辆</string>
+
+  <string name="hc_receive_voice">收不到验证码?收听语音验证码</string>
+
+  <string name="hc_my_sold_vehicles">我出售的车</string>
+
+  <string name="hc_click_for_detail">点击图片查看详情</string>
+
+  <string name="hc_redress_brand">如您发现车款不符,可联系我们进行纠正: 400-696-8390</string>
+
+  <string name="hc_your_quote">您的报价</string>
+
+  <string name="hc_price_too_high">根据好车无忧的估价,您的报价偏高,建议价格为</string>
+
+  <string name="hc_adjust_price">我要调整价格</string>
+
+  <string name="hc_sold_progress">出售进度</string>
+
+  <string name="hc_sold_empty">还没有人询问过你的爱车,\n请再耐心等待一下</string>
+
+  <string name="hc_offline">申请下线</string>
+
+  <string name="hc_consultative_salor">咨询销售</string>
+
+  <string name="hc_customer_service">有任何问题可致电客服:400-696-8390</string>
+
+  <string name="hc_hi_ownner">您好,%s车主</string>
+
+  <string name="hc_not_sell_now">您还未提交爱车出售信息\n请先提交爱车出售信息</string>
+  <!--出售爱车页文本-->
+  <string name="hc_my_vehicle">我的爱车</string>
+  <string name="hc_service_desc">位车主在好车无忧成功出售爱车</string>
+  <string name="hc_contact_phone">或直接咨询：</string>
+  <string name="hc_contact_tip">填写出售信息</string>
+  <string name="hc_sell_vehicle">我要卖车</string>
+  <string name="hc_invalid_phont_tip">*您输入的电话号码错误</string>
+  <string name="hc_go_sale_status">立刻去看看</string>
+  <string name="hc_action_from_sale">通过手机号登录即可匹配到您的在售车辆</string>
+  <string name="hc_action_from_detail_collect">登录后,才可以使用收藏功能</string>
+  <string name="hc_action_from_detail_subscribe">登录后,才可以使用提醒功能</string>
+  <string name="hc_action_from_subscribe">请登录后查看提醒</string>
+
+  <string name="hc_vehicle_not_online">爱车信息还未上线</string>
+
+  <string name="hc_hi_owner_not_online">您好!%s车主\n爱车信息上线后,我们会短信通知您</string>
+
+  <string name="hc_please_wait">请您耐心等候...</string>
+  <string name="hc_already_offline">应您要求,您的车辆已做下线不显示</string>
+  <string name="hc_vehicle_number">编号:%d</string>
+
+
+  <string name="hc_deal_price">成交价格</string>
+  <string name="hc_baojia">您的报价</string>
+  <string name="hc_zanweishangxian">您的爱车暂未上线</string>
+  <string name="hc_has_offline_now">您的爱车已经下线</string>
+
+  <string name="hc_most_20">只显示最新的20条数据</string>
+
+  <string name="hc_p_book">预定</string>
+  <string name="hc_p_collect">收藏</string>
+  <string name="hc_p_sub">上新提醒</string>
+
+  <string name="hc_p_coupon">优惠券</string>
+  <string name="hc_p_history">浏览记录</string>
+  <string name="hc_p_setting">设置</string>
+  <string name="hc_p_recommand">推荐</string>
+
+  <string name="hc_has_collected">已收藏</string>
+  <string name="hc_cancel_collect">取消收藏</string>
+
+  <string name="hc_phone_advisory">电话咨询</string>
+
+  <string name="hc_similar_vehicle">购买相似车辆</string>
+
+  <string name="hc_reach_voice_limit">语音请求太频繁,请稍候重试</string>
+
+  <string name="hc_net_err_retry">你的网络不太给力哦</string>
+  <string name="hc_click_refresh">点击刷新</string>
+  <string name="hc_my_collection">我的收藏</string>
+
+  <string name="hc_jump_it">点击跳过5秒</string>
+  <string name="hc_jump_count">点击跳过%d秒</string>
+
+  <string name="hc_sell_answer">卖车解答</string>
+  <string name="hc_sell_q1">Q1:</string>
+  <string name="hc_sell_q2">Q2:</string>
+  <string name="hc_sell_q3">Q3:</string>
+  <string name="hc_sell_q4">Q4:</string>
+  <string name="hc_sell_q5">Q5:</string>
+  <string name="hc_sell_question01">好车无忧是什么样的平台？</string>
+  <string name="hc_sell_question02">好车无忧如何帮我卖车？</string>
+  <string name="hc_sell_question03">好车无忧如何收费？</string>
+  <string name="hc_sell_question04">好车无忧会帮我为旧车估价吗？</string>
+  <string name="hc_sell_question05">“21天承诺”收车能保证吗？</string>
+  <string name="hc_sell_answer01">好车无忧是国内最真实的个人二手车平台，撮合个人车主和个人买家直接交易，避免车商和4S店的低价和陷阱。我们不收车，也不寄售。只帮您找真实靠谱的个人买家，价格更好，交易透明。</string>
+  <string name="hc_sell_answer02">我们收到您的出售信息后，会派出专业评估师上门验车，如符合好车的要求，我们会上线到好车无忧官网，帮您找靠谱的个人买家。全程没有骚扰，不用奔波，还可以开着车直到卖出为止，整个过程轻松无忧。</string>
+  <string name="hc_sell_answer03">针对卖车全程免费，也不赚差价，好车无忧仅会向买家收取不超过3%的服务费。</string>
+  <string name="hc_sell_answer04">好车无忧有庞大的成交数据库和有经验的评估师，会给您一个建议价，但最终车价是以您的报价为准。</string>
+  <string name="hc_sell_answer05">“21天承诺”是以车价在承诺价位的当天开始，如超过21天无法售出的，好车无忧会以承诺价收购。好车无忧会同您签署承诺书保证您的权益。（承诺价：以历史个人交易成交价数据库为依据，根据车型，车况和市场淡旺季等综合计算出的价格，保证高于车商收车价和4S店置换+补贴价）</string>
+
+  <string name="hc_sell_quick">快速卖好价</string>
+  <string name="hc_sell_quick_one00">卖给个人价更高</string>
+  <string name="hc_sell_quick_one01">拒绝黄牛、车商中介、直接与个人面对面交易</string>
+  <string name="hc_sell_quick_one02">直接卖给个人比车商价高出20%以上</string>
+  <string name="hc_sell_quick_two00">边开边卖，免费上门检测</string>
+  <string name="hc_sell_quick_two01">边开边卖，不影响车主用车</string>
+  <string name="hc_sell_quick_two02">评估师免费上门拍摄，检测车辆</string>
+  <string name="hc_sell_quick_two03">评估师出示免费权威检测报告</string>
+  <string name="hc_sell_quick_three00">严格筛选，靠谱买家带看</string>
+  <string name="hc_sell_quick_three01">买家看车前，明确告知对方车况</string>
+  <string name="hc_sell_quick_three02">买家看车前，明确告知对方车主心里价位</string>
+  <string name="hc_sell_quick_three03">只带靠谱买家上门看车</string>
+  <string name="hc_sell_quick_four00">全程一站式服务</string>
+  <string name="hc_sell_quick_four01">全程担保交易</string>
+  <string name="hc_sell_quick_four02">全程代办过户</string>
+  <string name="hc_sell_quick_four03">提供全方位的质保服务</string>
+
+  <string name="hc_sell_process_one00">预约时间地点</string>
+  <string name="hc_sell_process_one01">• 时间和地点由您决定</string>
+  <string name="hc_sell_process_one02">• 足不出户，全程免费</string>
+  <string name="hc_sell_process_one03">• 边开边卖，不影响正常使用</string>
+  <string name="hc_sell_process_two00">评估师上门验车</string>
+  <string name="hc_sell_process_two01">• 仅需30分钟全面检测</string>
+  <string name="hc_sell_process_two02">• 自行定价 (评估师会给出建议价)</string>
+  <string name="hc_sell_process_two03">• 24小时内全渠道推广</string>
+  <string name="hc_sell_process_three00">买家上门看车</string>
+  <string name="hc_sell_process_three01">• 80%在14天内售出 (价格合理)</string>
+  <string name="hc_sell_process_three02">• 严格筛选靠谱买家 (1~2次带看即可成交)</string>
+  <string name="hc_sell_process_three03">• 评估师全程陪同，帮您谈价</string>
+  <string name="hc_sell_process_four00">过户/售后全搞定</string>
+  <string name="hc_sell_process_four01">• 代办过户所有手续</string>
+  <string name="hc_sell_process_four02">• 全年负责售后，无后顾之忧</string>
+
+
+  <string name="hc_home_s_check">218项专业检测</string>
+  <string name="hc_home_s_tui">14天可退车</string>
+  <string name="hc_home_s_pei">1年2万公里质保</string>
+  <string name="hc_home_go_forum">进入论坛</string>
+
+  <string name="hc_pull_down">下拉刷新</string>
+  <string name="hc_refresh_complete">更新完成</string>
+  <string name="hc_refreshing">刷新中请稍后..</string>
+  <string name="hc_release_to_refresh">释放刷新</string>
+  <string name="hc_more_data">精彩尽在好车无忧</string>
+
+  <string name="filter_please_choose_interval">请选择区间</string>
+
+  <string name="hc_try_bangmai">试试我们的帮买服务</string>
+  <string name="hc_bangmai_desc">24小时快速反馈,一对一帮你全城找车</string>
+  <string name="hc_helpme_buy">帮我买车</string>
+  <string name="hc_bangmai_count">%d位用户选择帮买服务的理由</string>
+  <string name="hc_bangmai_r1">省事高效,为您节省95%的搜选时间</string>
+  <string name="hc_bangmai_r2">218项检测,拒绝事故车</string>
+  <string name="hc_bangmai_r3">14天可退车,1年2万公里放心质保</string>
+
+  <string name="hc_nearcity_match">附近城市[%s]符合您要求的车</string>
+  <string name="hc_nearcity_buy">全程一对一服务,异地购车简单便捷</string>
+  <string name="hc_nearcity_name">[%1$s]%2$s</string>
+
+  <string name="hc_city_change_message">检测到您的访问城市发生变化，推荐您切换到【%s】，立即切换？</string>
+  <string name="hc_bangmai_city_change_message">检测到您的访问城市发生变化，推荐的车辆在【%s】，立即切换？</string>
+  <string name="hc_show_phone_error">您输入的电话号码错误,请检查重试</string>
+  <string name="hc_bangmai_success">信息已提交，请等待客服联系</string>
+  <string name="hc_bangmai_defeat">提交失败</string>
+
+  <string name="hc_home_quiz_wrong">哎呀！看来您了解的还不够透彻。</string>
+  <string name="hc_home_quiz_right">恭喜您！答对啦。</string>
+  <string name="hc_home_quiz_know">知道了</string>
+  <string name="hc_home_quiz_answer">答案: %s</string>
+  <string name="hc_home_evaluate">买家评价</string>
+
+  <string name="hc_home_store_count">共%s辆车体验店在售车</string>
+  <string name="hc_home_store_price">%s万</string>
+
+  <string name="hc_home_entrance_buy">买车</string>
+  <string name="hc_home_entrance_sell">卖车</string>
+
+  <string name="hc_home_arrival_count">辆</string>
+  <string name="hc_home_arrival_see">查看</string>
+
+  <string name="hc_home_explain_tv1">4万4139辆</string>
+  <string name="hc_home_explain_tv2">累计检测出事故车</string>
+  <string name="hc_home_explain_tv3">1000</string>
+  <string name="hc_home_explain_tv4">诚信保障基金池</string>
+  <string name="hc_home_explain_tv5">万</string>
+
+  <string name="hc_home_total_default">000000</string>
+  <string name="hc_home_total_hint">辆车供您选择!</string>
+
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wh_match"
+    >
+
+  <FrameLayout
+      android:id="@+id/home_page_container"
+      style="@style/wh_match_wrap"
+      >
+
+    <com.haoche51.custom.HCPullToRefresh
+        android:id="@+id/hcptr_home_list"
+        style="@style/wh_match"
+        />
+
+  </FrameLayout>
+
+  <ImageView
+      android:id="@+id/iv_home_live"
+      android:layout_width="@dimen/px_80dp"
+      android:layout_height="@dimen/px_80dp"
+      android:contentDescription="@null"
+      android:visibility="gone"
+      android:layout_gravity="bottom|right"
+      android:layout_marginRight="@dimen/px_10dp"
+      android:layout_marginBottom="@dimen/px_30dp"
+      android:clickable="true"
+      >
+  </ImageView>
+
+  <include
+      layout="@layout/fragment_home_page_titlebar"
+      />
+
+</FrameLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/wh_match_wrap"
+    >
+  <LinearLayout
+      style="@style/wh_match_wrap"
+      android:background="@drawable/bg_bottom_line_light_gray"
+      android:paddingLeft="@dimen/px_18dp"
+      android:paddingRight="@dimen/px_48dp"
+      android:orientation="horizontal"
+      android:gravity="center_vertical"
+      >
+
+    <TextView
+        android:id="@+id/tv_core_search"
+        android:layout_width="@dimen/px_30dp"
+        android:drawableLeft="@drawable/icon_black_search"
+        android:padding="@dimen/px_10dp"
+        style="@style/wh_wrap"
+        />
+
+
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        android:id="@+id/smart_vp_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_45dp"
+        android:layout_marginLeft="@dimen/px_32dp"
+        android:layout_marginRight="@dimen/px_32dp"
+        app:stl_defaultTabTextColor="@drawable/text_color_viewpager_tab"
+        app:stl_defaultTabTextSize="@dimen/ip5_32px"
+        app:stl_dividerThickness="0dp"
+        app:stl_indicatorColor="@color/hc_transcolor"
+        app:stl_indicatorCornerRadius="@dimen/px_1dp"
+        app:stl_indicatorInterpolation="linear"
+        app:stl_indicatorThickness="@dimen/px_2dp"
+        app:stl_underlineColor="@color/hc_transcolor"
+        app:stl_defaultTabBackground="@color/hc_transcolor"
+        app:stl_customTabTextLayoutId="@layout/custom_smart_tab"
+        app:stl_customTabTextViewId="@id/tv_custom_tab"
+        />
+  </LinearLayout>
+  <TextView
+      android:id="@+id/tv_core_hot_icon"
+      android:layout_width="@dimen/px_13dp"
+      android:layout_height="@dimen/px_13dp"
+      android:visibility="gone"
+      android:background="@drawable/icon_core_hot_direct"
+      />
+</FrameLayout>

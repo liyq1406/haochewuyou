@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <declare-styleable name="hc_pull_scrollview">
+    <attr name="headViewHeight"
+        format="dimension"/>
+    <attr name="headViewVisibleHeight"
+        format="dimension"/>
+  </declare-styleable>
+
+  <declare-styleable name="TagFlowLayout">
+    <attr name="multi_suppout"
+        format="boolean"/>
+    <attr name="max_select"
+        format="integer"/>
+  </declare-styleable>
+
+  <declare-styleable name="Theme">
+    <attr name="customImageViewStyle"
+        format="reference"/>
+  </declare-styleable>
+
+  <declare-styleable name="HCCircleImageView">
+    <attr name="circle"
+        format="boolean"/>
+    <attr name="radius"
+        format="dimension"/>
+  </declare-styleable>
+  <declare-styleable name="MultiViewPager">
+    <!-- Child view inside a page to match the page size against. -->
+    <attr name="matchChildWidth"
+        format="reference"/>
+    <!-- Maximum size. -->
+    <attr name="android:maxWidth"/>
+    <!-- Maximum size. -->
+    <attr name="android:maxHeight"/>
+  </declare-styleable>
+  <declare-styleable name="SwipeLayout">
+    <attr name="drag_edge">
+      <flag name="left"
+          value="1"/>
+      <flag name="right"
+          value="2"/>
+      <flag name="top"
+          value="4"/>
+      <flag name="bottom"
+          value="8"/>
+    </attr>
+    <attr name="leftEdgeSwipeOffset"
+        format="dimension"/>
+    <attr name="rightEdgeSwipeOffset"
+        format="dimension"/>
+    <attr name="topEdgeSwipeOffset"
+        format="dimension"/>
+    <attr name="bottomEdgeSwipeOffset"
+        format="dimension"/>
+    <attr name="show_mode"
+        format="enum">
+      <enum name="lay_down"
+          value="0"/>
+      <enum name="pull_out"
+          value="1"/>
+    </attr>
+    <attr name="clickToClose"
+        format="boolean"/>
+  </declare-styleable>
+  <declare-styleable name="ImageCycleView">
+    <attr name="bgColor"
+        format="reference"/>
+    <attr name="fgColor"
+        format="reference"/>
+    <attr name="position"
+        format="enum">
+      <enum name="left"
+          value="0"/>
+      <enum name="center"
+          value="1"/>
+      <enum name="right"
+          value="2"/>
+    </attr>
+  </declare-styleable>
+</resources>
